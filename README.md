@@ -7,8 +7,10 @@ This repository is the standalone package extracted from Unigint so other projec
 ## Install
 
 ```bash
-pip install axl-agent-exchange-language
+pip install git+https://github.com/cdavisv/axl-agent-exchange-language.git
 ```
+
+If the package is later published to PyPI, the package name is `axl-agent-exchange-language`.
 
 For local development:
 
