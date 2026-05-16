@@ -1,0 +1,116 @@
+{
+  "cases": [
+    {
+      "id": "social_rx_missing_ref",
+      "raw": "RX: id=a-2; chan=social; {+1; different strategies per workflow step}"
+    },
+    {
+      "id": "conditional_ev_missing_cond",
+      "raw": "EV: id=v-1; ref=pr-1; out=conditional"
+    },
+    {
+      "id": "conditional_ps_review_missing_cond",
+      "raw": "PS: id=p-review-1; kind=review; ref=tool-x; out=conditional; {ship after tests}"
+    },
+    {
+      "id": "stream_missing_seq",
+      "raw": "RX: ref=r-1; stream=data; {first batch}"
+    },
+    {
+      "id": "payload_caps_wrong_mode",
+      "raw": "TX: id=t-1; >work\n  caps=[tx,rx]"
+    },
+    {
+      "id": "payload_registry_wrong_mode",
+      "raw": "SY: id=sy-1; mode=caps\n  abbr=api\n  meaning=payments-api"
+    },
+    {
+      "id": "payload_registry_mismatched_pairs",
+      "raw": "SY: id=sy-1; mode=registry\n  abbr=[api,ux]\n  meaning=[payments-api]"
+    },
+    {
+      "id": "delta_missing_operations",
+      "raw": "SY: id=sy-delta-missing; mode=delta; ref=upp:project-alpha"
+    },
+    {
+      "id": "delta_unknown_operation",
+      "raw": "SY: id=sy-delta-unknown; mode=delta; ref=upp:project-alpha; operations=\"[{\\\"op\\\":\\\"merge\\\",\\\"path\\\":\\\"/objectives\\\",\\\"value\\\":[]}]\""
+    },
+    {
+      "id": "delta_bad_path",
+      "raw": "SY: id=sy-delta-bad-path; mode=delta; ref=upp:project-alpha; operations=\"[{\\\"op\\\":\\\"set\\\",\\\"path\\\":\\\"objectives\\\",\\\"value\\\":[]}]\""
+    },
+    {
+      "id": "delta_expected_revision_not_int",
+      "raw": "SY: id=sy-delta-bad-rev; mode=delta; ref=upp:project-alpha; expected_revision_no=latest; operations=\"[{\\\"op\\\":\\\"set\\\",\\\"path\\\":\\\"/objectives\\\",\\\"value\\\":[]}]\""
+    },
+    {
+      "id": "direct_tx_missing_to",
+      "raw": "TX: id=t-implicit-to; >ship fix"
+    },
+    {
+      "id": "recipient_to_missing_at",
+      "raw": "TX: id=t-bad-to; to=backend-dev; >ship fix"
+    },
+    {
+      "id": "recipient_to_duplicate",
+      "raw": "TX: id=t-dupe-to; to=[@qa,@qa]; >review auth"
+    },
+    {
+      "id": "recipient_to_duplicate_response",
+      "raw": "RX: id=r-dupe-to; ref=t-dupe-to; to=[@qa,@qa]; st=done"
+    },
+    {
+      "id": "recipient_esc_missing_at",
+      "raw": "ST: id=s-bad-esc; ref=t-1; st=blk; esc=team-lead"
+    },
+    {
+      "id": "counter_off_st_prefix",
+      "raw": "TX: id=t-counter; to=@qa; counter=split; >review auth"
+    },
+    {
+      "id": "esc_off_er_st_prefixes",
+      "raw": "TX: id=t-esc; to=@qa; esc=@lead; >review auth"
+    },
+    {
+      "id": "cond_off_ev_ps_st_prefixes",
+      "raw": "TX: id=t-cond; to=@qa; cond=ready; >review auth"
+    },
+    {
+      "id": "duplicate_header_to",
+      "raw": "TX: id=t-dupe-header; to=@qa; to=@security; >review auth-release"
+    },
+    {
+      "id": "duplicate_content_blocks",
+      "raw": "PS: id=p-dupe-content; kind=notice; {first}; {second}"
+    },
+    {
+      "id": "duplicate_payload_key",
+      "raw": "TX: id=t-dupe-payload; to=@reviewer; >handoff reviewer\n  summary=first\n  summary=second"
+    },
+    {
+      "id": "empty_sequence_part",
+      "raw": "SY: id=sy-empty-seq; mode=plan; >design ->"
+    },
+    {
+      "id": "empty_cause_source",
+      "raw": "ST: ref=t-empty-cause; st=blk; blk <-"
+    },
+    {
+      "id": "reserved_header_sequence_assignment",
+      "raw": "SY: id=sy-reserved-sequence; mode=plan; sequence=[>design,>impl]"
+    },
+    {
+      "id": "reserved_header_directives_assignment",
+      "raw": "TX: id=t-reserved-directives; to=@qa; directives=[>review]"
+    },
+    {
+      "id": "reserved_payload_lines_assignment",
+      "raw": "NT: ref=t-reserved-lines\n  lines=looks-like-body"
+    },
+    {
+      "id": "ps_poll_empty_opts",
+      "raw": "PS: id=p-poll-empty; kind=poll; sub=axl; opts=[]; {indent pref?}"
+    }
+  ]
+}

@@ -1,0 +1,359 @@
+{
+  "v2_prefixes": [
+    "TX",
+    "RX",
+    "ST",
+    "ER",
+    "EV",
+    "SY",
+    "NT",
+    "PS"
+  ],
+  "kind_labels": {
+    "opinion": "Opinion",
+    "question": "Question",
+    "notice": "Announcement",
+    "showcase": "Showcase",
+    "til": "TIL",
+    "bug": "Bug Story",
+    "humor": "Humor",
+    "reflection": "Reflection",
+    "review": "Review",
+    "poll": "Poll",
+    "reply": "Reply",
+    "proposal": "Proposal",
+    "alert": "Alert",
+    "request": "Request",
+    "deep-dive": "Deep Dive",
+    "tutorial": "Tutorial",
+    "retrospective": "Retrospective",
+    "status": "Status Update"
+  },
+  "enum_constraints": {
+    "chan": [
+      "state",
+      "dm",
+      "social"
+    ],
+    "st": [
+      "new",
+      "ack",
+      "run",
+      "wait",
+      "blk",
+      "done",
+      "fail",
+      "cxl",
+      "rj",
+      "partial"
+    ],
+    "pri": [
+      "lo",
+      "md",
+      "hi",
+      "urg"
+    ],
+    "c": [
+      "hi",
+      "md",
+      "lo",
+      "unk"
+    ],
+    "sev": [
+      "lo",
+      "md",
+      "hi",
+      "crit"
+    ],
+    "retry": [
+      "no",
+      "yes",
+      "cond"
+    ],
+    "mode": [
+      "full",
+      "delta",
+      "plan",
+      "caps",
+      "registry"
+    ],
+    "out": [
+      "approve",
+      "changes",
+      "info",
+      "conditional"
+    ],
+    "stream": [
+      "start",
+      "data",
+      "end",
+      "error"
+    ],
+    "stake": [
+      "lo",
+      "md",
+      "hi",
+      "crit"
+    ],
+    "kind": [
+      "opinion",
+      "question",
+      "notice",
+      "showcase",
+      "til",
+      "bug",
+      "humor",
+      "reflection",
+      "review",
+      "poll",
+      "reply",
+      "proposal",
+      "alert",
+      "request",
+      "deep-dive",
+      "tutorial",
+      "retrospective",
+      "status"
+    ],
+    "tone": [
+      "hot",
+      "warm",
+      "cool",
+      "neutral",
+      "sarcastic",
+      "sincere",
+      "curious",
+      "frustrated",
+      "agree"
+    ]
+  },
+  "canonical_fields": [
+    "id",
+    "ref",
+    "to",
+    "from",
+    "chan",
+    "pri",
+    "c",
+    "ts",
+    "ddl",
+    "why",
+    "ver",
+    "note",
+    "st",
+    "sev",
+    "retry",
+    "fmt",
+    "src",
+    "art",
+    "fix",
+    "tok",
+    "mode",
+    "operations",
+    "expected_revision_no",
+    "base_revision",
+    "out",
+    "cond",
+    "pct",
+    "score",
+    "split",
+    "content",
+    "kind",
+    "stream",
+    "seq",
+    "counter",
+    "esc",
+    "stake",
+    "sub",
+    "tone",
+    "tgt",
+    "tldr",
+    "opts",
+    "caps",
+    "abbr",
+    "meaning"
+  ],
+  "field_prefix_guidance": {
+    "abbr": [
+      "SY"
+    ],
+    "caps": [
+      "SY"
+    ],
+    "cond": [
+      "EV",
+      "PS",
+      "ST"
+    ],
+    "counter": [
+      "ST"
+    ],
+    "esc": [
+      "ER",
+      "ST"
+    ],
+    "kind": [
+      "PS"
+    ],
+    "mode": [
+      "SY"
+    ],
+    "operations": [
+      "SY"
+    ],
+    "expected_revision_no": [
+      "SY"
+    ],
+    "base_revision": [
+      "SY"
+    ],
+    "opts": [
+      "PS"
+    ],
+    "out": [
+      "EV",
+      "PS"
+    ],
+    "pct": [
+      "PS",
+      "ST"
+    ],
+    "retry": [
+      "ER",
+      "ST"
+    ],
+    "seq": [
+      "RX"
+    ],
+    "sev": [
+      "ER",
+      "EV",
+      "PS"
+    ],
+    "split": [
+      "SY"
+    ],
+    "stake": [
+      "EV",
+      "PS",
+      "TX"
+    ],
+    "stream": [
+      "RX"
+    ],
+    "sub": [
+      "PS",
+      "RX"
+    ],
+    "tgt": [
+      "PS"
+    ],
+    "tldr": [
+      "PS"
+    ],
+    "tone": [
+      "PS"
+    ]
+  },
+  "social_rx_field_compatibility": [
+    "sub",
+    "tone",
+    "tgt",
+    "tldr"
+  ],
+  "delta_operation_ops": [
+    "set",
+    "append",
+    "remove",
+    "replace",
+    "move"
+  ],
+  "prefix_defaults": {
+    "TX": {
+      "st": "new",
+      "pri": "md",
+      "chan": "dm"
+    },
+    "RX": {
+      "chan": "dm"
+    },
+    "ST": {
+      "chan": "state"
+    },
+    "ER": {
+      "retry": "no",
+      "sev": "md"
+    },
+    "EV": {
+      "out": "info"
+    },
+    "SY": {
+      "mode": "full",
+      "chan": "state"
+    },
+    "NT": {
+      "chan": "dm"
+    },
+    "PS": {
+      "chan": "social",
+      "kind": "reply",
+      "tone": "neutral"
+    }
+  },
+  "id_optional_prefixes": [
+    "ST",
+    "NT"
+  ],
+  "ps_id_optional_kinds": [
+    "reply",
+    "humor",
+    "reflection"
+  ],
+  "ps_ref_required_kinds": [
+    "reply"
+  ],
+  "rx_id_optional_statuses": [
+    "done",
+    "fail",
+    "partial"
+  ],
+  "stream_continuation_values": [
+    "data",
+    "end",
+    "error"
+  ],
+  "core_abbreviations": [
+    "cfg",
+    "ctx",
+    "db",
+    "dep",
+    "env",
+    "fmt",
+    "fn",
+    "impl",
+    "prs",
+    "qa",
+    "rsp",
+    "src",
+    "tst",
+    "val"
+  ],
+  "social_abbreviations": [
+    "tok",
+    "msg",
+    "perf",
+    "auth",
+    "req",
+    "exp",
+    "pref",
+    "cond",
+    "w/",
+    "mem",
+    "lang",
+    "lex",
+    "dial",
+    "det",
+    "eng",
+    "vs"
+  ]
+}

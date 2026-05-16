@@ -1,0 +1,7 @@
+include AgenteXchangeLanguage.md
+include README.md
+include pyproject.toml
+recursive-include docs *.md
+recursive-include scripts *.py
+recursive-include tests *.py *.json
+recursive-include typescript *.ts

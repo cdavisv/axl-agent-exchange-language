@@ -1,0 +1,51 @@
+[build-system]
+requires = ["setuptools>=69", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "axl-agent-exchange-language"
+version = "0.1.0"
+description = "Standalone parser, models, and protocol metadata for AXL Agent eXchange Language."
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = ["pydantic>=2.0"]
+keywords = ["agents", "agent-protocol", "axl", "multi-agent", "parser"]
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Intended Audience :: Developers",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: 3.13",
+  "Typing :: Typed",
+]
+
+[project.optional-dependencies]
+dev = [
+  "build>=1.2",
+  "pytest>=8.0",
+  "ruff>=0.6",
+  "twine>=5.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/cdavisv/axl-agent-exchange-language"
+Repository = "https://github.com/cdavisv/axl-agent-exchange-language"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+axl = ["axl_protocol.json", "py.typed"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.ruff]
+target-version = "py310"
+line-length = 100
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "UP", "B", "A", "SIM", "TCH"]
+ignore = ["E501", "A003"]
