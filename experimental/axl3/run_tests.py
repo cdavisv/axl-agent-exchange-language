@@ -19,6 +19,7 @@ PROFILES = [
     "refinement",
     "planning",
     "session",
+    "typed_rows",
 ]
 
 if __name__ == "__main__":

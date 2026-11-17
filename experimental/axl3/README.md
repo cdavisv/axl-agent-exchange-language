@@ -19,6 +19,8 @@ It does not establish a novel syntax-compression advantage or improved model rea
   selector among snapshots, named deltas, numeric-opcode deltas, and unchanged receipts.
 - `session/`: experimental schema-alias binding and explicit-metadata JSON control with
   equal sequence/replay checks; host authentication, fresh epochs and persistence remain required.
+- `typed_rows/`: optional strict schema-typed text grammar, with guarded JSON comparisons;
+  short-context losses and slower decoding are retained alongside conditional longer-context gains.
 - `planning/`: opt-in bounded, cost-aware shared-field selection; a trusted callback can price
   full constructed context, with byte cost as the default.
 - `refinement/`: bounded coding-handoff prompt builder/scorer. No model calls, arbitrary `eval`, or
@@ -44,7 +46,7 @@ python experimental/axl3/benchmark_synthetic.py --tokenizer /path/to/tokenizer.j
 ```
 
 The runner isolates each profile in a separate process to avoid same-name module collisions. The
-143-test suite passes on the publication Windows environment with **142 passed, 1 skipped**. The
+153-test suite passes on the publication Windows environment with **152 passed, 1 skipped**. The
 skipped integration test requires POSIX `flock`; the process fixture was previously verified on
 Linux. Windows production file locking is not implemented. The existing v2 suite must also pass.
 

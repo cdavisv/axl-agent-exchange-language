@@ -151,3 +151,23 @@ Independent review added 300 sequential delivery/retry probes. No production sec
 python experimental/axl3/benchmark_session.py --output build/session-context-bytes.json
 python experimental/axl3/benchmark_session.py --tokenizer /path/to/tokenizer.json --output build/session-context-tokens.json
 ```
+
+
+## Schema-typed text language candidate
+
+The optional [typed-row profile](typed_rows/README.md) removes JSON quotes only from declared
+string columns, with strict escaping, pinned schema identity, exact types and native resource
+guards. It rejects optional-field schemas. Explicit LF/CRLF framing normalization is supported;
+no inferred repair is attempted. This changes the language surface, not just transport metadata.
+
+Across 48 synthetic scenarios, the Llama 3.1 tokenizer measures 2.94% fewer wire tokens than
+equally guarded packed JSON. Including format instructions and schema, however, retained context
+costs 4.46% more at three turns and 0.65% more at eight. At sixteen retained turns it costs 0.91%
+less. Negotiated positional JSON remains smaller throughout, under its different out-of-band
+schema contract. The local Python decoder is about 1.56 times slower, not faster.
+
+This is an optional experiment, not a default replacement or a general advantage over JSON.
+Ten additional tests cover exact typed values, framing and malformed/resource-limit cases;
+independent review reproduced all three token artifacts and checked mutation/roundtrip cases.
+No model generation, task success, provider billing or retry costs have been measured.
+See the profile README and per-observation results for reproduction and all loss strata.
