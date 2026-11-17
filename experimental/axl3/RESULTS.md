@@ -171,3 +171,21 @@ Ten additional tests cover exact typed values, framing and malformed/resource-li
 independent review reproduced all three token artifacts and checked mutation/roundtrip cases.
 No model generation, task success, provider billing or retry costs have been measured.
 See the profile README and per-observation results for reproduction and all loss strata.
+
+
+### Cross-tokenizer and frozen-content counterexamples
+
+The [Gemma tokenizer check](typed_rows/gemma-README.md) reverses even the small Llama wire win:
+three-turn wire costs 2.58% more than guarded JSON, and retained context costs 8.51%, 5.36%, and
+4.07% more at 3/8/16 turns. Every primary stratum loses on wire and retained tokens.
+
+A [new frozen synthetic diagnostic](typed_rows/heldout-README.md), authored after the original
+study but measured against the unchanged grammar, varies schema string fractions, code/logs,
+URLs, multilingual controls, numeric-only/nested content, and empty/all-shared cases. Its Llama
+retained totals are 3.40%, 1.00%, and 0.04% larger at 3/8/16 turns. The earlier sixteen-turn
+aggregate win does not reproduce. All 1,824 exact checks passed, and an independent run reproduced
+every observation. Two integrity tests pin corpus bytes and reaggregate all recorded summaries.
+
+These counterexamples are retained, not tuned away. A smaller character representation does not
+ensure lower token cost. Shared parser internals or host codec selection are possible future
+experiments, not proven improvements. No task-success or model-generation evidence exists here.

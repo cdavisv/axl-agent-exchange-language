@@ -2,6 +2,9 @@
 
 This is a language-level candidate, not a replacement for AXL3 or a claim of better model task success. Removing JSON quotes around schema-declared strings produces small wire-token savings, but its longer instructions and slower Python decoder make it unattractive for short contexts in this study. Keep it experimental.
 
+Subsequent checks weaken the case further: [Gemma loses even on wire tokens](gemma-README.md),
+and the original long-context win [does not reproduce on the frozen diverse diagnostic](heldout-README.md).
+
 ## Profile and safety contract
 
 A message consists of `@axl3t ` plus the pinned 64-character lowercase schema fingerprint, then a line beginning `=` containing the JSON shared-index map, then zero or more `>`-prefixed tab-separated rows. Remaining columns follow schema order after shared columns are removed. All schema fields must be required; optional-field schemas are rejected. Empty batches have no row lines. An all-shared row is `>`; schema width distinguishes this from an empty string cell.
