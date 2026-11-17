@@ -1,0 +1,6 @@
+{
+  "commit": "f408c9024a108df7e6136798b013ab76a0e545c8",
+  "axl3_git_blob_content_sha256": "ce17c269662e5b536c9e078ba5e2470ce2e86957632e577450bec6008dea3e88",
+  "typed_rows_git_blob_content_sha256": "e5cb2a96e6c057347fb11cf5cee88ab70ad7d403147f1af8d305ef2601288c9f",
+  "scope": "Frozen old pack/unpack/typed encode/decode bodies, renamed; unchanged common scalar/schema helpers imported. Test/benchmark oracle only."
+}

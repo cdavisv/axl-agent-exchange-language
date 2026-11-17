@@ -5,7 +5,7 @@ import re
 import sys
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
-from axl3 import Error, MAX_BYTES, MAX_ROWS, dump, load, pack, unpack
+from axl3 import Error, MAX_BYTES, MAX_ROWS, dump, load, pack, _unpack_validated_envelope
 
 
 def _bound(wire):
@@ -133,4 +133,6 @@ def decode(wire, schemas):
             ]
         )
     # Reuse all native type, expanded-byte, depth, node and alias-isolation checks.
-    return unpack(dump([3, key, constants, rows]), schemas)
+    envelope = [3, key, constants, rows]
+    dump(envelope)  # Preserve exact canonical-envelope byte/global bounds.
+    return _unpack_validated_envelope(envelope, schemas)

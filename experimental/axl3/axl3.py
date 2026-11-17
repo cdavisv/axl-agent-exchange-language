@@ -259,7 +259,16 @@ def pack(records, schema, shared=()):
 
 
 def unpack(wire, schemas):
-    value = load(wire)
+    return _unpack_validated_envelope(load(wire), schemas)
+
+
+def _unpack_validated_envelope(value, schemas):
+    """Internal expansion of an already bounded/validated JSON envelope.
+
+    Text entry points must use strict load first. Constructed envelopes must
+    use dump first to retain canonical bytes, aggregate nodes/depth and scalar
+    validation. This helper is not an untrusted Python-object entry point.
+    """
     if type(value) is not list or len(value) != 4:
         raise Error("Bad envelope")
     version, key, constants, rows = value

@@ -76,3 +76,13 @@ python experimental/axl3/typed_rows/decoder_benchmark.py --output decoder-result
 ```
 
 Result files in this directory preserve per-observation counts and per-case timing. Byte-only output is not evidence about tokenizer behavior. Next useful evidence would be a controlled model-generation/task-success comparison with retry costs, rather than further tuning synthetic strings to enlarge a small token win.
+
+
+## Decoder implementation follow-up
+
+A [shared validated-envelope refactor](envelope-README.md) removes redundant reparsing while
+retaining canonical-envelope serialization and every existing guard. It improves local typed
+decoding by about 15.65% on the original workloads and 17.70% on frozen first-turn workloads,
+but typed remains 32.50% and 47.65% slower than equally updated JSON. The earlier 1.556x result
+above is the retained pre-refactor measurement, not the current implementation measurement.
+Wire/grammar/token results are unchanged.

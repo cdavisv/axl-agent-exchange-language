@@ -189,3 +189,17 @@ every observation. Two integrity tests pin corpus bytes and reaggregate all reco
 These counterexamples are retained, not tuned away. A smaller character representation does not
 ensure lower token cost. Shared parser internals or host codec selection are possible future
 experiments, not proven improvements. No task-success or model-generation evidence exists here.
+
+
+### Guard-preserving decoder implementation improvement
+
+The [shared-envelope refactor](typed_rows/envelope-README.md) removes typed rows' redundant JSON
+reparse, not the serialization that enforces reconstructed bounds. Both JSON and typed use the
+same validated expansion. Six differential tests plus independent mutation/boundary review retain
+acceptance/value behavior; all frozen corpus encoder bytes remain identical.
+
+Four-arm full-entrypoint CPU measurements show typed decoding about 15.65% faster than its prior
+implementation on 36 primary workloads, and 17.70% faster on 38 frozen first-turn workloads. JSON
+is effectively unchanged. Updated typed decoding still takes 32.50% and 47.65% more time than
+updated JSON, respectively. This is local implementation efficiency, not token savings, model
+latency, provider billing, or a JSON performance win. No grammar change or weaker guard is used.
