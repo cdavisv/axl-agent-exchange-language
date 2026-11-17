@@ -24,6 +24,7 @@ PROFILES = [
     "schema_cache",
     "deferred_copy",
     "hybrid_validation",
+    "shared_reference",
 ]
 
 if __name__ == "__main__":

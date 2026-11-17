@@ -300,7 +300,10 @@ def pack(records, schema, shared=()):
             raise Error("Shared field absent")
         # JSON spelling comparison prevents bool/int or int/float coercion.
         v = records[0][n]
-        if any(dump(x[n]) != dump(v) for x in records):
+        # Stable JSON inputs need one reference serialization per field, not
+        # one per row. Keep spelling comparison (including bool/int/float).
+        reference_wire = dump(v)
+        if any(dump(x[n]) != reference_wire for x in records):
             raise Error("Mixed shared values")
         constants[str(names.index(n))] = v
     remaining = [f for i, f in enumerate(schema.fields) if str(i) not in constants]
