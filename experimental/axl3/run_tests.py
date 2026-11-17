@@ -22,6 +22,7 @@ PROFILES = [
     "typed_rows",
     "semantic",
     "schema_cache",
+    "deferred_copy",
 ]
 
 if __name__ == "__main__":

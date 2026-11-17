@@ -335,13 +335,15 @@ def _unpack_validated_envelope(value, schemas):
         expanded_bytes += len(dump(obj).encode("utf-8")) + (1 if output else 0)
         if expanded_bytes > MAX_BYTES:
             raise Error("Expanded output limit")
-        output.append(copy.deepcopy(obj))
+        # Exact schemas validate without mutating rows. Defer detachment until
+        # all original guards pass; preserve eager snapshots for subclasses.
+        output.append(obj if type(schema) is Schema else copy.deepcopy(obj))
     validate_value(output)
     # Empty batches still validate constants, including their declared types.
     for i, v in constants.items():
         if not matches(v, fields[int(i)][1]):
             raise Error("Wrong shared type")
-    return output
+    return [copy.deepcopy(obj) for obj in output] if type(schema) is Schema else output
 
 
 # Wrap every strict v2 field/payload, rather than silently remapping semantics.

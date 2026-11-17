@@ -1,0 +1,79 @@
+{
+  "source_commit": "8743a6839fe5dcb96731564ed29d8fe8f2312773",
+  "source_sha256": "851f2af5ef7e5e08dad8dcc9cbf8fb03f411a8b81e0a15cbcdbe688c9b7d8b43",
+  "agreement_cases": 206,
+  "results": [
+    {
+      "case": "list-100-rows-10",
+      "outcome": "ok",
+      "wire_bytes": 310,
+      "deepcopies": {
+        "baseline": 10,
+        "deferred": 10
+      },
+      "baseline_median_s": 0.0007997309985512402,
+      "candidate_median_s": 0.0007314779995795107,
+      "ratio": 1.093308341482539
+    },
+    {
+      "case": "list-1000-rows-20",
+      "outcome": "ok",
+      "wire_bytes": 2140,
+      "deepcopies": {
+        "baseline": 20,
+        "deferred": 20
+      },
+      "baseline_median_s": 0.012979013999938616,
+      "candidate_median_s": 0.012777800000549178,
+      "ratio": 1.0157471551738788
+    },
+    {
+      "case": "list-1000-rows-33",
+      "outcome": "reject",
+      "wire_bytes": 2179,
+      "deepcopies": {
+        "baseline": 33,
+        "deferred": 0
+      },
+      "baseline_median_s": 0.019039921999137732,
+      "candidate_median_s": 0.014128114000413916,
+      "ratio": 1.3476619737482238
+    },
+    {
+      "case": "list-2000-rows-100",
+      "outcome": "reject",
+      "wire_bytes": 4380,
+      "deepcopies": {
+        "baseline": 65,
+        "deferred": 0
+      },
+      "baseline_median_s": 0.0576898089984752,
+      "candidate_median_s": 0.03807847200005199,
+      "ratio": 1.5150242635365316
+    },
+    {
+      "case": "list-8000-rows-100",
+      "outcome": "reject",
+      "wire_bytes": 16380,
+      "deepcopies": {
+        "baseline": 16,
+        "deferred": 0
+      },
+      "baseline_median_s": 0.06530462699993222,
+      "candidate_median_s": 0.046731992000786704,
+      "ratio": 1.3974287036348219
+    },
+    {
+      "case": "list-16000-rows-100",
+      "outcome": "reject",
+      "wire_bytes": 32380,
+      "deepcopies": {
+        "baseline": 8,
+        "deferred": 0
+      },
+      "baseline_median_s": 0.07097432899900014,
+      "candidate_median_s": 0.05182602399872849,
+      "ratio": 1.3694727768570754
+    }
+  ]
+}
