@@ -21,6 +21,7 @@ PROFILES = [
     "session",
     "typed_rows",
     "semantic",
+    "schema_cache",
 ]
 
 if __name__ == "__main__":

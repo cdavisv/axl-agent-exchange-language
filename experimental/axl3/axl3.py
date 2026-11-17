@@ -9,6 +9,7 @@ import copy
 from decimal import Decimal, DecimalException
 from types import MappingProxyType
 from dataclasses import dataclass
+from functools import cached_property
 
 MAX_BYTES = 262144
 MAX_DEPTH = 32
@@ -179,15 +180,33 @@ class Schema:
     def definition(self):
         return {"name": self.name, "fields": [list(f) for f in self.fields]}
 
+    @cached_property
+    def _field_name_set(self):
+        return frozenset(f[0] for f in self.fields)
+
+    @cached_property
+    def _field_index_set(self):
+        return frozenset(str(i) for i in range(len(self.fields)))
+
+    @cached_property
+    def _fingerprint_cache(self):
+        return hashlib.sha256(dump(self.definition).encode()).hexdigest()
+
     @property
     def fingerprint(self):
+        # Only exact immutable Schema instances use cached metadata. Subclasses
+        # retain dynamic definition behavior; old pickles lazily fill caches.
+        if type(self) is Schema:
+            return self._fingerprint_cache
         return hashlib.sha256(dump(self.definition).encode()).hexdigest()
 
     def check(self, obj):
         if type(obj) is not dict:
             raise Error("Record must be object")
         validate_value(obj)
-        if set(obj) - {f[0] for f in self.fields}:
+        if set(obj) - (
+            self._field_name_set if type(self) is Schema else {f[0] for f in self.fields}
+        ):
             raise Error("Unknown field")
         for n, t, r in self.fields:
             if n not in obj:
@@ -282,7 +301,10 @@ def _unpack_validated_envelope(value, schemas):
     if type(constants) is not dict or type(rows) is not list or len(rows) > MAX_ROWS:
         raise Error("Bad envelope containers")
     fields = schema.fields
-    if any(k not in {str(i) for i in range(len(fields))} for k in constants):
+    indices = (
+        schema._field_index_set if type(schema) is Schema else {str(i) for i in range(len(fields))}
+    )
+    if any(k not in indices for k in constants):
         raise Error("Unknown shared index")
     remaining = [f for i, f in enumerate(fields) if str(i) not in constants]
     optional = [f for f in remaining if not f[2]]

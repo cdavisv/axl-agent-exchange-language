@@ -23,6 +23,8 @@ It does not establish a novel syntax-compression advantage or improved model rea
   short-context losses and slower decoding are retained alongside conditional longer-context gains.
 - `semantic/`: opt-in pinned enum/default/presence mapping with equal transformed JSON and
   stronger domain-only native controls; negative aggregate results are retained.
+- `schema_cache/`: provenance, parity tests and cold/hot controls for bounded per-instance
+  immutable schema metadata caching shared by JSON and other profiles.
 - `planning/`: opt-in bounded, cost-aware shared-field selection; a trusted callback can price
   full constructed context, with byte cost as the default.
 - `refinement/`: bounded coding-handoff prompt builder/scorer. No model calls, arbitrary `eval`, or
@@ -48,7 +50,7 @@ python experimental/axl3/benchmark_synthetic.py --tokenizer /path/to/tokenizer.j
 ```
 
 The runner isolates each profile in a separate process to avoid same-name module collisions. The
-169-test suite passes on the publication Windows environment with **168 passed, 1 skipped**. The
+176-test suite passes on the publication Windows environment with **175 passed, 1 skipped**. The
 skipped integration test requires POSIX `flock`; the process fixture was previously verified on
 Linux. Windows production file locking is not implemented. The existing v2 suite must also pass.
 

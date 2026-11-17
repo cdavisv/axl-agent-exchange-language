@@ -221,3 +221,22 @@ overprovisioned full-definition baseline disappear with the stronger control. Al
 
 Eight tests and 4,548 decode checks support exactness; no model generation/task-success evidence.
 This remains opt-in research, not a recommended default. The existing codecs are unchanged.
+
+
+## Immutable schema metadata caching
+
+The [per-instance cache](schema_cache/README.md) avoids repeated native schema fingerprint and
+field-set calculations. Only exact immutable `Schema` instances use the fast path; subclasses
+retain dynamic behavior. Public definition views stay fresh, dataclass fields remain unchanged,
+and legacy uncached pickle state works lazily. Caches are bounded and live only with their schema.
+Wire bytes, fingerprints, grammar and token results are unchanged; all parser guards remain.
+
+On 38 frozen first-turn workloads, hot median-case decode time is 7.73% lower for JSON and 9.45%
+lower for typed rows. Summed case medians improve only 2.25% and 3.10%, respectively, because larger
+payload work dominates. Typed remains 35.75% slower than equally cached JSON by median-case ratio.
+Construction is roughly unchanged; constructor plus first fingerprint is 0.26–4.81% slower, while
+constructor plus first JSON decode is 8.94–19.00% faster on 1/4/16/128-field synthetic schemas.
+
+These are local CPU diagnostics, not universal throughput or model-latency claims. Seven new tests
+cover ordinary API/legacy/subclass compatibility and old/new parity; old full modules are frozen
+as independent controls. Extra per-instance metadata memory and first-access cost are explicit.

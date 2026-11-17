@@ -1,0 +1,6 @@
+{
+  "commit": "665ed1b159c8f3eb4376f4cce1e880cd8665dcc6",
+  "scope": "Frozen test/benchmark modules only; typed import retargeted to baseline_axl3. No production fallbacks.",
+  "experimental/axl3/axl3.py": "164c43eba2e8197f5fad80ccecc02cc34fd97a4e23c085b2a8d851b5e729c542",
+  "experimental/axl3/typed_rows/typed_rows.py": "e2a327c536182bace108b8a031728ac3982f79c17bc1e273a64906bd68243334"
+}
