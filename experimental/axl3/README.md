@@ -21,6 +21,8 @@ It does not establish a novel syntax-compression advantage or improved model rea
   equal sequence/replay checks; host authentication, fresh epochs and persistence remain required.
 - `typed_rows/`: optional strict schema-typed text grammar, with guarded JSON comparisons;
   short-context losses and slower decoding are retained alongside conditional longer-context gains.
+- `semantic/`: opt-in pinned enum/default/presence mapping with equal transformed JSON and
+  stronger domain-only native controls; negative aggregate results are retained.
 - `planning/`: opt-in bounded, cost-aware shared-field selection; a trusted callback can price
   full constructed context, with byte cost as the default.
 - `refinement/`: bounded coding-handoff prompt builder/scorer. No model calls, arbitrary `eval`, or
@@ -46,7 +48,7 @@ python experimental/axl3/benchmark_synthetic.py --tokenizer /path/to/tokenizer.j
 ```
 
 The runner isolates each profile in a separate process to avoid same-name module collisions. The
-161-test suite passes on the publication Windows environment with **160 passed, 1 skipped**. The
+169-test suite passes on the publication Windows environment with **168 passed, 1 skipped**. The
 skipped integration test requires POSIX `flock`; the process fixture was previously verified on
 Linux. Windows production file locking is not implemented. The existing v2 suite must also pass.
 

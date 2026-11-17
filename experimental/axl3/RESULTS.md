@@ -203,3 +203,21 @@ implementation on 36 primary workloads, and 17.70% faster on 38 frozen first-tur
 is effectively unchanged. Updated typed decoding still takes 32.50% and 47.65% more time than
 updated JSON, respectively. This is local implementation efficiency, not token savings, model
 latency, provider billing, or a JSON performance win. No grammar change or weaker guard is used.
+
+
+## Semantic schema redundancy experiment
+
+The optional [semantic mapping](semantic/README.md) tests finite string enum ordinals and exact
+default omission with explicit absent/default/value states. Definitions are immutable and pinned;
+numeric types, null/absence distinctions, strict masks/indices and expanded bounds are preserved.
+This is an experimental JSON mapping, not a new AXL release or semantic inference.
+
+Identically transformed JSON ties every observation. A stronger native JSON control provisions
+only base schema plus enum constraints, omits unnecessary compression-only default metadata, and
+exhaustively chooses constant-field sharing subsets against the current full retained context.
+Against that control, the candidate costs 8.37%, 4.71%, and 2.85% more study tokens at 3/8/16 turns;
+the frozen synthetic holdout costs 3.24%, 2.04%, and 1.55% more. Apparent small wins against an
+overprovisioned full-definition baseline disappear with the stronger control. All cases remain.
+
+Eight tests and 4,548 decode checks support exactness; no model generation/task-success evidence.
+This remains opt-in research, not a recommended default. The existing codecs are unchanged.
