@@ -18,6 +18,7 @@ PROFILES = [
     "offshoots",
     "refinement",
     "planning",
+    "session",
 ]
 
 if __name__ == "__main__":

@@ -94,3 +94,60 @@ Configured constant-column counts refer only to c0-c3, not every eligible field.
 batches make all six fields constant. Results record both configured and actual eligible counts.
 Exhaustive search is per turn; it does not optimize the whole three-turn sequence jointly.
 Independent review reproduced all 144 token observations exactly, including every equivalent-JSON tie.
+
+## Trusted-session schema metadata amortization
+
+The `session/` offshoot tests a different contract: bind an approved schema fingerprint to a
+short alias within a host-owned transport/session epoch, acknowledge it, then carry epoch, alias,
+sequence and data. The explicit JSON control instead carries version/full fingerprint on each
+frame. Both profiles use the same schema, transport checks, exact-last-retry detection, sequence
+guards and target decoding. Equivalent alias-based JSON is identical to the session profile.
+
+`benchmark_session.py` covers 48 synthetic scenarios with one/eight rows, short/long bodies,
+1/2/4/8/16/32 frames and either stable transport or reconnect every four frames. All constructed
+context costs include common instructions, schema provisioning, bind/ACK messages, every previous
+data frame, and common host delivery receipts. Reconnects redo binding without erasing conversation
+history. Separate transmitted-wire totals include both binding messages and every delivery receipt.
+Handshakes/receipts are host-generated, not model calls. Native chat templates, generated tokens,
+provider caching/billing, model quality and network latency remain outside this measurement.
+
+Aggregate Llama 3.1 full-input token counts across four row/body conditions:
+
+| Frames | Reconnect interval | Explicit fingerprint JSON | Session aliases | Equivalent alias JSON |
+|---|---:|---:|---:|---:|
+| 1 | none | 980 | 1,236 | 1,236 |
+| 4 | none | 7,352 | 7,464 | 7,464 |
+| 8 | none | 23,856 | 21,648 | 21,648 |
+| 32 | none | 315,072 | 247,872 | 247,872 |
+| 32 | 4 | 317,312 | 295,808 | 295,808 |
+
+Short exchanges lose because binding/acknowledgment costs dominate. Longer stable exchanges save
+21.33% here; reconnecting every four frames reduces that to 6.78%. These are **metadata amortization
+results**, not AXL superiority over JSON: the strongest equivalent alias JSON control ties exactly.
+Retaining every prior frame makes this a full-history condition, not a universal context policy.
+Do not compare these totals to provider usage or omit setup costs in a shorter session.
+
+### Mandatory host assumptions and recovery limits
+
+- Authenticate the actual peer/session outside message content; schema definitions and binding
+  approval are host-owned. A fingerprint is not a signature or capability.
+- Allocate a fresh epoch for every new binding lifetime, and never reinitialize an existing binding
+  after effects. The helper does not maintain a global used-epoch registry and cannot enforce this
+  across host restarts. Reusing an epoch and resetting sequence can permit replay.
+- Gate sending on successful `verify_ack`; the pure helper does not persist sender-readiness state.
+- Commit the proposed binding/sequence and external effects atomically under host CAS/locking.
+  Returning a new binding is not durable acknowledgment or exactly-once execution.
+- Only an exact retry of the most recent accepted frame is deduplicated. Older retries reject and
+  require application-level reconciliation. Gaps, altered retries, wrong aliases/epochs, wrong
+  peers/sessions and unpinned schemas reject without advancing the supplied immutable binding.
+- Reconnect with a newly approved binding/epoch. Decide at application level whether to resend a
+  current snapshot or reconcile prior committed work; do not blindly replay older effects.
+
+Nine tests cover handshake/ACK checks, explicit-control parity, typed values, exact retries,
+altered retries, gaps, reconnects, malformed envelopes, rollback and sequence exhaustion.
+Independent review added 300 sequential delivery/retry probes. No production security claim.
+
+```sh
+python experimental/axl3/benchmark_session.py --output build/session-context-bytes.json
+python experimental/axl3/benchmark_session.py --tokenizer /path/to/tokenizer.json --output build/session-context-tokens.json
+```
