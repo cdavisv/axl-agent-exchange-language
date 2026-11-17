@@ -46,3 +46,23 @@ python experimental/axl3/typed_rows/heldout_benchmark.py --tokenizer /path/to/to
 ```
 
 The committed corpus is the frozen input. `heldout_corpus.py` documents deterministic generation and can regenerate in a separate clean directory; it will not replace an existing corpus. No model calls, credits resets, private data, network downloads, or codec changes are involved.
+
+
+## Gemma cross-check of the same frozen corpus
+
+An independent Linux execution of the published corpus also passed all 1,824 exact checks.
+The Gemma tokenizer identity is recorded in [gemma-summary.json](gemma-summary.json), and
+[heldout-gemma-summary.json](heldout-gemma-summary.json) records the aggregate results.
+
+| Turns | Typed wire | Guarded wire | Typed retained | Guarded retained | Negotiated retained | Typed retained change |
+| --- | ---: | ---: | ---: | ---: | ---: | ---: |
+| 3 | 104,141 | 104,002 | 229,649 | 221,243 | 208,475 | +3.80% |
+| 8 | 284,840 | 284,526 | 1,330,653 | 1,307,503 | 1,228,995 | +1.77% |
+| 16 | 575,070 | 574,442 | 4,982,169 | 4,933,357 | 4,634,069 | +0.99% |
+
+Unlike the primary Gemma corpus, this diagnostic has some winning strata: sixteen-turn
+code/log retained tokens are 552,092 versus 553,436 (-0.24%), and multilingual/control tokens
+are 270,442 versus 294,022 (-8.02%). Other strata lose, and the aggregate remains larger.
+Content, schema and tokenizer jointly matter; neither the positive subsets nor negative
+aggregate establish model reliability. Run the same heldout command with the Gemma tokenizer
+to reproduce full per-observation results. No grammar changes followed these measurements.
