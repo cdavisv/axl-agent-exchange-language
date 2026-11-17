@@ -23,6 +23,7 @@ PROFILES = [
     "semantic",
     "schema_cache",
     "deferred_copy",
+    "hybrid_validation",
 ]
 
 if __name__ == "__main__":

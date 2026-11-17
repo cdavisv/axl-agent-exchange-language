@@ -2,6 +2,7 @@
 Not an authorization system, semantic compressor, or released protocol.
 """
 
+from itertools import islice
 import hashlib
 import json
 import math
@@ -23,36 +24,72 @@ class Error(ValueError):
     pass
 
 
+def _validation_list_children(value, depth):
+    return ((child, depth + 1) for child in reversed(value))
+
+
+def _validation_dict_children(value, depth):
+    return ((child, depth + 1) for key in reversed(value) for child in (value[key], key))
+
+
 def validate_value(value):
+    # Preserve LIFO error precedence. Suspend wide containers and refill in
+    # bounded reverse-order chunks instead of allocating a tuple per child.
+    # Small containers retain the original eager path. Inputs must not mutate
+    # concurrently during validation; limits assume a fixed host policy.
     stack = [(value, 0)]
+    pending = []
     nodes = 0
-    while stack:
-        v, d = stack.pop()
-        nodes += 1
-        if d > MAX_DEPTH or nodes > MAX_NODES:
-            raise Error("JSON resource limit")
-        if v is None or type(v) in (bool, int):
-            continue
-        if type(v) is float:
-            if not math.isfinite(v):
-                raise Error("Nonfinite number")
-        elif type(v) is str:
-            try:
-                v.encode("utf-8")
-            except UnicodeError as e:
-                raise Error("Invalid Unicode scalar") from e
-        elif type(v) is list:
-            if d >= MAX_DEPTH:
-                raise Error("JSON depth limit")
-            stack.extend((x, d + 1) for x in v)
-        elif type(v) is dict:
-            if d >= MAX_DEPTH:
-                raise Error("JSON depth limit")
-            if any(type(k) is not str for k in v):
-                raise Error("Non-string object key")
-            stack.extend((x, d + 1) for pair in v.items() for x in pair)
-        else:
-            raise Error("Not a JSON value")
+    while True:
+        while stack:
+            v, d = stack.pop()
+            nodes += 1
+            if d > MAX_DEPTH or nodes > MAX_NODES:
+                raise Error("JSON resource limit")
+            if v is None or type(v) in (bool, int):
+                continue
+            if type(v) is float:
+                if not math.isfinite(v):
+                    raise Error("Nonfinite number")
+            elif type(v) is str:
+                try:
+                    v.encode("utf-8")
+                except UnicodeError as e:
+                    raise Error("Invalid Unicode scalar") from e
+            elif type(v) is list:
+                if d >= MAX_DEPTH:
+                    raise Error("JSON depth limit")
+                if len(v) <= 4096:
+                    stack.extend((x, d + 1) for x in v)
+                else:
+                    pending.append((stack, _validation_list_children(v, d)))
+                    stack = []
+                    break
+            elif type(v) is dict:
+                if d >= MAX_DEPTH:
+                    raise Error("JSON depth limit")
+                if any(type(k) is not str for k in v):
+                    raise Error("Non-string object key")
+                if len(v) <= 2048:
+                    stack.extend((x, d + 1) for pair in v.items() for x in pair)
+                else:
+                    pending.append((stack, _validation_dict_children(v, d)))
+                    stack = []
+                    break
+            else:
+                raise Error("Not a JSON value")
+        while pending and not stack:
+            parent, iterator = pending[-1]
+            chunk = list(islice(iterator, 1024))
+            if chunk:
+                # The iterator yields visitation order; reversing into a LIFO
+                # stack retains that order across chunk and container boundaries.
+                stack.extend(reversed(chunk))
+            else:
+                stack = parent
+                pending.pop()
+        if not stack:
+            return
 
 
 def dump(value):
