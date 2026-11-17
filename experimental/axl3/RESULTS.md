@@ -44,3 +44,53 @@ proves AXL3 universally outperforms JSON would be false.
 
 Historical private-workflow metrics and source data are intentionally not part of this publication.
 The tracked results here can be reproduced solely from the included synthetic benchmark.
+
+## Cost-aware sharing with retained context
+
+The follow-on `benchmark_sharing.py` covers 48 synthetic scenarios, each with three sequential
+turns. It counts the complete constructed input: common profile instructions, schema once, every
+previous wire for that mode, and the next wire. It does not count native provider chat-template
+framing, generated output, repair messages or provider caching. No generation model is called.
+
+| Strategy | Llama 3.1 full constructed-context tokens |
+|---|---:|
+| No shared fields | 127,194 |
+| Share every eligible constant | 102,636 |
+| Cost-aware schema-ordered subsets | 101,622 |
+| Byte-cost subset planner | 101,658 |
+| Equivalent packed JSON with same guards/planner | 101,622 |
+| Compact JSON with schema/version pinned by trusted session | 90,390 |
+
+The planner improves on indiscriminate sharing by **0.99%** and on no sharing by **20.10%**, but
+**ties equivalent packed JSON exactly**. Most improvement over share-all comes from avoiding
+sharing overhead in single-record batches (930 of the 1,014 saved tokens). The byte heuristic is
+only 36 tokens behind exact token selection here; this does not prove general tokenizer agreement.
+
+Planned AXL3 is 12.43% larger than the compact negotiated JSON control. It omits the repeated per-message version/fingerprint, relying
+on trusted out-of-band schema negotiation. That is a different wire contract, not an equal
+per-message identity control. This points to session-level metadata amortization as a useful next
+experiment, while making the contract tradeoff explicit. It does not establish a language win.
+
+The new planner preserves existing codec validation and wire format. It evaluates no-sharing and
+all-sharing first, then schema-ordered subsets. Small search spaces are exhaustive; larger ones
+try bounded singleton/all-but-one/pair alternatives. The budget counts attempted configurations,
+including unrepresentable wires. There is no global optimality promise beyond the evaluated
+schema-ordered subsets, and no guarantee of best end-to-end model latency. Inputs are snapshotted
+before the trusted cost callback; invalid states/costs reject. A valid shared representation can
+still be selected when an unshared wire exceeds bounds.
+
+Eight new unit tests include 100 exhaustive-oracle cases and boundary/type/presence checks.
+Independent review added 160 oracle cases and a near-limit probe. Reproduce with:
+
+```sh
+python experimental/axl3/benchmark_sharing.py --output build/sharing-context-bytes.json
+python experimental/axl3/benchmark_sharing.py --tokenizer /path/to/tokenizer.json --output build/sharing-context-tokens.json
+```
+
+The tracked `sharing-context-bytes.json` and `sharing-llama31-context.json` contain all case-level
+measurements. Tokenizer identity is recorded by file hash; no private data or tokenizer is shipped.
+
+Configured constant-column counts refer only to c0-c3, not every eligible field. Single-row
+batches make all six fields constant. Results record both configured and actual eligible counts.
+Exhaustive search is per turn; it does not optimize the whole three-turn sequence jointly.
+Independent review reproduced all 144 token observations exactly, including every equivalent-JSON tie.

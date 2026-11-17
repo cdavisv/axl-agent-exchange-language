@@ -17,6 +17,8 @@ It does not establish a novel syntax-compression advantage or improved model rea
   fixture. No network service, external tool execution, or production persistence guarantee.
 - `deltas/`: revision/base/target guarded state changes, equivalent JSON controls, and an opt-in
   selector among snapshots, named deltas, numeric-opcode deltas, and unchanged receipts.
+- `planning/`: opt-in bounded, cost-aware shared-field selection; a trusted callback can price
+  full constructed context, with byte cost as the default.
 - `refinement/`: bounded coding-handoff prompt builder/scorer. No model calls, arbitrary `eval`, or
   generated-code execution.
 - `results/`: fully synthetic, reproducible measurements. No private transcripts, model weights,
@@ -40,7 +42,7 @@ python experimental/axl3/benchmark_synthetic.py --tokenizer /path/to/tokenizer.j
 ```
 
 The runner isolates each profile in a separate process to avoid same-name module collisions. The
-126-test suite passes on the publication Windows environment with **125 passed, 1 skipped**. The
+134-test suite passes on the publication Windows environment with **133 passed, 1 skipped**. The
 skipped integration test requires POSIX `flock`; the process fixture was previously verified on
 Linux. Windows production file locking is not implemented. The existing v2 suite must also pass.
 

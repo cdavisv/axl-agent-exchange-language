@@ -17,6 +17,7 @@ PROFILES = [
     "lifecycle",
     "offshoots",
     "refinement",
+    "planning",
 ]
 
 if __name__ == "__main__":
