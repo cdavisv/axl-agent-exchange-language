@@ -1,0 +1,810 @@
+{
+  "unit": "utf8_bytes",
+  "tokenizer_sha256": null,
+  "scope": "60 synthetic stress cases, not independent real tasks. Actual matching warm base required. Complete tagged wires counted; no prompt, schema provisioning, model generation or provider billing. All candidates use identical guards. Minimum is among offered representable candidates; no novel syntax or learned strategy claim.",
+  "summary": {
+    "cases": 60,
+    "snapshot": 398290,
+    "snapshot_with_receipts": 319664,
+    "delta": 161812,
+    "delta_with_receipts": 160996,
+    "opcodes": 157312,
+    "opcodes_with_receipts": 156472,
+    "byte_selected": 152668,
+    "minimum": 152668
+  },
+  "rows": [
+    {
+      "fields": 4,
+      "length": 8,
+      "change_fraction": 0,
+      "costs": {
+        "snapshot": 236,
+        "delta": 154,
+        "opcodes": 156,
+        "unchanged": 86
+      },
+      "byte_selected_mode": "unchanged",
+      "byte_selected_cost": 86,
+      "minimum_cost": 86
+    },
+    {
+      "fields": 4,
+      "length": 8,
+      "change_fraction": 0.0625,
+      "costs": {
+        "snapshot": 236,
+        "delta": 183,
+        "opcodes": 181
+      },
+      "byte_selected_mode": "opcodes",
+      "byte_selected_cost": 181,
+      "minimum_cost": 181
+    },
+    {
+      "fields": 4,
+      "length": 8,
+      "change_fraction": 0.25,
+      "costs": {
+        "snapshot": 236,
+        "delta": 183,
+        "opcodes": 181
+      },
+      "byte_selected_mode": "opcodes",
+      "byte_selected_cost": 181,
+      "minimum_cost": 181
+    },
+    {
+      "fields": 4,
+      "length": 8,
+      "change_fraction": 0.5,
+      "costs": {
+        "snapshot": 236,
+        "delta": 213,
+        "opcodes": 207
+      },
+      "byte_selected_mode": "opcodes",
+      "byte_selected_cost": 207,
+      "minimum_cost": 207
+    },
+    {
+      "fields": 4,
+      "length": 8,
+      "change_fraction": 1,
+      "costs": {
+        "snapshot": 236,
+        "delta": 273,
+        "opcodes": 259
+      },
+      "byte_selected_mode": "snapshot",
+      "byte_selected_cost": 236,
+      "minimum_cost": 236
+    },
+    {
+      "fields": 4,
+      "length": 64,
+      "change_fraction": 0,
+      "costs": {
+        "snapshot": 460,
+        "delta": 154,
+        "opcodes": 156,
+        "unchanged": 86
+      },
+      "byte_selected_mode": "unchanged",
+      "byte_selected_cost": 86,
+      "minimum_cost": 86
+    },
+    {
+      "fields": 4,
+      "length": 64,
+      "change_fraction": 0.0625,
+      "costs": {
+        "snapshot": 460,
+        "delta": 239,
+        "opcodes": 237
+      },
+      "byte_selected_mode": "opcodes",
+      "byte_selected_cost": 237,
+      "minimum_cost": 237
+    },
+    {
+      "fields": 4,
+      "length": 64,
+      "change_fraction": 0.25,
+      "costs": {
+        "snapshot": 460,
+        "delta": 239,
+        "opcodes": 237
+      },
+      "byte_selected_mode": "opcodes",
+      "byte_selected_cost": 237,
+      "minimum_cost": 237
+    },
+    {
+      "fields": 4,
+      "length": 64,
+      "change_fraction": 0.5,
+      "costs": {
+        "snapshot": 460,
+        "delta": 325,
+        "opcodes": 319
+      },
+      "byte_selected_mode": "opcodes",
+      "byte_selected_cost": 319,
+      "minimum_cost": 319
+    },
+    {
+      "fields": 4,
+      "length": 64,
+      "change_fraction": 1,
+      "costs": {
+        "snapshot": 460,
+        "delta": 497,
+        "opcodes": 483
+      },
+      "byte_selected_mode": "snapshot",
+      "byte_selected_cost": 460,
+      "minimum_cost": 460
+    },
+    {
+      "fields": 4,
+      "length": 256,
+      "change_fraction": 0,
+      "costs": {
+        "snapshot": 1228,
+        "delta": 154,
+        "opcodes": 156,
+        "unchanged": 86
+      },
+      "byte_selected_mode": "unchanged",
+      "byte_selected_cost": 86,
+      "minimum_cost": 86
+    },
+    {
+      "fields": 4,
+      "length": 256,
+      "change_fraction": 0.0625,
+      "costs": {
+        "snapshot": 1228,
+        "delta": 431,
+        "opcodes": 429
+      },
+      "byte_selected_mode": "opcodes",
+      "byte_selected_cost": 429,
+      "minimum_cost": 429
+    },
+    {
+      "fields": 4,
+      "length": 256,
+      "change_fraction": 0.25,
+      "costs": {
+        "snapshot": 1228,
+        "delta": 431,
+        "opcodes": 429
+      },
+      "byte_selected_mode": "opcodes",
+      "byte_selected_cost": 429,
+      "minimum_cost": 429
+    },
+    {
+      "fields": 4,
+      "length": 256,
+      "change_fraction": 0.5,
+      "costs": {
+        "snapshot": 1228,
+        "delta": 709,
+        "opcodes": 703
+      },
+      "byte_selected_mode": "opcodes",
+      "byte_selected_cost": 703,
+      "minimum_cost": 703
+    },
+    {
+      "fields": 4,
+      "length": 256,
+      "change_fraction": 1,
+      "costs": {
+        "snapshot": 1228,
+        "delta": 1265,
+        "opcodes": 1251
+      },
+      "byte_selected_mode": "snapshot",
+      "byte_selected_cost": 1228,
+      "minimum_cost": 1228
+    },
+    {
+      "fields": 16,
+      "length": 8,
+      "change_fraction": 0,
+      "costs": {
+        "snapshot": 482,
+        "delta": 154,
+        "opcodes": 156,
+        "unchanged": 86
+      },
+      "byte_selected_mode": "unchanged",
+      "byte_selected_cost": 86,
+      "minimum_cost": 86
+    },
+    {
+      "fields": 16,
+      "length": 8,
+      "change_fraction": 0.0625,
+      "costs": {
+        "snapshot": 482,
+        "delta": 183,
+        "opcodes": 181
+      },
+      "byte_selected_mode": "opcodes",
+      "byte_selected_cost": 181,
+      "minimum_cost": 181
+    },
+    {
+      "fields": 16,
+      "length": 8,
+      "change_fraction": 0.25,
+      "costs": {
+        "snapshot": 482,
+        "delta": 273,
+        "opcodes": 259
+      },
+      "byte_selected_mode": "opcodes",
+      "byte_selected_cost": 259,
+      "minimum_cost": 259
+    },
+    {
+      "fields": 16,
+      "length": 8,
+      "change_fraction": 0.5,
+      "costs": {
+        "snapshot": 482,
+        "delta": 393,
+        "opcodes": 363
+      },
+      "byte_selected_mode": "opcodes",
+      "byte_selected_cost": 363,
+      "minimum_cost": 363
+    },
+    {
+      "fields": 16,
+      "length": 8,
+      "change_fraction": 1,
+      "costs": {
+        "snapshot": 482,
+        "delta": 639,
+        "opcodes": 577
+      },
+      "byte_selected_mode": "snapshot",
+      "byte_selected_cost": 482,
+      "minimum_cost": 482
+    },
+    {
+      "fields": 16,
+      "length": 64,
+      "change_fraction": 0,
+      "costs": {
+        "snapshot": 1378,
+        "delta": 154,
+        "opcodes": 156,
+        "unchanged": 86
+      },
+      "byte_selected_mode": "unchanged",
+      "byte_selected_cost": 86,
+      "minimum_cost": 86
+    },
+    {
+      "fields": 16,
+      "length": 64,
+      "change_fraction": 0.0625,
+      "costs": {
+        "snapshot": 1378,
+        "delta": 239,
+        "opcodes": 237
+      },
+      "byte_selected_mode": "opcodes",
+      "byte_selected_cost": 237,
+      "minimum_cost": 237
+    },
+    {
+      "fields": 16,
+      "length": 64,
+      "change_fraction": 0.25,
+      "costs": {
+        "snapshot": 1378,
+        "delta": 497,
+        "opcodes": 483
+      },
+      "byte_selected_mode": "opcodes",
+      "byte_selected_cost": 483,
+      "minimum_cost": 483
+    },
+    {
+      "fields": 16,
+      "length": 64,
+      "change_fraction": 0.5,
+      "costs": {
+        "snapshot": 1378,
+        "delta": 841,
+        "opcodes": 811
+      },
+      "byte_selected_mode": "opcodes",
+      "byte_selected_cost": 811,
+      "minimum_cost": 811
+    },
+    {
+      "fields": 16,
+      "length": 64,
+      "change_fraction": 1,
+      "costs": {
+        "snapshot": 1378,
+        "delta": 1535,
+        "opcodes": 1473
+      },
+      "byte_selected_mode": "snapshot",
+      "byte_selected_cost": 1378,
+      "minimum_cost": 1378
+    },
+    {
+      "fields": 16,
+      "length": 256,
+      "change_fraction": 0,
+      "costs": {
+        "snapshot": 4450,
+        "delta": 154,
+        "opcodes": 156,
+        "unchanged": 86
+      },
+      "byte_selected_mode": "unchanged",
+      "byte_selected_cost": 86,
+      "minimum_cost": 86
+    },
+    {
+      "fields": 16,
+      "length": 256,
+      "change_fraction": 0.0625,
+      "costs": {
+        "snapshot": 4450,
+        "delta": 431,
+        "opcodes": 429
+      },
+      "byte_selected_mode": "opcodes",
+      "byte_selected_cost": 429,
+      "minimum_cost": 429
+    },
+    {
+      "fields": 16,
+      "length": 256,
+      "change_fraction": 0.25,
+      "costs": {
+        "snapshot": 4450,
+        "delta": 1265,
+        "opcodes": 1251
+      },
+      "byte_selected_mode": "opcodes",
+      "byte_selected_cost": 1251,
+      "minimum_cost": 1251
+    },
+    {
+      "fields": 16,
+      "length": 256,
+      "change_fraction": 0.5,
+      "costs": {
+        "snapshot": 4450,
+        "delta": 2377,
+        "opcodes": 2347
+      },
+      "byte_selected_mode": "opcodes",
+      "byte_selected_cost": 2347,
+      "minimum_cost": 2347
+    },
+    {
+      "fields": 16,
+      "length": 256,
+      "change_fraction": 1,
+      "costs": {
+        "snapshot": 4450,
+        "delta": 4607,
+        "opcodes": 4545
+      },
+      "byte_selected_mode": "snapshot",
+      "byte_selected_cost": 4450,
+      "minimum_cost": 4450
+    },
+    {
+      "fields": 64,
+      "length": 8,
+      "change_fraction": 0,
+      "costs": {
+        "snapshot": 1490,
+        "delta": 154,
+        "opcodes": 156,
+        "unchanged": 86
+      },
+      "byte_selected_mode": "unchanged",
+      "byte_selected_cost": 86,
+      "minimum_cost": 86
+    },
+    {
+      "fields": 64,
+      "length": 8,
+      "change_fraction": 0.0625,
+      "costs": {
+        "snapshot": 1490,
+        "delta": 273,
+        "opcodes": 259
+      },
+      "byte_selected_mode": "opcodes",
+      "byte_selected_cost": 259,
+      "minimum_cost": 259
+    },
+    {
+      "fields": 64,
+      "length": 8,
+      "change_fraction": 0.25,
+      "costs": {
+        "snapshot": 1490,
+        "delta": 639,
+        "opcodes": 577
+      },
+      "byte_selected_mode": "opcodes",
+      "byte_selected_cost": 577,
+      "minimum_cost": 577
+    },
+    {
+      "fields": 64,
+      "length": 8,
+      "change_fraction": 0.5,
+      "costs": {
+        "snapshot": 1490,
+        "delta": 1135,
+        "opcodes": 1009
+      },
+      "byte_selected_mode": "opcodes",
+      "byte_selected_cost": 1009,
+      "minimum_cost": 1009
+    },
+    {
+      "fields": 64,
+      "length": 8,
+      "change_fraction": 1,
+      "costs": {
+        "snapshot": 1490,
+        "delta": 2127,
+        "opcodes": 1873
+      },
+      "byte_selected_mode": "snapshot",
+      "byte_selected_cost": 1490,
+      "minimum_cost": 1490
+    },
+    {
+      "fields": 64,
+      "length": 64,
+      "change_fraction": 0,
+      "costs": {
+        "snapshot": 5074,
+        "delta": 154,
+        "opcodes": 156,
+        "unchanged": 86
+      },
+      "byte_selected_mode": "unchanged",
+      "byte_selected_cost": 86,
+      "minimum_cost": 86
+    },
+    {
+      "fields": 64,
+      "length": 64,
+      "change_fraction": 0.0625,
+      "costs": {
+        "snapshot": 5074,
+        "delta": 497,
+        "opcodes": 483
+      },
+      "byte_selected_mode": "opcodes",
+      "byte_selected_cost": 483,
+      "minimum_cost": 483
+    },
+    {
+      "fields": 64,
+      "length": 64,
+      "change_fraction": 0.25,
+      "costs": {
+        "snapshot": 5074,
+        "delta": 1535,
+        "opcodes": 1473
+      },
+      "byte_selected_mode": "opcodes",
+      "byte_selected_cost": 1473,
+      "minimum_cost": 1473
+    },
+    {
+      "fields": 64,
+      "length": 64,
+      "change_fraction": 0.5,
+      "costs": {
+        "snapshot": 5074,
+        "delta": 2927,
+        "opcodes": 2801
+      },
+      "byte_selected_mode": "opcodes",
+      "byte_selected_cost": 2801,
+      "minimum_cost": 2801
+    },
+    {
+      "fields": 64,
+      "length": 64,
+      "change_fraction": 1,
+      "costs": {
+        "snapshot": 5074,
+        "delta": 5711,
+        "opcodes": 5457
+      },
+      "byte_selected_mode": "snapshot",
+      "byte_selected_cost": 5074,
+      "minimum_cost": 5074
+    },
+    {
+      "fields": 64,
+      "length": 256,
+      "change_fraction": 0,
+      "costs": {
+        "snapshot": 17362,
+        "delta": 154,
+        "opcodes": 156,
+        "unchanged": 86
+      },
+      "byte_selected_mode": "unchanged",
+      "byte_selected_cost": 86,
+      "minimum_cost": 86
+    },
+    {
+      "fields": 64,
+      "length": 256,
+      "change_fraction": 0.0625,
+      "costs": {
+        "snapshot": 17362,
+        "delta": 1265,
+        "opcodes": 1251
+      },
+      "byte_selected_mode": "opcodes",
+      "byte_selected_cost": 1251,
+      "minimum_cost": 1251
+    },
+    {
+      "fields": 64,
+      "length": 256,
+      "change_fraction": 0.25,
+      "costs": {
+        "snapshot": 17362,
+        "delta": 4607,
+        "opcodes": 4545
+      },
+      "byte_selected_mode": "opcodes",
+      "byte_selected_cost": 4545,
+      "minimum_cost": 4545
+    },
+    {
+      "fields": 64,
+      "length": 256,
+      "change_fraction": 0.5,
+      "costs": {
+        "snapshot": 17362,
+        "delta": 9071,
+        "opcodes": 8945
+      },
+      "byte_selected_mode": "opcodes",
+      "byte_selected_cost": 8945,
+      "minimum_cost": 8945
+    },
+    {
+      "fields": 64,
+      "length": 256,
+      "change_fraction": 1,
+      "costs": {
+        "snapshot": 17362,
+        "delta": 17999,
+        "opcodes": 17745
+      },
+      "byte_selected_mode": "snapshot",
+      "byte_selected_cost": 17362,
+      "minimum_cost": 17362
+    },
+    {
+      "fields": 128,
+      "length": 8,
+      "change_fraction": 0,
+      "costs": {
+        "snapshot": 2862,
+        "delta": 154,
+        "opcodes": 156,
+        "unchanged": 86
+      },
+      "byte_selected_mode": "unchanged",
+      "byte_selected_cost": 86,
+      "minimum_cost": 86
+    },
+    {
+      "fields": 128,
+      "length": 8,
+      "change_fraction": 0.0625,
+      "costs": {
+        "snapshot": 2862,
+        "delta": 393,
+        "opcodes": 363
+      },
+      "byte_selected_mode": "opcodes",
+      "byte_selected_cost": 363,
+      "minimum_cost": 363
+    },
+    {
+      "fields": 128,
+      "length": 8,
+      "change_fraction": 0.25,
+      "costs": {
+        "snapshot": 2862,
+        "delta": 1135,
+        "opcodes": 1009
+      },
+      "byte_selected_mode": "opcodes",
+      "byte_selected_cost": 1009,
+      "minimum_cost": 1009
+    },
+    {
+      "fields": 128,
+      "length": 8,
+      "change_fraction": 0.5,
+      "costs": {
+        "snapshot": 2862,
+        "delta": 2127,
+        "opcodes": 1873
+      },
+      "byte_selected_mode": "opcodes",
+      "byte_selected_cost": 1873,
+      "minimum_cost": 1873
+    },
+    {
+      "fields": 128,
+      "length": 8,
+      "change_fraction": 1,
+      "costs": {
+        "snapshot": 2862,
+        "delta": 4139,
+        "opcodes": 3629
+      },
+      "byte_selected_mode": "snapshot",
+      "byte_selected_cost": 2862,
+      "minimum_cost": 2862
+    },
+    {
+      "fields": 128,
+      "length": 64,
+      "change_fraction": 0,
+      "costs": {
+        "snapshot": 10030,
+        "delta": 154,
+        "opcodes": 156,
+        "unchanged": 86
+      },
+      "byte_selected_mode": "unchanged",
+      "byte_selected_cost": 86,
+      "minimum_cost": 86
+    },
+    {
+      "fields": 128,
+      "length": 64,
+      "change_fraction": 0.0625,
+      "costs": {
+        "snapshot": 10030,
+        "delta": 841,
+        "opcodes": 811
+      },
+      "byte_selected_mode": "opcodes",
+      "byte_selected_cost": 811,
+      "minimum_cost": 811
+    },
+    {
+      "fields": 128,
+      "length": 64,
+      "change_fraction": 0.25,
+      "costs": {
+        "snapshot": 10030,
+        "delta": 2927,
+        "opcodes": 2801
+      },
+      "byte_selected_mode": "opcodes",
+      "byte_selected_cost": 2801,
+      "minimum_cost": 2801
+    },
+    {
+      "fields": 128,
+      "length": 64,
+      "change_fraction": 0.5,
+      "costs": {
+        "snapshot": 10030,
+        "delta": 5711,
+        "opcodes": 5457
+      },
+      "byte_selected_mode": "opcodes",
+      "byte_selected_cost": 5457,
+      "minimum_cost": 5457
+    },
+    {
+      "fields": 128,
+      "length": 64,
+      "change_fraction": 1,
+      "costs": {
+        "snapshot": 10030,
+        "delta": 11307,
+        "opcodes": 10797
+      },
+      "byte_selected_mode": "snapshot",
+      "byte_selected_cost": 10030,
+      "minimum_cost": 10030
+    },
+    {
+      "fields": 128,
+      "length": 256,
+      "change_fraction": 0,
+      "costs": {
+        "snapshot": 34606,
+        "delta": 154,
+        "opcodes": 156,
+        "unchanged": 86
+      },
+      "byte_selected_mode": "unchanged",
+      "byte_selected_cost": 86,
+      "minimum_cost": 86
+    },
+    {
+      "fields": 128,
+      "length": 256,
+      "change_fraction": 0.0625,
+      "costs": {
+        "snapshot": 34606,
+        "delta": 2377,
+        "opcodes": 2347
+      },
+      "byte_selected_mode": "opcodes",
+      "byte_selected_cost": 2347,
+      "minimum_cost": 2347
+    },
+    {
+      "fields": 128,
+      "length": 256,
+      "change_fraction": 0.25,
+      "costs": {
+        "snapshot": 34606,
+        "delta": 9071,
+        "opcodes": 8945
+      },
+      "byte_selected_mode": "opcodes",
+      "byte_selected_cost": 8945,
+      "minimum_cost": 8945
+    },
+    {
+      "fields": 128,
+      "length": 256,
+      "change_fraction": 0.5,
+      "costs": {
+        "snapshot": 34606,
+        "delta": 17999,
+        "opcodes": 17745
+      },
+      "byte_selected_mode": "opcodes",
+      "byte_selected_cost": 17745,
+      "minimum_cost": 17745
+    },
+    {
+      "fields": 128,
+      "length": 256,
+      "change_fraction": 1,
+      "costs": {
+        "snapshot": 34606,
+        "delta": 35883,
+        "opcodes": 35373
+      },
+      "byte_selected_mode": "snapshot",
+      "byte_selected_cost": 34606,
+      "minimum_cost": 34606
+    }
+  ]
+}
