@@ -25,6 +25,7 @@ PROFILES = [
     "deferred_copy",
     "hybrid_validation",
     "shared_reference",
+    "native_tools",
 ]
 
 if __name__ == "__main__":
@@ -45,3 +46,4 @@ if __name__ == "__main__":
             failed.append(profile)
     if failed:
         raise SystemExit("Failed profiles: " + ", ".join(failed))
+
