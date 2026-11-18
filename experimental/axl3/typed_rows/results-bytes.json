@@ -1,0 +1,3446 @@
+{
+  "unit": "utf8_bytes",
+  "tokenizer_sha256": null,
+  "turns": 3,
+  "scope": "48 synthetic scenarios;6diverse strata; bounded turn count recorded separately. Exact typed decoding checked for every arm. Per-format setup instructions plus common pinned schema counted. Retained context includes setup once and every previous wire for each format. No native provider chat framing, generation, task success, repair/retry billing or inference. Negotiated positional JSON has a different contract: version/schema trusted out of band. Guarded JSON is equivalent pinned-schema/type/resource baseline. No confidentiality/authenticity claims from fingerprint.",
+  "setup_costs": {
+    "typed_rows": 706,
+    "guarded_packed_json": 447,
+    "negotiated_positional_json": 507
+  },
+  "summary": {
+    "all": {
+      "typed_rows": {
+        "wire": 161168,
+        "cold": 263552,
+        "retained_context": 425690
+      },
+      "guarded_packed_json": {
+        "wire": 180524,
+        "cold": 245612,
+        "retained_context": 427090
+      },
+      "negotiated_positional_json": {
+        "wire": 170588,
+        "cold": 244316,
+        "retained_context": 415858
+      }
+    },
+    "metadata": {
+      "typed_rows": {
+        "wire": 14417,
+        "cold": 31481,
+        "retained_context": 46086
+      },
+      "guarded_packed_json": {
+        "wire": 17477,
+        "cold": 28325,
+        "retained_context": 45990
+      },
+      "negotiated_positional_json": {
+        "wire": 15821,
+        "cold": 28109,
+        "retained_context": 44118
+      }
+    },
+    "prose": {
+      "typed_rows": {
+        "wire": 47224,
+        "cold": 64288,
+        "retained_context": 111620
+      },
+      "guarded_packed_json": {
+        "wire": 50284,
+        "cold": 61132,
+        "retained_context": 111524
+      },
+      "negotiated_positional_json": {
+        "wire": 48628,
+        "cold": 60916,
+        "retained_context": 109652
+      }
+    },
+    "numeric_strings": {
+      "typed_rows": {
+        "wire": 15382,
+        "cold": 32446,
+        "retained_context": 48014
+      },
+      "guarded_packed_json": {
+        "wire": 18442,
+        "cold": 29290,
+        "retained_context": 47918
+      },
+      "negotiated_positional_json": {
+        "wire": 16786,
+        "cold": 29074,
+        "retained_context": 46046
+      }
+    },
+    "escapes": {
+      "typed_rows": {
+        "wire": 19322,
+        "cold": 36386,
+        "retained_context": 55920
+      },
+      "guarded_packed_json": {
+        "wire": 23378,
+        "cold": 34226,
+        "retained_context": 57800
+      },
+      "negotiated_positional_json": {
+        "wire": 21722,
+        "cold": 34010,
+        "retained_context": 55928
+      }
+    },
+    "unicode": {
+      "typed_rows": {
+        "wire": 18902,
+        "cold": 35966,
+        "retained_context": 55068
+      },
+      "guarded_packed_json": {
+        "wire": 21962,
+        "cold": 32810,
+        "retained_context": 54972
+      },
+      "negotiated_positional_json": {
+        "wire": 20306,
+        "cold": 32594,
+        "retained_context": 53100
+      }
+    },
+    "nested": {
+      "typed_rows": {
+        "wire": 45921,
+        "cold": 62985,
+        "retained_context": 108982
+      },
+      "guarded_packed_json": {
+        "wire": 48981,
+        "cold": 59829,
+        "retained_context": 108886
+      },
+      "negotiated_positional_json": {
+        "wire": 47325,
+        "cold": 59613,
+        "retained_context": 107014
+      }
+    }
+  },
+  "observations": [
+    {
+      "family": "metadata",
+      "row_count": 1,
+      "shared_kind": false,
+      "turn": 0,
+      "costs": {
+        "typed_rows": {
+          "wire": 102,
+          "cold": 813,
+          "retained_context": 813
+        },
+        "guarded_packed_json": {
+          "wire": 109,
+          "cold": 561,
+          "retained_context": 561
+        },
+        "negotiated_positional_json": {
+          "wire": 40,
+          "cold": 552,
+          "retained_context": 552
+        }
+      }
+    },
+    {
+      "family": "metadata",
+      "row_count": 1,
+      "shared_kind": false,
+      "turn": 1,
+      "costs": {
+        "typed_rows": {
+          "wire": 101,
+          "cold": 812,
+          "retained_context": 924
+        },
+        "guarded_packed_json": {
+          "wire": 108,
+          "cold": 560,
+          "retained_context": 679
+        },
+        "negotiated_positional_json": {
+          "wire": 39,
+          "cold": 551,
+          "retained_context": 601
+        }
+      }
+    },
+    {
+      "family": "metadata",
+      "row_count": 1,
+      "shared_kind": false,
+      "turn": 2,
+      "costs": {
+        "typed_rows": {
+          "wire": 101,
+          "cold": 812,
+          "retained_context": 1035
+        },
+        "guarded_packed_json": {
+          "wire": 108,
+          "cold": 560,
+          "retained_context": 797
+        },
+        "negotiated_positional_json": {
+          "wire": 39,
+          "cold": 551,
+          "retained_context": 650
+        }
+      }
+    },
+    {
+      "family": "metadata",
+      "row_count": 1,
+      "shared_kind": true,
+      "turn": 0,
+      "costs": {
+        "typed_rows": {
+          "wire": 107,
+          "cold": 818,
+          "retained_context": 818
+        },
+        "guarded_packed_json": {
+          "wire": 112,
+          "cold": 564,
+          "retained_context": 564
+        },
+        "negotiated_positional_json": {
+          "wire": 43,
+          "cold": 555,
+          "retained_context": 555
+        }
+      }
+    },
+    {
+      "family": "metadata",
+      "row_count": 1,
+      "shared_kind": true,
+      "turn": 1,
+      "costs": {
+        "typed_rows": {
+          "wire": 106,
+          "cold": 817,
+          "retained_context": 934
+        },
+        "guarded_packed_json": {
+          "wire": 111,
+          "cold": 563,
+          "retained_context": 685
+        },
+        "negotiated_positional_json": {
+          "wire": 42,
+          "cold": 554,
+          "retained_context": 607
+        }
+      }
+    },
+    {
+      "family": "metadata",
+      "row_count": 1,
+      "shared_kind": true,
+      "turn": 2,
+      "costs": {
+        "typed_rows": {
+          "wire": 106,
+          "cold": 817,
+          "retained_context": 1050
+        },
+        "guarded_packed_json": {
+          "wire": 111,
+          "cold": 563,
+          "retained_context": 806
+        },
+        "negotiated_positional_json": {
+          "wire": 42,
+          "cold": 554,
+          "retained_context": 659
+        }
+      }
+    },
+    {
+      "family": "metadata",
+      "row_count": 4,
+      "shared_kind": false,
+      "turn": 0,
+      "costs": {
+        "typed_rows": {
+          "wire": 185,
+          "cold": 896,
+          "retained_context": 896
+        },
+        "guarded_packed_json": {
+          "wire": 213,
+          "cold": 665,
+          "retained_context": 665
+        },
+        "negotiated_positional_json": {
+          "wire": 144,
+          "cold": 656,
+          "retained_context": 656
+        }
+      }
+    },
+    {
+      "family": "metadata",
+      "row_count": 4,
+      "shared_kind": false,
+      "turn": 1,
+      "costs": {
+        "typed_rows": {
+          "wire": 193,
+          "cold": 904,
+          "retained_context": 1099
+        },
+        "guarded_packed_json": {
+          "wire": 221,
+          "cold": 673,
+          "retained_context": 896
+        },
+        "negotiated_positional_json": {
+          "wire": 152,
+          "cold": 664,
+          "retained_context": 818
+        }
+      }
+    },
+    {
+      "family": "metadata",
+      "row_count": 4,
+      "shared_kind": false,
+      "turn": 2,
+      "costs": {
+        "typed_rows": {
+          "wire": 192,
+          "cold": 903,
+          "retained_context": 1301
+        },
+        "guarded_packed_json": {
+          "wire": 220,
+          "cold": 672,
+          "retained_context": 1126
+        },
+        "negotiated_positional_json": {
+          "wire": 151,
+          "cold": 663,
+          "retained_context": 979
+        }
+      }
+    },
+    {
+      "family": "metadata",
+      "row_count": 4,
+      "shared_kind": true,
+      "turn": 0,
+      "costs": {
+        "typed_rows": {
+          "wire": 163,
+          "cold": 874,
+          "retained_context": 874
+        },
+        "guarded_packed_json": {
+          "wire": 183,
+          "cold": 635,
+          "retained_context": 635
+        },
+        "negotiated_positional_json": {
+          "wire": 114,
+          "cold": 626,
+          "retained_context": 626
+        }
+      }
+    },
+    {
+      "family": "metadata",
+      "row_count": 4,
+      "shared_kind": true,
+      "turn": 1,
+      "costs": {
+        "typed_rows": {
+          "wire": 171,
+          "cold": 882,
+          "retained_context": 1055
+        },
+        "guarded_packed_json": {
+          "wire": 191,
+          "cold": 643,
+          "retained_context": 836
+        },
+        "negotiated_positional_json": {
+          "wire": 122,
+          "cold": 634,
+          "retained_context": 758
+        }
+      }
+    },
+    {
+      "family": "metadata",
+      "row_count": 4,
+      "shared_kind": true,
+      "turn": 2,
+      "costs": {
+        "typed_rows": {
+          "wire": 170,
+          "cold": 881,
+          "retained_context": 1235
+        },
+        "guarded_packed_json": {
+          "wire": 190,
+          "cold": 642,
+          "retained_context": 1036
+        },
+        "negotiated_positional_json": {
+          "wire": 121,
+          "cold": 633,
+          "retained_context": 889
+        }
+      }
+    },
+    {
+      "family": "metadata",
+      "row_count": 16,
+      "shared_kind": false,
+      "turn": 0,
+      "costs": {
+        "typed_rows": {
+          "wire": 529,
+          "cold": 1240,
+          "retained_context": 1240
+        },
+        "guarded_packed_json": {
+          "wire": 641,
+          "cold": 1093,
+          "retained_context": 1093
+        },
+        "negotiated_positional_json": {
+          "wire": 572,
+          "cold": 1084,
+          "retained_context": 1084
+        }
+      }
+    },
+    {
+      "family": "metadata",
+      "row_count": 16,
+      "shared_kind": false,
+      "turn": 1,
+      "costs": {
+        "typed_rows": {
+          "wire": 543,
+          "cold": 1254,
+          "retained_context": 1793
+        },
+        "guarded_packed_json": {
+          "wire": 655,
+          "cold": 1107,
+          "retained_context": 1758
+        },
+        "negotiated_positional_json": {
+          "wire": 586,
+          "cold": 1098,
+          "retained_context": 1680
+        }
+      }
+    },
+    {
+      "family": "metadata",
+      "row_count": 16,
+      "shared_kind": false,
+      "turn": 2,
+      "costs": {
+        "typed_rows": {
+          "wire": 542,
+          "cold": 1253,
+          "retained_context": 2345
+        },
+        "guarded_packed_json": {
+          "wire": 654,
+          "cold": 1106,
+          "retained_context": 2422
+        },
+        "negotiated_positional_json": {
+          "wire": 585,
+          "cold": 1097,
+          "retained_context": 2275
+        }
+      }
+    },
+    {
+      "family": "metadata",
+      "row_count": 16,
+      "shared_kind": true,
+      "turn": 0,
+      "costs": {
+        "typed_rows": {
+          "wire": 399,
+          "cold": 1110,
+          "retained_context": 1110
+        },
+        "guarded_packed_json": {
+          "wire": 479,
+          "cold": 931,
+          "retained_context": 931
+        },
+        "negotiated_positional_json": {
+          "wire": 410,
+          "cold": 922,
+          "retained_context": 922
+        }
+      }
+    },
+    {
+      "family": "metadata",
+      "row_count": 16,
+      "shared_kind": true,
+      "turn": 1,
+      "costs": {
+        "typed_rows": {
+          "wire": 413,
+          "cold": 1124,
+          "retained_context": 1533
+        },
+        "guarded_packed_json": {
+          "wire": 493,
+          "cold": 945,
+          "retained_context": 1434
+        },
+        "negotiated_positional_json": {
+          "wire": 424,
+          "cold": 936,
+          "retained_context": 1356
+        }
+      }
+    },
+    {
+      "family": "metadata",
+      "row_count": 16,
+      "shared_kind": true,
+      "turn": 2,
+      "costs": {
+        "typed_rows": {
+          "wire": 412,
+          "cold": 1123,
+          "retained_context": 1955
+        },
+        "guarded_packed_json": {
+          "wire": 492,
+          "cold": 944,
+          "retained_context": 1936
+        },
+        "negotiated_positional_json": {
+          "wire": 423,
+          "cold": 935,
+          "retained_context": 1789
+        }
+      }
+    },
+    {
+      "family": "metadata",
+      "row_count": 64,
+      "shared_kind": false,
+      "turn": 0,
+      "costs": {
+        "typed_rows": {
+          "wire": 1923,
+          "cold": 2634,
+          "retained_context": 2634
+        },
+        "guarded_packed_json": {
+          "wire": 2371,
+          "cold": 2823,
+          "retained_context": 2823
+        },
+        "negotiated_positional_json": {
+          "wire": 2302,
+          "cold": 2814,
+          "retained_context": 2814
+        }
+      }
+    },
+    {
+      "family": "metadata",
+      "row_count": 64,
+      "shared_kind": false,
+      "turn": 1,
+      "costs": {
+        "typed_rows": {
+          "wire": 1931,
+          "cold": 2642,
+          "retained_context": 4575
+        },
+        "guarded_packed_json": {
+          "wire": 2379,
+          "cold": 2831,
+          "retained_context": 5212
+        },
+        "negotiated_positional_json": {
+          "wire": 2310,
+          "cold": 2822,
+          "retained_context": 5134
+        }
+      }
+    },
+    {
+      "family": "metadata",
+      "row_count": 64,
+      "shared_kind": false,
+      "turn": 2,
+      "costs": {
+        "typed_rows": {
+          "wire": 1930,
+          "cold": 2641,
+          "retained_context": 6515
+        },
+        "guarded_packed_json": {
+          "wire": 2378,
+          "cold": 2830,
+          "retained_context": 7600
+        },
+        "negotiated_positional_json": {
+          "wire": 2309,
+          "cold": 2821,
+          "retained_context": 7453
+        }
+      }
+    },
+    {
+      "family": "metadata",
+      "row_count": 64,
+      "shared_kind": true,
+      "turn": 0,
+      "costs": {
+        "typed_rows": {
+          "wire": 1361,
+          "cold": 2072,
+          "retained_context": 2072
+        },
+        "guarded_packed_json": {
+          "wire": 1681,
+          "cold": 2133,
+          "retained_context": 2133
+        },
+        "negotiated_positional_json": {
+          "wire": 1612,
+          "cold": 2124,
+          "retained_context": 2124
+        }
+      }
+    },
+    {
+      "family": "metadata",
+      "row_count": 64,
+      "shared_kind": true,
+      "turn": 1,
+      "costs": {
+        "typed_rows": {
+          "wire": 1369,
+          "cold": 2080,
+          "retained_context": 3451
+        },
+        "guarded_packed_json": {
+          "wire": 1689,
+          "cold": 2141,
+          "retained_context": 3832
+        },
+        "negotiated_positional_json": {
+          "wire": 1620,
+          "cold": 2132,
+          "retained_context": 3754
+        }
+      }
+    },
+    {
+      "family": "metadata",
+      "row_count": 64,
+      "shared_kind": true,
+      "turn": 2,
+      "costs": {
+        "typed_rows": {
+          "wire": 1368,
+          "cold": 2079,
+          "retained_context": 4829
+        },
+        "guarded_packed_json": {
+          "wire": 1688,
+          "cold": 2140,
+          "retained_context": 5530
+        },
+        "negotiated_positional_json": {
+          "wire": 1619,
+          "cold": 2131,
+          "retained_context": 5383
+        }
+      }
+    },
+    {
+      "family": "prose",
+      "row_count": 1,
+      "shared_kind": false,
+      "turn": 0,
+      "costs": {
+        "typed_rows": {
+          "wire": 160,
+          "cold": 871,
+          "retained_context": 871
+        },
+        "guarded_packed_json": {
+          "wire": 167,
+          "cold": 619,
+          "retained_context": 619
+        },
+        "negotiated_positional_json": {
+          "wire": 98,
+          "cold": 610,
+          "retained_context": 610
+        }
+      }
+    },
+    {
+      "family": "prose",
+      "row_count": 1,
+      "shared_kind": false,
+      "turn": 1,
+      "costs": {
+        "typed_rows": {
+          "wire": 168,
+          "cold": 879,
+          "retained_context": 1049
+        },
+        "guarded_packed_json": {
+          "wire": 175,
+          "cold": 627,
+          "retained_context": 804
+        },
+        "negotiated_positional_json": {
+          "wire": 106,
+          "cold": 618,
+          "retained_context": 726
+        }
+      }
+    },
+    {
+      "family": "prose",
+      "row_count": 1,
+      "shared_kind": false,
+      "turn": 2,
+      "costs": {
+        "typed_rows": {
+          "wire": 166,
+          "cold": 877,
+          "retained_context": 1225
+        },
+        "guarded_packed_json": {
+          "wire": 173,
+          "cold": 625,
+          "retained_context": 987
+        },
+        "negotiated_positional_json": {
+          "wire": 104,
+          "cold": 616,
+          "retained_context": 840
+        }
+      }
+    },
+    {
+      "family": "prose",
+      "row_count": 1,
+      "shared_kind": true,
+      "turn": 0,
+      "costs": {
+        "typed_rows": {
+          "wire": 165,
+          "cold": 876,
+          "retained_context": 876
+        },
+        "guarded_packed_json": {
+          "wire": 170,
+          "cold": 622,
+          "retained_context": 622
+        },
+        "negotiated_positional_json": {
+          "wire": 101,
+          "cold": 613,
+          "retained_context": 613
+        }
+      }
+    },
+    {
+      "family": "prose",
+      "row_count": 1,
+      "shared_kind": true,
+      "turn": 1,
+      "costs": {
+        "typed_rows": {
+          "wire": 173,
+          "cold": 884,
+          "retained_context": 1059
+        },
+        "guarded_packed_json": {
+          "wire": 178,
+          "cold": 630,
+          "retained_context": 810
+        },
+        "negotiated_positional_json": {
+          "wire": 109,
+          "cold": 621,
+          "retained_context": 732
+        }
+      }
+    },
+    {
+      "family": "prose",
+      "row_count": 1,
+      "shared_kind": true,
+      "turn": 2,
+      "costs": {
+        "typed_rows": {
+          "wire": 171,
+          "cold": 882,
+          "retained_context": 1240
+        },
+        "guarded_packed_json": {
+          "wire": 176,
+          "cold": 628,
+          "retained_context": 996
+        },
+        "negotiated_positional_json": {
+          "wire": 107,
+          "cold": 619,
+          "retained_context": 849
+        }
+      }
+    },
+    {
+      "family": "prose",
+      "row_count": 4,
+      "shared_kind": false,
+      "turn": 0,
+      "costs": {
+        "typed_rows": {
+          "wire": 428,
+          "cold": 1139,
+          "retained_context": 1139
+        },
+        "guarded_packed_json": {
+          "wire": 456,
+          "cold": 908,
+          "retained_context": 908
+        },
+        "negotiated_positional_json": {
+          "wire": 387,
+          "cold": 899,
+          "retained_context": 899
+        }
+      }
+    },
+    {
+      "family": "prose",
+      "row_count": 4,
+      "shared_kind": false,
+      "turn": 1,
+      "costs": {
+        "typed_rows": {
+          "wire": 451,
+          "cold": 1162,
+          "retained_context": 1600
+        },
+        "guarded_packed_json": {
+          "wire": 479,
+          "cold": 931,
+          "retained_context": 1397
+        },
+        "negotiated_positional_json": {
+          "wire": 410,
+          "cold": 922,
+          "retained_context": 1319
+        }
+      }
+    },
+    {
+      "family": "prose",
+      "row_count": 4,
+      "shared_kind": false,
+      "turn": 2,
+      "costs": {
+        "typed_rows": {
+          "wire": 448,
+          "cold": 1159,
+          "retained_context": 2058
+        },
+        "guarded_packed_json": {
+          "wire": 476,
+          "cold": 928,
+          "retained_context": 1883
+        },
+        "negotiated_positional_json": {
+          "wire": 407,
+          "cold": 919,
+          "retained_context": 1736
+        }
+      }
+    },
+    {
+      "family": "prose",
+      "row_count": 4,
+      "shared_kind": true,
+      "turn": 0,
+      "costs": {
+        "typed_rows": {
+          "wire": 415,
+          "cold": 1126,
+          "retained_context": 1126
+        },
+        "guarded_packed_json": {
+          "wire": 435,
+          "cold": 887,
+          "retained_context": 887
+        },
+        "negotiated_positional_json": {
+          "wire": 366,
+          "cold": 878,
+          "retained_context": 878
+        }
+      }
+    },
+    {
+      "family": "prose",
+      "row_count": 4,
+      "shared_kind": true,
+      "turn": 1,
+      "costs": {
+        "typed_rows": {
+          "wire": 438,
+          "cold": 1149,
+          "retained_context": 1574
+        },
+        "guarded_packed_json": {
+          "wire": 458,
+          "cold": 910,
+          "retained_context": 1355
+        },
+        "negotiated_positional_json": {
+          "wire": 389,
+          "cold": 901,
+          "retained_context": 1277
+        }
+      }
+    },
+    {
+      "family": "prose",
+      "row_count": 4,
+      "shared_kind": true,
+      "turn": 2,
+      "costs": {
+        "typed_rows": {
+          "wire": 435,
+          "cold": 1146,
+          "retained_context": 2019
+        },
+        "guarded_packed_json": {
+          "wire": 455,
+          "cold": 907,
+          "retained_context": 1820
+        },
+        "negotiated_positional_json": {
+          "wire": 386,
+          "cold": 898,
+          "retained_context": 1673
+        }
+      }
+    },
+    {
+      "family": "prose",
+      "row_count": 16,
+      "shared_kind": false,
+      "turn": 0,
+      "costs": {
+        "typed_rows": {
+          "wire": 1530,
+          "cold": 2241,
+          "retained_context": 2241
+        },
+        "guarded_packed_json": {
+          "wire": 1642,
+          "cold": 2094,
+          "retained_context": 2094
+        },
+        "negotiated_positional_json": {
+          "wire": 1573,
+          "cold": 2085,
+          "retained_context": 2085
+        }
+      }
+    },
+    {
+      "family": "prose",
+      "row_count": 16,
+      "shared_kind": false,
+      "turn": 1,
+      "costs": {
+        "typed_rows": {
+          "wire": 1553,
+          "cold": 2264,
+          "retained_context": 3804
+        },
+        "guarded_packed_json": {
+          "wire": 1665,
+          "cold": 2117,
+          "retained_context": 3769
+        },
+        "negotiated_positional_json": {
+          "wire": 1596,
+          "cold": 2108,
+          "retained_context": 3691
+        }
+      }
+    },
+    {
+      "family": "prose",
+      "row_count": 16,
+      "shared_kind": false,
+      "turn": 2,
+      "costs": {
+        "typed_rows": {
+          "wire": 1550,
+          "cold": 2261,
+          "retained_context": 5364
+        },
+        "guarded_packed_json": {
+          "wire": 1662,
+          "cold": 2114,
+          "retained_context": 5441
+        },
+        "negotiated_positional_json": {
+          "wire": 1593,
+          "cold": 2105,
+          "retained_context": 5294
+        }
+      }
+    },
+    {
+      "family": "prose",
+      "row_count": 16,
+      "shared_kind": true,
+      "turn": 0,
+      "costs": {
+        "typed_rows": {
+          "wire": 1445,
+          "cold": 2156,
+          "retained_context": 2156
+        },
+        "guarded_packed_json": {
+          "wire": 1525,
+          "cold": 1977,
+          "retained_context": 1977
+        },
+        "negotiated_positional_json": {
+          "wire": 1456,
+          "cold": 1968,
+          "retained_context": 1968
+        }
+      }
+    },
+    {
+      "family": "prose",
+      "row_count": 16,
+      "shared_kind": true,
+      "turn": 1,
+      "costs": {
+        "typed_rows": {
+          "wire": 1468,
+          "cold": 2179,
+          "retained_context": 3634
+        },
+        "guarded_packed_json": {
+          "wire": 1548,
+          "cold": 2000,
+          "retained_context": 3535
+        },
+        "negotiated_positional_json": {
+          "wire": 1479,
+          "cold": 1991,
+          "retained_context": 3457
+        }
+      }
+    },
+    {
+      "family": "prose",
+      "row_count": 16,
+      "shared_kind": true,
+      "turn": 2,
+      "costs": {
+        "typed_rows": {
+          "wire": 1465,
+          "cold": 2176,
+          "retained_context": 5109
+        },
+        "guarded_packed_json": {
+          "wire": 1545,
+          "cold": 1997,
+          "retained_context": 5090
+        },
+        "negotiated_positional_json": {
+          "wire": 1476,
+          "cold": 1988,
+          "retained_context": 4943
+        }
+      }
+    },
+    {
+      "family": "prose",
+      "row_count": 64,
+      "shared_kind": false,
+      "turn": 0,
+      "costs": {
+        "typed_rows": {
+          "wire": 5938,
+          "cold": 6649,
+          "retained_context": 6649
+        },
+        "guarded_packed_json": {
+          "wire": 6386,
+          "cold": 6838,
+          "retained_context": 6838
+        },
+        "negotiated_positional_json": {
+          "wire": 6317,
+          "cold": 6829,
+          "retained_context": 6829
+        }
+      }
+    },
+    {
+      "family": "prose",
+      "row_count": 64,
+      "shared_kind": false,
+      "turn": 1,
+      "costs": {
+        "typed_rows": {
+          "wire": 5961,
+          "cold": 6672,
+          "retained_context": 12620
+        },
+        "guarded_packed_json": {
+          "wire": 6409,
+          "cold": 6861,
+          "retained_context": 13257
+        },
+        "negotiated_positional_json": {
+          "wire": 6340,
+          "cold": 6852,
+          "retained_context": 13179
+        }
+      }
+    },
+    {
+      "family": "prose",
+      "row_count": 64,
+      "shared_kind": false,
+      "turn": 2,
+      "costs": {
+        "typed_rows": {
+          "wire": 5958,
+          "cold": 6669,
+          "retained_context": 18588
+        },
+        "guarded_packed_json": {
+          "wire": 6406,
+          "cold": 6858,
+          "retained_context": 19673
+        },
+        "negotiated_positional_json": {
+          "wire": 6337,
+          "cold": 6849,
+          "retained_context": 19526
+        }
+      }
+    },
+    {
+      "family": "prose",
+      "row_count": 64,
+      "shared_kind": true,
+      "turn": 0,
+      "costs": {
+        "typed_rows": {
+          "wire": 5565,
+          "cold": 6276,
+          "retained_context": 6276
+        },
+        "guarded_packed_json": {
+          "wire": 5885,
+          "cold": 6337,
+          "retained_context": 6337
+        },
+        "negotiated_positional_json": {
+          "wire": 5816,
+          "cold": 6328,
+          "retained_context": 6328
+        }
+      }
+    },
+    {
+      "family": "prose",
+      "row_count": 64,
+      "shared_kind": true,
+      "turn": 1,
+      "costs": {
+        "typed_rows": {
+          "wire": 5588,
+          "cold": 6299,
+          "retained_context": 11874
+        },
+        "guarded_packed_json": {
+          "wire": 5908,
+          "cold": 6360,
+          "retained_context": 12255
+        },
+        "negotiated_positional_json": {
+          "wire": 5839,
+          "cold": 6351,
+          "retained_context": 12177
+        }
+      }
+    },
+    {
+      "family": "prose",
+      "row_count": 64,
+      "shared_kind": true,
+      "turn": 2,
+      "costs": {
+        "typed_rows": {
+          "wire": 5585,
+          "cold": 6296,
+          "retained_context": 17469
+        },
+        "guarded_packed_json": {
+          "wire": 5905,
+          "cold": 6357,
+          "retained_context": 18170
+        },
+        "negotiated_positional_json": {
+          "wire": 5836,
+          "cold": 6348,
+          "retained_context": 18023
+        }
+      }
+    },
+    {
+      "family": "numeric_strings",
+      "row_count": 1,
+      "shared_kind": false,
+      "turn": 0,
+      "costs": {
+        "typed_rows": {
+          "wire": 106,
+          "cold": 817,
+          "retained_context": 817
+        },
+        "guarded_packed_json": {
+          "wire": 113,
+          "cold": 565,
+          "retained_context": 565
+        },
+        "negotiated_positional_json": {
+          "wire": 44,
+          "cold": 556,
+          "retained_context": 556
+        }
+      }
+    },
+    {
+      "family": "numeric_strings",
+      "row_count": 1,
+      "shared_kind": false,
+      "turn": 1,
+      "costs": {
+        "typed_rows": {
+          "wire": 106,
+          "cold": 817,
+          "retained_context": 933
+        },
+        "guarded_packed_json": {
+          "wire": 113,
+          "cold": 565,
+          "retained_context": 688
+        },
+        "negotiated_positional_json": {
+          "wire": 44,
+          "cold": 556,
+          "retained_context": 610
+        }
+      }
+    },
+    {
+      "family": "numeric_strings",
+      "row_count": 1,
+      "shared_kind": false,
+      "turn": 2,
+      "costs": {
+        "typed_rows": {
+          "wire": 104,
+          "cold": 815,
+          "retained_context": 1047
+        },
+        "guarded_packed_json": {
+          "wire": 111,
+          "cold": 563,
+          "retained_context": 809
+        },
+        "negotiated_positional_json": {
+          "wire": 42,
+          "cold": 554,
+          "retained_context": 662
+        }
+      }
+    },
+    {
+      "family": "numeric_strings",
+      "row_count": 1,
+      "shared_kind": true,
+      "turn": 0,
+      "costs": {
+        "typed_rows": {
+          "wire": 111,
+          "cold": 822,
+          "retained_context": 822
+        },
+        "guarded_packed_json": {
+          "wire": 116,
+          "cold": 568,
+          "retained_context": 568
+        },
+        "negotiated_positional_json": {
+          "wire": 47,
+          "cold": 559,
+          "retained_context": 559
+        }
+      }
+    },
+    {
+      "family": "numeric_strings",
+      "row_count": 1,
+      "shared_kind": true,
+      "turn": 1,
+      "costs": {
+        "typed_rows": {
+          "wire": 111,
+          "cold": 822,
+          "retained_context": 943
+        },
+        "guarded_packed_json": {
+          "wire": 116,
+          "cold": 568,
+          "retained_context": 694
+        },
+        "negotiated_positional_json": {
+          "wire": 47,
+          "cold": 559,
+          "retained_context": 616
+        }
+      }
+    },
+    {
+      "family": "numeric_strings",
+      "row_count": 1,
+      "shared_kind": true,
+      "turn": 2,
+      "costs": {
+        "typed_rows": {
+          "wire": 109,
+          "cold": 820,
+          "retained_context": 1062
+        },
+        "guarded_packed_json": {
+          "wire": 114,
+          "cold": 566,
+          "retained_context": 818
+        },
+        "negotiated_positional_json": {
+          "wire": 45,
+          "cold": 557,
+          "retained_context": 671
+        }
+      }
+    },
+    {
+      "family": "numeric_strings",
+      "row_count": 4,
+      "shared_kind": false,
+      "turn": 0,
+      "costs": {
+        "typed_rows": {
+          "wire": 196,
+          "cold": 907,
+          "retained_context": 907
+        },
+        "guarded_packed_json": {
+          "wire": 224,
+          "cold": 676,
+          "retained_context": 676
+        },
+        "negotiated_positional_json": {
+          "wire": 155,
+          "cold": 667,
+          "retained_context": 667
+        }
+      }
+    },
+    {
+      "family": "numeric_strings",
+      "row_count": 4,
+      "shared_kind": false,
+      "turn": 1,
+      "costs": {
+        "typed_rows": {
+          "wire": 224,
+          "cold": 935,
+          "retained_context": 1141
+        },
+        "guarded_packed_json": {
+          "wire": 252,
+          "cold": 704,
+          "retained_context": 938
+        },
+        "negotiated_positional_json": {
+          "wire": 183,
+          "cold": 695,
+          "retained_context": 860
+        }
+      }
+    },
+    {
+      "family": "numeric_strings",
+      "row_count": 4,
+      "shared_kind": false,
+      "turn": 2,
+      "costs": {
+        "typed_rows": {
+          "wire": 205,
+          "cold": 916,
+          "retained_context": 1356
+        },
+        "guarded_packed_json": {
+          "wire": 233,
+          "cold": 685,
+          "retained_context": 1181
+        },
+        "negotiated_positional_json": {
+          "wire": 164,
+          "cold": 676,
+          "retained_context": 1034
+        }
+      }
+    },
+    {
+      "family": "numeric_strings",
+      "row_count": 4,
+      "shared_kind": true,
+      "turn": 0,
+      "costs": {
+        "typed_rows": {
+          "wire": 153,
+          "cold": 864,
+          "retained_context": 864
+        },
+        "guarded_packed_json": {
+          "wire": 173,
+          "cold": 625,
+          "retained_context": 625
+        },
+        "negotiated_positional_json": {
+          "wire": 104,
+          "cold": 616,
+          "retained_context": 616
+        }
+      }
+    },
+    {
+      "family": "numeric_strings",
+      "row_count": 4,
+      "shared_kind": true,
+      "turn": 1,
+      "costs": {
+        "typed_rows": {
+          "wire": 181,
+          "cold": 892,
+          "retained_context": 1055
+        },
+        "guarded_packed_json": {
+          "wire": 201,
+          "cold": 653,
+          "retained_context": 836
+        },
+        "negotiated_positional_json": {
+          "wire": 132,
+          "cold": 644,
+          "retained_context": 758
+        }
+      }
+    },
+    {
+      "family": "numeric_strings",
+      "row_count": 4,
+      "shared_kind": true,
+      "turn": 2,
+      "costs": {
+        "typed_rows": {
+          "wire": 162,
+          "cold": 873,
+          "retained_context": 1227
+        },
+        "guarded_packed_json": {
+          "wire": 182,
+          "cold": 634,
+          "retained_context": 1028
+        },
+        "negotiated_positional_json": {
+          "wire": 113,
+          "cold": 625,
+          "retained_context": 881
+        }
+      }
+    },
+    {
+      "family": "numeric_strings",
+      "row_count": 16,
+      "shared_kind": false,
+      "turn": 0,
+      "costs": {
+        "typed_rows": {
+          "wire": 611,
+          "cold": 1322,
+          "retained_context": 1322
+        },
+        "guarded_packed_json": {
+          "wire": 723,
+          "cold": 1175,
+          "retained_context": 1175
+        },
+        "negotiated_positional_json": {
+          "wire": 654,
+          "cold": 1166,
+          "retained_context": 1166
+        }
+      }
+    },
+    {
+      "family": "numeric_strings",
+      "row_count": 16,
+      "shared_kind": false,
+      "turn": 1,
+      "costs": {
+        "typed_rows": {
+          "wire": 627,
+          "cold": 1338,
+          "retained_context": 1959
+        },
+        "guarded_packed_json": {
+          "wire": 739,
+          "cold": 1191,
+          "retained_context": 1924
+        },
+        "negotiated_positional_json": {
+          "wire": 670,
+          "cold": 1182,
+          "retained_context": 1846
+        }
+      }
+    },
+    {
+      "family": "numeric_strings",
+      "row_count": 16,
+      "shared_kind": false,
+      "turn": 2,
+      "costs": {
+        "typed_rows": {
+          "wire": 619,
+          "cold": 1330,
+          "retained_context": 2588
+        },
+        "guarded_packed_json": {
+          "wire": 731,
+          "cold": 1183,
+          "retained_context": 2665
+        },
+        "negotiated_positional_json": {
+          "wire": 662,
+          "cold": 1174,
+          "retained_context": 2518
+        }
+      }
+    },
+    {
+      "family": "numeric_strings",
+      "row_count": 16,
+      "shared_kind": true,
+      "turn": 0,
+      "costs": {
+        "typed_rows": {
+          "wire": 376,
+          "cold": 1087,
+          "retained_context": 1087
+        },
+        "guarded_packed_json": {
+          "wire": 456,
+          "cold": 908,
+          "retained_context": 908
+        },
+        "negotiated_positional_json": {
+          "wire": 387,
+          "cold": 899,
+          "retained_context": 899
+        }
+      }
+    },
+    {
+      "family": "numeric_strings",
+      "row_count": 16,
+      "shared_kind": true,
+      "turn": 1,
+      "costs": {
+        "typed_rows": {
+          "wire": 392,
+          "cold": 1103,
+          "retained_context": 1489
+        },
+        "guarded_packed_json": {
+          "wire": 472,
+          "cold": 924,
+          "retained_context": 1390
+        },
+        "negotiated_positional_json": {
+          "wire": 403,
+          "cold": 915,
+          "retained_context": 1312
+        }
+      }
+    },
+    {
+      "family": "numeric_strings",
+      "row_count": 16,
+      "shared_kind": true,
+      "turn": 2,
+      "costs": {
+        "typed_rows": {
+          "wire": 384,
+          "cold": 1095,
+          "retained_context": 1883
+        },
+        "guarded_packed_json": {
+          "wire": 464,
+          "cold": 916,
+          "retained_context": 1864
+        },
+        "negotiated_positional_json": {
+          "wire": 395,
+          "cold": 907,
+          "retained_context": 1717
+        }
+      }
+    },
+    {
+      "family": "numeric_strings",
+      "row_count": 64,
+      "shared_kind": false,
+      "turn": 0,
+      "costs": {
+        "typed_rows": {
+          "wire": 2260,
+          "cold": 2971,
+          "retained_context": 2971
+        },
+        "guarded_packed_json": {
+          "wire": 2708,
+          "cold": 3160,
+          "retained_context": 3160
+        },
+        "negotiated_positional_json": {
+          "wire": 2639,
+          "cold": 3151,
+          "retained_context": 3151
+        }
+      }
+    },
+    {
+      "family": "numeric_strings",
+      "row_count": 64,
+      "shared_kind": false,
+      "turn": 1,
+      "costs": {
+        "typed_rows": {
+          "wire": 2275,
+          "cold": 2986,
+          "retained_context": 5256
+        },
+        "guarded_packed_json": {
+          "wire": 2723,
+          "cold": 3175,
+          "retained_context": 5893
+        },
+        "negotiated_positional_json": {
+          "wire": 2654,
+          "cold": 3166,
+          "retained_context": 5815
+        }
+      }
+    },
+    {
+      "family": "numeric_strings",
+      "row_count": 64,
+      "shared_kind": false,
+      "turn": 2,
+      "costs": {
+        "typed_rows": {
+          "wire": 2272,
+          "cold": 2983,
+          "retained_context": 7538
+        },
+        "guarded_packed_json": {
+          "wire": 2720,
+          "cold": 3172,
+          "retained_context": 8623
+        },
+        "negotiated_positional_json": {
+          "wire": 2651,
+          "cold": 3163,
+          "retained_context": 8476
+        }
+      }
+    },
+    {
+      "family": "numeric_strings",
+      "row_count": 64,
+      "shared_kind": true,
+      "turn": 0,
+      "costs": {
+        "typed_rows": {
+          "wire": 1257,
+          "cold": 1968,
+          "retained_context": 1968
+        },
+        "guarded_packed_json": {
+          "wire": 1577,
+          "cold": 2029,
+          "retained_context": 2029
+        },
+        "negotiated_positional_json": {
+          "wire": 1508,
+          "cold": 2020,
+          "retained_context": 2020
+        }
+      }
+    },
+    {
+      "family": "numeric_strings",
+      "row_count": 64,
+      "shared_kind": true,
+      "turn": 1,
+      "costs": {
+        "typed_rows": {
+          "wire": 1272,
+          "cold": 1983,
+          "retained_context": 3250
+        },
+        "guarded_packed_json": {
+          "wire": 1592,
+          "cold": 2044,
+          "retained_context": 3631
+        },
+        "negotiated_positional_json": {
+          "wire": 1523,
+          "cold": 2035,
+          "retained_context": 3553
+        }
+      }
+    },
+    {
+      "family": "numeric_strings",
+      "row_count": 64,
+      "shared_kind": true,
+      "turn": 2,
+      "costs": {
+        "typed_rows": {
+          "wire": 1269,
+          "cold": 1980,
+          "retained_context": 4529
+        },
+        "guarded_packed_json": {
+          "wire": 1589,
+          "cold": 2041,
+          "retained_context": 5230
+        },
+        "negotiated_positional_json": {
+          "wire": 1520,
+          "cold": 2032,
+          "retained_context": 5083
+        }
+      }
+    },
+    {
+      "family": "escapes",
+      "row_count": 1,
+      "shared_kind": false,
+      "turn": 0,
+      "costs": {
+        "typed_rows": {
+          "wire": 114,
+          "cold": 825,
+          "retained_context": 825
+        },
+        "guarded_packed_json": {
+          "wire": 123,
+          "cold": 575,
+          "retained_context": 575
+        },
+        "negotiated_positional_json": {
+          "wire": 54,
+          "cold": 566,
+          "retained_context": 566
+        }
+      }
+    },
+    {
+      "family": "escapes",
+      "row_count": 1,
+      "shared_kind": false,
+      "turn": 1,
+      "costs": {
+        "typed_rows": {
+          "wire": 115,
+          "cold": 826,
+          "retained_context": 950
+        },
+        "guarded_packed_json": {
+          "wire": 122,
+          "cold": 574,
+          "retained_context": 707
+        },
+        "negotiated_positional_json": {
+          "wire": 53,
+          "cold": 565,
+          "retained_context": 629
+        }
+      }
+    },
+    {
+      "family": "escapes",
+      "row_count": 1,
+      "shared_kind": false,
+      "turn": 2,
+      "costs": {
+        "typed_rows": {
+          "wire": 112,
+          "cold": 823,
+          "retained_context": 1072
+        },
+        "guarded_packed_json": {
+          "wire": 119,
+          "cold": 571,
+          "retained_context": 836
+        },
+        "negotiated_positional_json": {
+          "wire": 50,
+          "cold": 562,
+          "retained_context": 689
+        }
+      }
+    },
+    {
+      "family": "escapes",
+      "row_count": 1,
+      "shared_kind": true,
+      "turn": 0,
+      "costs": {
+        "typed_rows": {
+          "wire": 119,
+          "cold": 830,
+          "retained_context": 830
+        },
+        "guarded_packed_json": {
+          "wire": 126,
+          "cold": 578,
+          "retained_context": 578
+        },
+        "negotiated_positional_json": {
+          "wire": 57,
+          "cold": 569,
+          "retained_context": 569
+        }
+      }
+    },
+    {
+      "family": "escapes",
+      "row_count": 1,
+      "shared_kind": true,
+      "turn": 1,
+      "costs": {
+        "typed_rows": {
+          "wire": 120,
+          "cold": 831,
+          "retained_context": 960
+        },
+        "guarded_packed_json": {
+          "wire": 125,
+          "cold": 577,
+          "retained_context": 713
+        },
+        "negotiated_positional_json": {
+          "wire": 56,
+          "cold": 568,
+          "retained_context": 635
+        }
+      }
+    },
+    {
+      "family": "escapes",
+      "row_count": 1,
+      "shared_kind": true,
+      "turn": 2,
+      "costs": {
+        "typed_rows": {
+          "wire": 117,
+          "cold": 828,
+          "retained_context": 1087
+        },
+        "guarded_packed_json": {
+          "wire": 122,
+          "cold": 574,
+          "retained_context": 845
+        },
+        "negotiated_positional_json": {
+          "wire": 53,
+          "cold": 565,
+          "retained_context": 698
+        }
+      }
+    },
+    {
+      "family": "escapes",
+      "row_count": 4,
+      "shared_kind": false,
+      "turn": 0,
+      "costs": {
+        "typed_rows": {
+          "wire": 224,
+          "cold": 935,
+          "retained_context": 935
+        },
+        "guarded_packed_json": {
+          "wire": 256,
+          "cold": 708,
+          "retained_context": 708
+        },
+        "negotiated_positional_json": {
+          "wire": 187,
+          "cold": 699,
+          "retained_context": 699
+        }
+      }
+    },
+    {
+      "family": "escapes",
+      "row_count": 4,
+      "shared_kind": false,
+      "turn": 1,
+      "costs": {
+        "typed_rows": {
+          "wire": 236,
+          "cold": 947,
+          "retained_context": 1181
+        },
+        "guarded_packed_json": {
+          "wire": 272,
+          "cold": 724,
+          "retained_context": 990
+        },
+        "negotiated_positional_json": {
+          "wire": 203,
+          "cold": 715,
+          "retained_context": 912
+        }
+      }
+    },
+    {
+      "family": "escapes",
+      "row_count": 4,
+      "shared_kind": false,
+      "turn": 2,
+      "costs": {
+        "typed_rows": {
+          "wire": 226,
+          "cold": 937,
+          "retained_context": 1417
+        },
+        "guarded_packed_json": {
+          "wire": 264,
+          "cold": 716,
+          "retained_context": 1264
+        },
+        "negotiated_positional_json": {
+          "wire": 195,
+          "cold": 707,
+          "retained_context": 1117
+        }
+      }
+    },
+    {
+      "family": "escapes",
+      "row_count": 4,
+      "shared_kind": true,
+      "turn": 0,
+      "costs": {
+        "typed_rows": {
+          "wire": 205,
+          "cold": 916,
+          "retained_context": 916
+        },
+        "guarded_packed_json": {
+          "wire": 229,
+          "cold": 681,
+          "retained_context": 681
+        },
+        "negotiated_positional_json": {
+          "wire": 160,
+          "cold": 672,
+          "retained_context": 672
+        }
+      }
+    },
+    {
+      "family": "escapes",
+      "row_count": 4,
+      "shared_kind": true,
+      "turn": 1,
+      "costs": {
+        "typed_rows": {
+          "wire": 217,
+          "cold": 928,
+          "retained_context": 1143
+        },
+        "guarded_packed_json": {
+          "wire": 245,
+          "cold": 697,
+          "retained_context": 936
+        },
+        "negotiated_positional_json": {
+          "wire": 176,
+          "cold": 688,
+          "retained_context": 858
+        }
+      }
+    },
+    {
+      "family": "escapes",
+      "row_count": 4,
+      "shared_kind": true,
+      "turn": 2,
+      "costs": {
+        "typed_rows": {
+          "wire": 207,
+          "cold": 918,
+          "retained_context": 1360
+        },
+        "guarded_packed_json": {
+          "wire": 237,
+          "cold": 689,
+          "retained_context": 1183
+        },
+        "negotiated_positional_json": {
+          "wire": 168,
+          "cold": 680,
+          "retained_context": 1036
+        }
+      }
+    },
+    {
+      "family": "escapes",
+      "row_count": 16,
+      "shared_kind": false,
+      "turn": 0,
+      "costs": {
+        "typed_rows": {
+          "wire": 676,
+          "cold": 1387,
+          "retained_context": 1387
+        },
+        "guarded_packed_json": {
+          "wire": 820,
+          "cold": 1272,
+          "retained_context": 1272
+        },
+        "negotiated_positional_json": {
+          "wire": 751,
+          "cold": 1263,
+          "retained_context": 1263
+        }
+      }
+    },
+    {
+      "family": "escapes",
+      "row_count": 16,
+      "shared_kind": false,
+      "turn": 1,
+      "costs": {
+        "typed_rows": {
+          "wire": 692,
+          "cold": 1403,
+          "retained_context": 2089
+        },
+        "guarded_packed_json": {
+          "wire": 834,
+          "cold": 1286,
+          "retained_context": 2116
+        },
+        "negotiated_positional_json": {
+          "wire": 765,
+          "cold": 1277,
+          "retained_context": 2038
+        }
+      }
+    },
+    {
+      "family": "escapes",
+      "row_count": 16,
+      "shared_kind": false,
+      "turn": 2,
+      "costs": {
+        "typed_rows": {
+          "wire": 688,
+          "cold": 1399,
+          "retained_context": 2787
+        },
+        "guarded_packed_json": {
+          "wire": 830,
+          "cold": 1282,
+          "retained_context": 2956
+        },
+        "negotiated_positional_json": {
+          "wire": 761,
+          "cold": 1273,
+          "retained_context": 2809
+        }
+      }
+    },
+    {
+      "family": "escapes",
+      "row_count": 16,
+      "shared_kind": true,
+      "turn": 0,
+      "costs": {
+        "typed_rows": {
+          "wire": 561,
+          "cold": 1272,
+          "retained_context": 1272
+        },
+        "guarded_packed_json": {
+          "wire": 673,
+          "cold": 1125,
+          "retained_context": 1125
+        },
+        "negotiated_positional_json": {
+          "wire": 604,
+          "cold": 1116,
+          "retained_context": 1116
+        }
+      }
+    },
+    {
+      "family": "escapes",
+      "row_count": 16,
+      "shared_kind": true,
+      "turn": 1,
+      "costs": {
+        "typed_rows": {
+          "wire": 577,
+          "cold": 1288,
+          "retained_context": 1859
+        },
+        "guarded_packed_json": {
+          "wire": 687,
+          "cold": 1139,
+          "retained_context": 1822
+        },
+        "negotiated_positional_json": {
+          "wire": 618,
+          "cold": 1130,
+          "retained_context": 1744
+        }
+      }
+    },
+    {
+      "family": "escapes",
+      "row_count": 16,
+      "shared_kind": true,
+      "turn": 2,
+      "costs": {
+        "typed_rows": {
+          "wire": 573,
+          "cold": 1284,
+          "retained_context": 2442
+        },
+        "guarded_packed_json": {
+          "wire": 683,
+          "cold": 1135,
+          "retained_context": 2515
+        },
+        "negotiated_positional_json": {
+          "wire": 614,
+          "cold": 1126,
+          "retained_context": 2368
+        }
+      }
+    },
+    {
+      "family": "escapes",
+      "row_count": 64,
+      "shared_kind": false,
+      "turn": 0,
+      "costs": {
+        "typed_rows": {
+          "wire": 2502,
+          "cold": 3213,
+          "retained_context": 3213
+        },
+        "guarded_packed_json": {
+          "wire": 3074,
+          "cold": 3526,
+          "retained_context": 3526
+        },
+        "negotiated_positional_json": {
+          "wire": 3005,
+          "cold": 3517,
+          "retained_context": 3517
+        }
+      }
+    },
+    {
+      "family": "escapes",
+      "row_count": 64,
+      "shared_kind": false,
+      "turn": 1,
+      "costs": {
+        "typed_rows": {
+          "wire": 2514,
+          "cold": 3225,
+          "retained_context": 5737
+        },
+        "guarded_packed_json": {
+          "wire": 3090,
+          "cold": 3542,
+          "retained_context": 6626
+        },
+        "negotiated_positional_json": {
+          "wire": 3021,
+          "cold": 3533,
+          "retained_context": 6548
+        }
+      }
+    },
+    {
+      "family": "escapes",
+      "row_count": 64,
+      "shared_kind": false,
+      "turn": 2,
+      "costs": {
+        "typed_rows": {
+          "wire": 2504,
+          "cold": 3215,
+          "retained_context": 8251
+        },
+        "guarded_packed_json": {
+          "wire": 3082,
+          "cold": 3534,
+          "retained_context": 9718
+        },
+        "negotiated_positional_json": {
+          "wire": 3013,
+          "cold": 3525,
+          "retained_context": 9571
+        }
+      }
+    },
+    {
+      "family": "escapes",
+      "row_count": 64,
+      "shared_kind": true,
+      "turn": 0,
+      "costs": {
+        "typed_rows": {
+          "wire": 2003,
+          "cold": 2714,
+          "retained_context": 2714
+        },
+        "guarded_packed_json": {
+          "wire": 2447,
+          "cold": 2899,
+          "retained_context": 2899
+        },
+        "negotiated_positional_json": {
+          "wire": 2378,
+          "cold": 2890,
+          "retained_context": 2890
+        }
+      }
+    },
+    {
+      "family": "escapes",
+      "row_count": 64,
+      "shared_kind": true,
+      "turn": 1,
+      "costs": {
+        "typed_rows": {
+          "wire": 2015,
+          "cold": 2726,
+          "retained_context": 4739
+        },
+        "guarded_packed_json": {
+          "wire": 2463,
+          "cold": 2915,
+          "retained_context": 5372
+        },
+        "negotiated_positional_json": {
+          "wire": 2394,
+          "cold": 2906,
+          "retained_context": 5294
+        }
+      }
+    },
+    {
+      "family": "escapes",
+      "row_count": 64,
+      "shared_kind": true,
+      "turn": 2,
+      "costs": {
+        "typed_rows": {
+          "wire": 2005,
+          "cold": 2716,
+          "retained_context": 6754
+        },
+        "guarded_packed_json": {
+          "wire": 2455,
+          "cold": 2907,
+          "retained_context": 7837
+        },
+        "negotiated_positional_json": {
+          "wire": 2386,
+          "cold": 2898,
+          "retained_context": 7690
+        }
+      }
+    },
+    {
+      "family": "unicode",
+      "row_count": 1,
+      "shared_kind": false,
+      "turn": 0,
+      "costs": {
+        "typed_rows": {
+          "wire": 112,
+          "cold": 823,
+          "retained_context": 823
+        },
+        "guarded_packed_json": {
+          "wire": 119,
+          "cold": 571,
+          "retained_context": 571
+        },
+        "negotiated_positional_json": {
+          "wire": 50,
+          "cold": 562,
+          "retained_context": 562
+        }
+      }
+    },
+    {
+      "family": "unicode",
+      "row_count": 1,
+      "shared_kind": false,
+      "turn": 1,
+      "costs": {
+        "typed_rows": {
+          "wire": 116,
+          "cold": 827,
+          "retained_context": 949
+        },
+        "guarded_packed_json": {
+          "wire": 123,
+          "cold": 575,
+          "retained_context": 704
+        },
+        "negotiated_positional_json": {
+          "wire": 54,
+          "cold": 566,
+          "retained_context": 626
+        }
+      }
+    },
+    {
+      "family": "unicode",
+      "row_count": 1,
+      "shared_kind": false,
+      "turn": 2,
+      "costs": {
+        "typed_rows": {
+          "wire": 107,
+          "cold": 818,
+          "retained_context": 1066
+        },
+        "guarded_packed_json": {
+          "wire": 114,
+          "cold": 566,
+          "retained_context": 828
+        },
+        "negotiated_positional_json": {
+          "wire": 45,
+          "cold": 557,
+          "retained_context": 681
+        }
+      }
+    },
+    {
+      "family": "unicode",
+      "row_count": 1,
+      "shared_kind": true,
+      "turn": 0,
+      "costs": {
+        "typed_rows": {
+          "wire": 117,
+          "cold": 828,
+          "retained_context": 828
+        },
+        "guarded_packed_json": {
+          "wire": 122,
+          "cold": 574,
+          "retained_context": 574
+        },
+        "negotiated_positional_json": {
+          "wire": 53,
+          "cold": 565,
+          "retained_context": 565
+        }
+      }
+    },
+    {
+      "family": "unicode",
+      "row_count": 1,
+      "shared_kind": true,
+      "turn": 1,
+      "costs": {
+        "typed_rows": {
+          "wire": 121,
+          "cold": 832,
+          "retained_context": 959
+        },
+        "guarded_packed_json": {
+          "wire": 126,
+          "cold": 578,
+          "retained_context": 710
+        },
+        "negotiated_positional_json": {
+          "wire": 57,
+          "cold": 569,
+          "retained_context": 632
+        }
+      }
+    },
+    {
+      "family": "unicode",
+      "row_count": 1,
+      "shared_kind": true,
+      "turn": 2,
+      "costs": {
+        "typed_rows": {
+          "wire": 112,
+          "cold": 823,
+          "retained_context": 1081
+        },
+        "guarded_packed_json": {
+          "wire": 117,
+          "cold": 569,
+          "retained_context": 837
+        },
+        "negotiated_positional_json": {
+          "wire": 48,
+          "cold": 560,
+          "retained_context": 690
+        }
+      }
+    },
+    {
+      "family": "unicode",
+      "row_count": 4,
+      "shared_kind": false,
+      "turn": 0,
+      "costs": {
+        "typed_rows": {
+          "wire": 219,
+          "cold": 930,
+          "retained_context": 930
+        },
+        "guarded_packed_json": {
+          "wire": 247,
+          "cold": 699,
+          "retained_context": 699
+        },
+        "negotiated_positional_json": {
+          "wire": 178,
+          "cold": 690,
+          "retained_context": 690
+        }
+      }
+    },
+    {
+      "family": "unicode",
+      "row_count": 4,
+      "shared_kind": false,
+      "turn": 1,
+      "costs": {
+        "typed_rows": {
+          "wire": 231,
+          "cold": 942,
+          "retained_context": 1171
+        },
+        "guarded_packed_json": {
+          "wire": 259,
+          "cold": 711,
+          "retained_context": 968
+        },
+        "negotiated_positional_json": {
+          "wire": 190,
+          "cold": 702,
+          "retained_context": 890
+        }
+      }
+    },
+    {
+      "family": "unicode",
+      "row_count": 4,
+      "shared_kind": false,
+      "turn": 2,
+      "costs": {
+        "typed_rows": {
+          "wire": 227,
+          "cold": 938,
+          "retained_context": 1408
+        },
+        "guarded_packed_json": {
+          "wire": 255,
+          "cold": 707,
+          "retained_context": 1233
+        },
+        "negotiated_positional_json": {
+          "wire": 186,
+          "cold": 698,
+          "retained_context": 1086
+        }
+      }
+    },
+    {
+      "family": "unicode",
+      "row_count": 4,
+      "shared_kind": true,
+      "turn": 0,
+      "costs": {
+        "typed_rows": {
+          "wire": 200,
+          "cold": 911,
+          "retained_context": 911
+        },
+        "guarded_packed_json": {
+          "wire": 220,
+          "cold": 672,
+          "retained_context": 672
+        },
+        "negotiated_positional_json": {
+          "wire": 151,
+          "cold": 663,
+          "retained_context": 663
+        }
+      }
+    },
+    {
+      "family": "unicode",
+      "row_count": 4,
+      "shared_kind": true,
+      "turn": 1,
+      "costs": {
+        "typed_rows": {
+          "wire": 212,
+          "cold": 923,
+          "retained_context": 1133
+        },
+        "guarded_packed_json": {
+          "wire": 232,
+          "cold": 684,
+          "retained_context": 914
+        },
+        "negotiated_positional_json": {
+          "wire": 163,
+          "cold": 675,
+          "retained_context": 836
+        }
+      }
+    },
+    {
+      "family": "unicode",
+      "row_count": 4,
+      "shared_kind": true,
+      "turn": 2,
+      "costs": {
+        "typed_rows": {
+          "wire": 208,
+          "cold": 919,
+          "retained_context": 1351
+        },
+        "guarded_packed_json": {
+          "wire": 228,
+          "cold": 680,
+          "retained_context": 1152
+        },
+        "negotiated_positional_json": {
+          "wire": 159,
+          "cold": 671,
+          "retained_context": 1005
+        }
+      }
+    },
+    {
+      "family": "unicode",
+      "row_count": 16,
+      "shared_kind": false,
+      "turn": 0,
+      "costs": {
+        "typed_rows": {
+          "wire": 662,
+          "cold": 1373,
+          "retained_context": 1373
+        },
+        "guarded_packed_json": {
+          "wire": 774,
+          "cold": 1226,
+          "retained_context": 1226
+        },
+        "negotiated_positional_json": {
+          "wire": 705,
+          "cold": 1217,
+          "retained_context": 1217
+        }
+      }
+    },
+    {
+      "family": "unicode",
+      "row_count": 16,
+      "shared_kind": false,
+      "turn": 1,
+      "costs": {
+        "typed_rows": {
+          "wire": 681,
+          "cold": 1392,
+          "retained_context": 2064
+        },
+        "guarded_packed_json": {
+          "wire": 793,
+          "cold": 1245,
+          "retained_context": 2029
+        },
+        "negotiated_positional_json": {
+          "wire": 724,
+          "cold": 1236,
+          "retained_context": 1951
+        }
+      }
+    },
+    {
+      "family": "unicode",
+      "row_count": 16,
+      "shared_kind": false,
+      "turn": 2,
+      "costs": {
+        "typed_rows": {
+          "wire": 671,
+          "cold": 1382,
+          "retained_context": 2745
+        },
+        "guarded_packed_json": {
+          "wire": 783,
+          "cold": 1235,
+          "retained_context": 2822
+        },
+        "negotiated_positional_json": {
+          "wire": 714,
+          "cold": 1226,
+          "retained_context": 2675
+        }
+      }
+    },
+    {
+      "family": "unicode",
+      "row_count": 16,
+      "shared_kind": true,
+      "turn": 0,
+      "costs": {
+        "typed_rows": {
+          "wire": 547,
+          "cold": 1258,
+          "retained_context": 1258
+        },
+        "guarded_packed_json": {
+          "wire": 627,
+          "cold": 1079,
+          "retained_context": 1079
+        },
+        "negotiated_positional_json": {
+          "wire": 558,
+          "cold": 1070,
+          "retained_context": 1070
+        }
+      }
+    },
+    {
+      "family": "unicode",
+      "row_count": 16,
+      "shared_kind": true,
+      "turn": 1,
+      "costs": {
+        "typed_rows": {
+          "wire": 566,
+          "cold": 1277,
+          "retained_context": 1834
+        },
+        "guarded_packed_json": {
+          "wire": 646,
+          "cold": 1098,
+          "retained_context": 1735
+        },
+        "negotiated_positional_json": {
+          "wire": 577,
+          "cold": 1089,
+          "retained_context": 1657
+        }
+      }
+    },
+    {
+      "family": "unicode",
+      "row_count": 16,
+      "shared_kind": true,
+      "turn": 2,
+      "costs": {
+        "typed_rows": {
+          "wire": 556,
+          "cold": 1267,
+          "retained_context": 2400
+        },
+        "guarded_packed_json": {
+          "wire": 636,
+          "cold": 1088,
+          "retained_context": 2381
+        },
+        "negotiated_positional_json": {
+          "wire": 567,
+          "cold": 1079,
+          "retained_context": 2234
+        }
+      }
+    },
+    {
+      "family": "unicode",
+      "row_count": 64,
+      "shared_kind": false,
+      "turn": 0,
+      "costs": {
+        "typed_rows": {
+          "wire": 2449,
+          "cold": 3160,
+          "retained_context": 3160
+        },
+        "guarded_packed_json": {
+          "wire": 2897,
+          "cold": 3349,
+          "retained_context": 3349
+        },
+        "negotiated_positional_json": {
+          "wire": 2828,
+          "cold": 3340,
+          "retained_context": 3340
+        }
+      }
+    },
+    {
+      "family": "unicode",
+      "row_count": 64,
+      "shared_kind": false,
+      "turn": 1,
+      "costs": {
+        "typed_rows": {
+          "wire": 2461,
+          "cold": 3172,
+          "retained_context": 5631
+        },
+        "guarded_packed_json": {
+          "wire": 2909,
+          "cold": 3361,
+          "retained_context": 6268
+        },
+        "negotiated_positional_json": {
+          "wire": 2840,
+          "cold": 3352,
+          "retained_context": 6190
+        }
+      }
+    },
+    {
+      "family": "unicode",
+      "row_count": 64,
+      "shared_kind": false,
+      "turn": 2,
+      "costs": {
+        "typed_rows": {
+          "wire": 2457,
+          "cold": 3168,
+          "retained_context": 8098
+        },
+        "guarded_packed_json": {
+          "wire": 2905,
+          "cold": 3357,
+          "retained_context": 9183
+        },
+        "negotiated_positional_json": {
+          "wire": 2836,
+          "cold": 3348,
+          "retained_context": 9036
+        }
+      }
+    },
+    {
+      "family": "unicode",
+      "row_count": 64,
+      "shared_kind": true,
+      "turn": 0,
+      "costs": {
+        "typed_rows": {
+          "wire": 1950,
+          "cold": 2661,
+          "retained_context": 2661
+        },
+        "guarded_packed_json": {
+          "wire": 2270,
+          "cold": 2722,
+          "retained_context": 2722
+        },
+        "negotiated_positional_json": {
+          "wire": 2201,
+          "cold": 2713,
+          "retained_context": 2713
+        }
+      }
+    },
+    {
+      "family": "unicode",
+      "row_count": 64,
+      "shared_kind": true,
+      "turn": 1,
+      "costs": {
+        "typed_rows": {
+          "wire": 1962,
+          "cold": 2673,
+          "retained_context": 4633
+        },
+        "guarded_packed_json": {
+          "wire": 2282,
+          "cold": 2734,
+          "retained_context": 5014
+        },
+        "negotiated_positional_json": {
+          "wire": 2213,
+          "cold": 2725,
+          "retained_context": 4936
+        }
+      }
+    },
+    {
+      "family": "unicode",
+      "row_count": 64,
+      "shared_kind": true,
+      "turn": 2,
+      "costs": {
+        "typed_rows": {
+          "wire": 1958,
+          "cold": 2669,
+          "retained_context": 6601
+        },
+        "guarded_packed_json": {
+          "wire": 2278,
+          "cold": 2730,
+          "retained_context": 7302
+        },
+        "negotiated_positional_json": {
+          "wire": 2209,
+          "cold": 2721,
+          "retained_context": 7155
+        }
+      }
+    },
+    {
+      "family": "nested",
+      "row_count": 1,
+      "shared_kind": false,
+      "turn": 0,
+      "costs": {
+        "typed_rows": {
+          "wire": 165,
+          "cold": 876,
+          "retained_context": 876
+        },
+        "guarded_packed_json": {
+          "wire": 172,
+          "cold": 624,
+          "retained_context": 624
+        },
+        "negotiated_positional_json": {
+          "wire": 103,
+          "cold": 615,
+          "retained_context": 615
+        }
+      }
+    },
+    {
+      "family": "nested",
+      "row_count": 1,
+      "shared_kind": false,
+      "turn": 1,
+      "costs": {
+        "typed_rows": {
+          "wire": 164,
+          "cold": 875,
+          "retained_context": 1050
+        },
+        "guarded_packed_json": {
+          "wire": 171,
+          "cold": 623,
+          "retained_context": 805
+        },
+        "negotiated_positional_json": {
+          "wire": 102,
+          "cold": 614,
+          "retained_context": 727
+        }
+      }
+    },
+    {
+      "family": "nested",
+      "row_count": 1,
+      "shared_kind": false,
+      "turn": 2,
+      "costs": {
+        "typed_rows": {
+          "wire": 161,
+          "cold": 872,
+          "retained_context": 1221
+        },
+        "guarded_packed_json": {
+          "wire": 168,
+          "cold": 620,
+          "retained_context": 983
+        },
+        "negotiated_positional_json": {
+          "wire": 99,
+          "cold": 611,
+          "retained_context": 836
+        }
+      }
+    },
+    {
+      "family": "nested",
+      "row_count": 1,
+      "shared_kind": true,
+      "turn": 0,
+      "costs": {
+        "typed_rows": {
+          "wire": 170,
+          "cold": 881,
+          "retained_context": 881
+        },
+        "guarded_packed_json": {
+          "wire": 175,
+          "cold": 627,
+          "retained_context": 627
+        },
+        "negotiated_positional_json": {
+          "wire": 106,
+          "cold": 618,
+          "retained_context": 618
+        }
+      }
+    },
+    {
+      "family": "nested",
+      "row_count": 1,
+      "shared_kind": true,
+      "turn": 1,
+      "costs": {
+        "typed_rows": {
+          "wire": 169,
+          "cold": 880,
+          "retained_context": 1060
+        },
+        "guarded_packed_json": {
+          "wire": 174,
+          "cold": 626,
+          "retained_context": 811
+        },
+        "negotiated_positional_json": {
+          "wire": 105,
+          "cold": 617,
+          "retained_context": 733
+        }
+      }
+    },
+    {
+      "family": "nested",
+      "row_count": 1,
+      "shared_kind": true,
+      "turn": 2,
+      "costs": {
+        "typed_rows": {
+          "wire": 166,
+          "cold": 877,
+          "retained_context": 1236
+        },
+        "guarded_packed_json": {
+          "wire": 171,
+          "cold": 623,
+          "retained_context": 992
+        },
+        "negotiated_positional_json": {
+          "wire": 102,
+          "cold": 614,
+          "retained_context": 845
+        }
+      }
+    },
+    {
+      "family": "nested",
+      "row_count": 4,
+      "shared_kind": false,
+      "turn": 0,
+      "costs": {
+        "typed_rows": {
+          "wire": 429,
+          "cold": 1140,
+          "retained_context": 1140
+        },
+        "guarded_packed_json": {
+          "wire": 457,
+          "cold": 909,
+          "retained_context": 909
+        },
+        "negotiated_positional_json": {
+          "wire": 388,
+          "cold": 900,
+          "retained_context": 900
+        }
+      }
+    },
+    {
+      "family": "nested",
+      "row_count": 4,
+      "shared_kind": false,
+      "turn": 1,
+      "costs": {
+        "typed_rows": {
+          "wire": 429,
+          "cold": 1140,
+          "retained_context": 1579
+        },
+        "guarded_packed_json": {
+          "wire": 457,
+          "cold": 909,
+          "retained_context": 1376
+        },
+        "negotiated_positional_json": {
+          "wire": 388,
+          "cold": 900,
+          "retained_context": 1298
+        }
+      }
+    },
+    {
+      "family": "nested",
+      "row_count": 4,
+      "shared_kind": false,
+      "turn": 2,
+      "costs": {
+        "typed_rows": {
+          "wire": 431,
+          "cold": 1142,
+          "retained_context": 2020
+        },
+        "guarded_packed_json": {
+          "wire": 459,
+          "cold": 911,
+          "retained_context": 1845
+        },
+        "negotiated_positional_json": {
+          "wire": 390,
+          "cold": 902,
+          "retained_context": 1698
+        }
+      }
+    },
+    {
+      "family": "nested",
+      "row_count": 4,
+      "shared_kind": true,
+      "turn": 0,
+      "costs": {
+        "typed_rows": {
+          "wire": 413,
+          "cold": 1124,
+          "retained_context": 1124
+        },
+        "guarded_packed_json": {
+          "wire": 433,
+          "cold": 885,
+          "retained_context": 885
+        },
+        "negotiated_positional_json": {
+          "wire": 364,
+          "cold": 876,
+          "retained_context": 876
+        }
+      }
+    },
+    {
+      "family": "nested",
+      "row_count": 4,
+      "shared_kind": true,
+      "turn": 1,
+      "costs": {
+        "typed_rows": {
+          "wire": 413,
+          "cold": 1124,
+          "retained_context": 1547
+        },
+        "guarded_packed_json": {
+          "wire": 433,
+          "cold": 885,
+          "retained_context": 1328
+        },
+        "negotiated_positional_json": {
+          "wire": 364,
+          "cold": 876,
+          "retained_context": 1250
+        }
+      }
+    },
+    {
+      "family": "nested",
+      "row_count": 4,
+      "shared_kind": true,
+      "turn": 2,
+      "costs": {
+        "typed_rows": {
+          "wire": 415,
+          "cold": 1126,
+          "retained_context": 1972
+        },
+        "guarded_packed_json": {
+          "wire": 435,
+          "cold": 887,
+          "retained_context": 1773
+        },
+        "negotiated_positional_json": {
+          "wire": 366,
+          "cold": 878,
+          "retained_context": 1626
+        }
+      }
+    },
+    {
+      "family": "nested",
+      "row_count": 16,
+      "shared_kind": false,
+      "turn": 0,
+      "costs": {
+        "typed_rows": {
+          "wire": 1497,
+          "cold": 2208,
+          "retained_context": 2208
+        },
+        "guarded_packed_json": {
+          "wire": 1609,
+          "cold": 2061,
+          "retained_context": 2061
+        },
+        "negotiated_positional_json": {
+          "wire": 1540,
+          "cold": 2052,
+          "retained_context": 2052
+        }
+      }
+    },
+    {
+      "family": "nested",
+      "row_count": 16,
+      "shared_kind": false,
+      "turn": 1,
+      "costs": {
+        "typed_rows": {
+          "wire": 1507,
+          "cold": 2218,
+          "retained_context": 3725
+        },
+        "guarded_packed_json": {
+          "wire": 1619,
+          "cold": 2071,
+          "retained_context": 3690
+        },
+        "negotiated_positional_json": {
+          "wire": 1550,
+          "cold": 2062,
+          "retained_context": 3612
+        }
+      }
+    },
+    {
+      "family": "nested",
+      "row_count": 16,
+      "shared_kind": false,
+      "turn": 2,
+      "costs": {
+        "typed_rows": {
+          "wire": 1507,
+          "cold": 2218,
+          "retained_context": 5242
+        },
+        "guarded_packed_json": {
+          "wire": 1619,
+          "cold": 2071,
+          "retained_context": 5319
+        },
+        "negotiated_positional_json": {
+          "wire": 1550,
+          "cold": 2062,
+          "retained_context": 5172
+        }
+      }
+    },
+    {
+      "family": "nested",
+      "row_count": 16,
+      "shared_kind": true,
+      "turn": 0,
+      "costs": {
+        "typed_rows": {
+          "wire": 1397,
+          "cold": 2108,
+          "retained_context": 2108
+        },
+        "guarded_packed_json": {
+          "wire": 1477,
+          "cold": 1929,
+          "retained_context": 1929
+        },
+        "negotiated_positional_json": {
+          "wire": 1408,
+          "cold": 1920,
+          "retained_context": 1920
+        }
+      }
+    },
+    {
+      "family": "nested",
+      "row_count": 16,
+      "shared_kind": true,
+      "turn": 1,
+      "costs": {
+        "typed_rows": {
+          "wire": 1407,
+          "cold": 2118,
+          "retained_context": 3525
+        },
+        "guarded_packed_json": {
+          "wire": 1487,
+          "cold": 1939,
+          "retained_context": 3426
+        },
+        "negotiated_positional_json": {
+          "wire": 1418,
+          "cold": 1930,
+          "retained_context": 3348
+        }
+      }
+    },
+    {
+      "family": "nested",
+      "row_count": 16,
+      "shared_kind": true,
+      "turn": 2,
+      "costs": {
+        "typed_rows": {
+          "wire": 1407,
+          "cold": 2118,
+          "retained_context": 4942
+        },
+        "guarded_packed_json": {
+          "wire": 1487,
+          "cold": 1939,
+          "retained_context": 4923
+        },
+        "negotiated_positional_json": {
+          "wire": 1418,
+          "cold": 1930,
+          "retained_context": 4776
+        }
+      }
+    },
+    {
+      "family": "nested",
+      "row_count": 64,
+      "shared_kind": false,
+      "turn": 0,
+      "costs": {
+        "typed_rows": {
+          "wire": 5793,
+          "cold": 6504,
+          "retained_context": 6504
+        },
+        "guarded_packed_json": {
+          "wire": 6241,
+          "cold": 6693,
+          "retained_context": 6693
+        },
+        "negotiated_positional_json": {
+          "wire": 6172,
+          "cold": 6684,
+          "retained_context": 6684
+        }
+      }
+    },
+    {
+      "family": "nested",
+      "row_count": 64,
+      "shared_kind": false,
+      "turn": 1,
+      "costs": {
+        "typed_rows": {
+          "wire": 5831,
+          "cold": 6542,
+          "retained_context": 12345
+        },
+        "guarded_packed_json": {
+          "wire": 6279,
+          "cold": 6731,
+          "retained_context": 12982
+        },
+        "negotiated_positional_json": {
+          "wire": 6210,
+          "cold": 6722,
+          "retained_context": 12904
+        }
+      }
+    },
+    {
+      "family": "nested",
+      "row_count": 64,
+      "shared_kind": false,
+      "turn": 2,
+      "costs": {
+        "typed_rows": {
+          "wire": 5867,
+          "cold": 6578,
+          "retained_context": 18222
+        },
+        "guarded_packed_json": {
+          "wire": 6315,
+          "cold": 6767,
+          "retained_context": 19307
+        },
+        "negotiated_positional_json": {
+          "wire": 6246,
+          "cold": 6758,
+          "retained_context": 19160
+        }
+      }
+    },
+    {
+      "family": "nested",
+      "row_count": 64,
+      "shared_kind": true,
+      "turn": 0,
+      "costs": {
+        "typed_rows": {
+          "wire": 5357,
+          "cold": 6068,
+          "retained_context": 6068
+        },
+        "guarded_packed_json": {
+          "wire": 5677,
+          "cold": 6129,
+          "retained_context": 6129
+        },
+        "negotiated_positional_json": {
+          "wire": 5608,
+          "cold": 6120,
+          "retained_context": 6120
+        }
+      }
+    },
+    {
+      "family": "nested",
+      "row_count": 64,
+      "shared_kind": true,
+      "turn": 1,
+      "costs": {
+        "typed_rows": {
+          "wire": 5395,
+          "cold": 6106,
+          "retained_context": 11473
+        },
+        "guarded_packed_json": {
+          "wire": 5715,
+          "cold": 6167,
+          "retained_context": 11854
+        },
+        "negotiated_positional_json": {
+          "wire": 5646,
+          "cold": 6158,
+          "retained_context": 11776
+        }
+      }
+    },
+    {
+      "family": "nested",
+      "row_count": 64,
+      "shared_kind": true,
+      "turn": 2,
+      "costs": {
+        "typed_rows": {
+          "wire": 5431,
+          "cold": 6142,
+          "retained_context": 16914
+        },
+        "guarded_packed_json": {
+          "wire": 5751,
+          "cold": 6203,
+          "retained_context": 17615
+        },
+        "negotiated_positional_json": {
+          "wire": 5682,
+          "cold": 6194,
+          "retained_context": 17468
+        }
+      }
+    }
+  ]
+}

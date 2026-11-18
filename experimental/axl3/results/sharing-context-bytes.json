@@ -1,0 +1,2175 @@
+{
+  "unit": "utf8_bytes",
+  "tokenizer_sha256": null,
+  "scope": "48 synthetic scenarios of 3 sequential turns; exact constructed full input includes instructions, schema once and all previous wires for each mode. Not native chat-template/provider usage; no generation, repair or output tokens. Negotiated compact JSON requires trusted schema/version out of band and omits per-message identity guards; equivalent packed JSON has exactly identical guards and wires. Selection is exhaustive per turn over these small schema-ordered subset spaces, not over the entire three-turn plan or all workloads. Configured constant columns count only c0-c3; actual eligible constants include any other fields constant within the batch.",
+  "summary": {
+    "unshared_axl3": 623808,
+    "share_all_axl3": 443142,
+    "planned_axl3": 441396,
+    "byte_planned_axl3": 441396,
+    "equivalent_packed_json": 441396,
+    "negotiated_compact_json": 421524
+  },
+  "observations": [
+    {
+      "rows": 1,
+      "configured_constant_columns": 0,
+      "eligible_constant_columns": 6,
+      "value_length": 0,
+      "turn": 0,
+      "full_context_cost": {
+        "unshared_axl3": 601,
+        "share_all_axl3": 625,
+        "planned_axl3": 601,
+        "byte_planned_axl3": 601,
+        "equivalent_packed_json": 601,
+        "negotiated_compact_json": 532
+      }
+    },
+    {
+      "rows": 1,
+      "configured_constant_columns": 0,
+      "eligible_constant_columns": 6,
+      "value_length": 0,
+      "turn": 1,
+      "full_context_cost": {
+        "unshared_axl3": 711,
+        "share_all_axl3": 759,
+        "planned_axl3": 711,
+        "byte_planned_axl3": 711,
+        "equivalent_packed_json": 711,
+        "negotiated_compact_json": 573
+      }
+    },
+    {
+      "rows": 1,
+      "configured_constant_columns": 0,
+      "eligible_constant_columns": 6,
+      "value_length": 0,
+      "turn": 2,
+      "full_context_cost": {
+        "unshared_axl3": 821,
+        "share_all_axl3": 893,
+        "planned_axl3": 821,
+        "byte_planned_axl3": 821,
+        "equivalent_packed_json": 821,
+        "negotiated_compact_json": 614
+      }
+    },
+    {
+      "rows": 1,
+      "configured_constant_columns": 0,
+      "eligible_constant_columns": 6,
+      "value_length": 1,
+      "turn": 0,
+      "full_context_cost": {
+        "unshared_axl3": 605,
+        "share_all_axl3": 629,
+        "planned_axl3": 605,
+        "byte_planned_axl3": 605,
+        "equivalent_packed_json": 605,
+        "negotiated_compact_json": 536
+      }
+    },
+    {
+      "rows": 1,
+      "configured_constant_columns": 0,
+      "eligible_constant_columns": 6,
+      "value_length": 1,
+      "turn": 1,
+      "full_context_cost": {
+        "unshared_axl3": 719,
+        "share_all_axl3": 767,
+        "planned_axl3": 719,
+        "byte_planned_axl3": 719,
+        "equivalent_packed_json": 719,
+        "negotiated_compact_json": 581
+      }
+    },
+    {
+      "rows": 1,
+      "configured_constant_columns": 0,
+      "eligible_constant_columns": 6,
+      "value_length": 1,
+      "turn": 2,
+      "full_context_cost": {
+        "unshared_axl3": 833,
+        "share_all_axl3": 905,
+        "planned_axl3": 833,
+        "byte_planned_axl3": 833,
+        "equivalent_packed_json": 833,
+        "negotiated_compact_json": 626
+      }
+    },
+    {
+      "rows": 1,
+      "configured_constant_columns": 0,
+      "eligible_constant_columns": 6,
+      "value_length": 16,
+      "turn": 0,
+      "full_context_cost": {
+        "unshared_axl3": 665,
+        "share_all_axl3": 689,
+        "planned_axl3": 665,
+        "byte_planned_axl3": 665,
+        "equivalent_packed_json": 665,
+        "negotiated_compact_json": 596
+      }
+    },
+    {
+      "rows": 1,
+      "configured_constant_columns": 0,
+      "eligible_constant_columns": 6,
+      "value_length": 16,
+      "turn": 1,
+      "full_context_cost": {
+        "unshared_axl3": 839,
+        "share_all_axl3": 887,
+        "planned_axl3": 839,
+        "byte_planned_axl3": 839,
+        "equivalent_packed_json": 839,
+        "negotiated_compact_json": 701
+      }
+    },
+    {
+      "rows": 1,
+      "configured_constant_columns": 0,
+      "eligible_constant_columns": 6,
+      "value_length": 16,
+      "turn": 2,
+      "full_context_cost": {
+        "unshared_axl3": 1013,
+        "share_all_axl3": 1085,
+        "planned_axl3": 1013,
+        "byte_planned_axl3": 1013,
+        "equivalent_packed_json": 1013,
+        "negotiated_compact_json": 806
+      }
+    },
+    {
+      "rows": 1,
+      "configured_constant_columns": 0,
+      "eligible_constant_columns": 6,
+      "value_length": 128,
+      "turn": 0,
+      "full_context_cost": {
+        "unshared_axl3": 1113,
+        "share_all_axl3": 1137,
+        "planned_axl3": 1113,
+        "byte_planned_axl3": 1113,
+        "equivalent_packed_json": 1113,
+        "negotiated_compact_json": 1044
+      }
+    },
+    {
+      "rows": 1,
+      "configured_constant_columns": 0,
+      "eligible_constant_columns": 6,
+      "value_length": 128,
+      "turn": 1,
+      "full_context_cost": {
+        "unshared_axl3": 1735,
+        "share_all_axl3": 1783,
+        "planned_axl3": 1735,
+        "byte_planned_axl3": 1735,
+        "equivalent_packed_json": 1735,
+        "negotiated_compact_json": 1597
+      }
+    },
+    {
+      "rows": 1,
+      "configured_constant_columns": 0,
+      "eligible_constant_columns": 6,
+      "value_length": 128,
+      "turn": 2,
+      "full_context_cost": {
+        "unshared_axl3": 2357,
+        "share_all_axl3": 2429,
+        "planned_axl3": 2357,
+        "byte_planned_axl3": 2357,
+        "equivalent_packed_json": 2357,
+        "negotiated_compact_json": 2150
+      }
+    },
+    {
+      "rows": 1,
+      "configured_constant_columns": 1,
+      "eligible_constant_columns": 6,
+      "value_length": 0,
+      "turn": 0,
+      "full_context_cost": {
+        "unshared_axl3": 600,
+        "share_all_axl3": 624,
+        "planned_axl3": 600,
+        "byte_planned_axl3": 600,
+        "equivalent_packed_json": 600,
+        "negotiated_compact_json": 531
+      }
+    },
+    {
+      "rows": 1,
+      "configured_constant_columns": 1,
+      "eligible_constant_columns": 6,
+      "value_length": 0,
+      "turn": 1,
+      "full_context_cost": {
+        "unshared_axl3": 709,
+        "share_all_axl3": 757,
+        "planned_axl3": 709,
+        "byte_planned_axl3": 709,
+        "equivalent_packed_json": 709,
+        "negotiated_compact_json": 571
+      }
+    },
+    {
+      "rows": 1,
+      "configured_constant_columns": 1,
+      "eligible_constant_columns": 6,
+      "value_length": 0,
+      "turn": 2,
+      "full_context_cost": {
+        "unshared_axl3": 818,
+        "share_all_axl3": 890,
+        "planned_axl3": 818,
+        "byte_planned_axl3": 818,
+        "equivalent_packed_json": 818,
+        "negotiated_compact_json": 611
+      }
+    },
+    {
+      "rows": 1,
+      "configured_constant_columns": 1,
+      "eligible_constant_columns": 6,
+      "value_length": 1,
+      "turn": 0,
+      "full_context_cost": {
+        "unshared_axl3": 604,
+        "share_all_axl3": 628,
+        "planned_axl3": 604,
+        "byte_planned_axl3": 604,
+        "equivalent_packed_json": 604,
+        "negotiated_compact_json": 535
+      }
+    },
+    {
+      "rows": 1,
+      "configured_constant_columns": 1,
+      "eligible_constant_columns": 6,
+      "value_length": 1,
+      "turn": 1,
+      "full_context_cost": {
+        "unshared_axl3": 717,
+        "share_all_axl3": 765,
+        "planned_axl3": 717,
+        "byte_planned_axl3": 717,
+        "equivalent_packed_json": 717,
+        "negotiated_compact_json": 579
+      }
+    },
+    {
+      "rows": 1,
+      "configured_constant_columns": 1,
+      "eligible_constant_columns": 6,
+      "value_length": 1,
+      "turn": 2,
+      "full_context_cost": {
+        "unshared_axl3": 830,
+        "share_all_axl3": 902,
+        "planned_axl3": 830,
+        "byte_planned_axl3": 830,
+        "equivalent_packed_json": 830,
+        "negotiated_compact_json": 623
+      }
+    },
+    {
+      "rows": 1,
+      "configured_constant_columns": 1,
+      "eligible_constant_columns": 6,
+      "value_length": 16,
+      "turn": 0,
+      "full_context_cost": {
+        "unshared_axl3": 664,
+        "share_all_axl3": 688,
+        "planned_axl3": 664,
+        "byte_planned_axl3": 664,
+        "equivalent_packed_json": 664,
+        "negotiated_compact_json": 595
+      }
+    },
+    {
+      "rows": 1,
+      "configured_constant_columns": 1,
+      "eligible_constant_columns": 6,
+      "value_length": 16,
+      "turn": 1,
+      "full_context_cost": {
+        "unshared_axl3": 837,
+        "share_all_axl3": 885,
+        "planned_axl3": 837,
+        "byte_planned_axl3": 837,
+        "equivalent_packed_json": 837,
+        "negotiated_compact_json": 699
+      }
+    },
+    {
+      "rows": 1,
+      "configured_constant_columns": 1,
+      "eligible_constant_columns": 6,
+      "value_length": 16,
+      "turn": 2,
+      "full_context_cost": {
+        "unshared_axl3": 1010,
+        "share_all_axl3": 1082,
+        "planned_axl3": 1010,
+        "byte_planned_axl3": 1010,
+        "equivalent_packed_json": 1010,
+        "negotiated_compact_json": 803
+      }
+    },
+    {
+      "rows": 1,
+      "configured_constant_columns": 1,
+      "eligible_constant_columns": 6,
+      "value_length": 128,
+      "turn": 0,
+      "full_context_cost": {
+        "unshared_axl3": 1112,
+        "share_all_axl3": 1136,
+        "planned_axl3": 1112,
+        "byte_planned_axl3": 1112,
+        "equivalent_packed_json": 1112,
+        "negotiated_compact_json": 1043
+      }
+    },
+    {
+      "rows": 1,
+      "configured_constant_columns": 1,
+      "eligible_constant_columns": 6,
+      "value_length": 128,
+      "turn": 1,
+      "full_context_cost": {
+        "unshared_axl3": 1733,
+        "share_all_axl3": 1781,
+        "planned_axl3": 1733,
+        "byte_planned_axl3": 1733,
+        "equivalent_packed_json": 1733,
+        "negotiated_compact_json": 1595
+      }
+    },
+    {
+      "rows": 1,
+      "configured_constant_columns": 1,
+      "eligible_constant_columns": 6,
+      "value_length": 128,
+      "turn": 2,
+      "full_context_cost": {
+        "unshared_axl3": 2354,
+        "share_all_axl3": 2426,
+        "planned_axl3": 2354,
+        "byte_planned_axl3": 2354,
+        "equivalent_packed_json": 2354,
+        "negotiated_compact_json": 2147
+      }
+    },
+    {
+      "rows": 1,
+      "configured_constant_columns": 4,
+      "eligible_constant_columns": 6,
+      "value_length": 0,
+      "turn": 0,
+      "full_context_cost": {
+        "unshared_axl3": 597,
+        "share_all_axl3": 621,
+        "planned_axl3": 597,
+        "byte_planned_axl3": 597,
+        "equivalent_packed_json": 597,
+        "negotiated_compact_json": 528
+      }
+    },
+    {
+      "rows": 1,
+      "configured_constant_columns": 4,
+      "eligible_constant_columns": 6,
+      "value_length": 0,
+      "turn": 1,
+      "full_context_cost": {
+        "unshared_axl3": 703,
+        "share_all_axl3": 751,
+        "planned_axl3": 703,
+        "byte_planned_axl3": 703,
+        "equivalent_packed_json": 703,
+        "negotiated_compact_json": 565
+      }
+    },
+    {
+      "rows": 1,
+      "configured_constant_columns": 4,
+      "eligible_constant_columns": 6,
+      "value_length": 0,
+      "turn": 2,
+      "full_context_cost": {
+        "unshared_axl3": 809,
+        "share_all_axl3": 881,
+        "planned_axl3": 809,
+        "byte_planned_axl3": 809,
+        "equivalent_packed_json": 809,
+        "negotiated_compact_json": 602
+      }
+    },
+    {
+      "rows": 1,
+      "configured_constant_columns": 4,
+      "eligible_constant_columns": 6,
+      "value_length": 1,
+      "turn": 0,
+      "full_context_cost": {
+        "unshared_axl3": 601,
+        "share_all_axl3": 625,
+        "planned_axl3": 601,
+        "byte_planned_axl3": 601,
+        "equivalent_packed_json": 601,
+        "negotiated_compact_json": 532
+      }
+    },
+    {
+      "rows": 1,
+      "configured_constant_columns": 4,
+      "eligible_constant_columns": 6,
+      "value_length": 1,
+      "turn": 1,
+      "full_context_cost": {
+        "unshared_axl3": 711,
+        "share_all_axl3": 759,
+        "planned_axl3": 711,
+        "byte_planned_axl3": 711,
+        "equivalent_packed_json": 711,
+        "negotiated_compact_json": 573
+      }
+    },
+    {
+      "rows": 1,
+      "configured_constant_columns": 4,
+      "eligible_constant_columns": 6,
+      "value_length": 1,
+      "turn": 2,
+      "full_context_cost": {
+        "unshared_axl3": 821,
+        "share_all_axl3": 893,
+        "planned_axl3": 821,
+        "byte_planned_axl3": 821,
+        "equivalent_packed_json": 821,
+        "negotiated_compact_json": 614
+      }
+    },
+    {
+      "rows": 1,
+      "configured_constant_columns": 4,
+      "eligible_constant_columns": 6,
+      "value_length": 16,
+      "turn": 0,
+      "full_context_cost": {
+        "unshared_axl3": 661,
+        "share_all_axl3": 685,
+        "planned_axl3": 661,
+        "byte_planned_axl3": 661,
+        "equivalent_packed_json": 661,
+        "negotiated_compact_json": 592
+      }
+    },
+    {
+      "rows": 1,
+      "configured_constant_columns": 4,
+      "eligible_constant_columns": 6,
+      "value_length": 16,
+      "turn": 1,
+      "full_context_cost": {
+        "unshared_axl3": 831,
+        "share_all_axl3": 879,
+        "planned_axl3": 831,
+        "byte_planned_axl3": 831,
+        "equivalent_packed_json": 831,
+        "negotiated_compact_json": 693
+      }
+    },
+    {
+      "rows": 1,
+      "configured_constant_columns": 4,
+      "eligible_constant_columns": 6,
+      "value_length": 16,
+      "turn": 2,
+      "full_context_cost": {
+        "unshared_axl3": 1001,
+        "share_all_axl3": 1073,
+        "planned_axl3": 1001,
+        "byte_planned_axl3": 1001,
+        "equivalent_packed_json": 1001,
+        "negotiated_compact_json": 794
+      }
+    },
+    {
+      "rows": 1,
+      "configured_constant_columns": 4,
+      "eligible_constant_columns": 6,
+      "value_length": 128,
+      "turn": 0,
+      "full_context_cost": {
+        "unshared_axl3": 1109,
+        "share_all_axl3": 1133,
+        "planned_axl3": 1109,
+        "byte_planned_axl3": 1109,
+        "equivalent_packed_json": 1109,
+        "negotiated_compact_json": 1040
+      }
+    },
+    {
+      "rows": 1,
+      "configured_constant_columns": 4,
+      "eligible_constant_columns": 6,
+      "value_length": 128,
+      "turn": 1,
+      "full_context_cost": {
+        "unshared_axl3": 1727,
+        "share_all_axl3": 1775,
+        "planned_axl3": 1727,
+        "byte_planned_axl3": 1727,
+        "equivalent_packed_json": 1727,
+        "negotiated_compact_json": 1589
+      }
+    },
+    {
+      "rows": 1,
+      "configured_constant_columns": 4,
+      "eligible_constant_columns": 6,
+      "value_length": 128,
+      "turn": 2,
+      "full_context_cost": {
+        "unshared_axl3": 2345,
+        "share_all_axl3": 2417,
+        "planned_axl3": 2345,
+        "byte_planned_axl3": 2345,
+        "equivalent_packed_json": 2345,
+        "negotiated_compact_json": 2138
+      }
+    },
+    {
+      "rows": 2,
+      "configured_constant_columns": 0,
+      "eligible_constant_columns": 0,
+      "value_length": 0,
+      "turn": 0,
+      "full_context_cost": {
+        "unshared_axl3": 626,
+        "share_all_axl3": 626,
+        "planned_axl3": 626,
+        "byte_planned_axl3": 626,
+        "equivalent_packed_json": 626,
+        "negotiated_compact_json": 557
+      }
+    },
+    {
+      "rows": 2,
+      "configured_constant_columns": 0,
+      "eligible_constant_columns": 0,
+      "value_length": 0,
+      "turn": 1,
+      "full_context_cost": {
+        "unshared_axl3": 761,
+        "share_all_axl3": 761,
+        "planned_axl3": 761,
+        "byte_planned_axl3": 761,
+        "equivalent_packed_json": 761,
+        "negotiated_compact_json": 623
+      }
+    },
+    {
+      "rows": 2,
+      "configured_constant_columns": 0,
+      "eligible_constant_columns": 0,
+      "value_length": 0,
+      "turn": 2,
+      "full_context_cost": {
+        "unshared_axl3": 896,
+        "share_all_axl3": 896,
+        "planned_axl3": 896,
+        "byte_planned_axl3": 896,
+        "equivalent_packed_json": 896,
+        "negotiated_compact_json": 689
+      }
+    },
+    {
+      "rows": 2,
+      "configured_constant_columns": 0,
+      "eligible_constant_columns": 0,
+      "value_length": 1,
+      "turn": 0,
+      "full_context_cost": {
+        "unshared_axl3": 634,
+        "share_all_axl3": 634,
+        "planned_axl3": 634,
+        "byte_planned_axl3": 634,
+        "equivalent_packed_json": 634,
+        "negotiated_compact_json": 565
+      }
+    },
+    {
+      "rows": 2,
+      "configured_constant_columns": 0,
+      "eligible_constant_columns": 0,
+      "value_length": 1,
+      "turn": 1,
+      "full_context_cost": {
+        "unshared_axl3": 777,
+        "share_all_axl3": 777,
+        "planned_axl3": 777,
+        "byte_planned_axl3": 777,
+        "equivalent_packed_json": 777,
+        "negotiated_compact_json": 639
+      }
+    },
+    {
+      "rows": 2,
+      "configured_constant_columns": 0,
+      "eligible_constant_columns": 0,
+      "value_length": 1,
+      "turn": 2,
+      "full_context_cost": {
+        "unshared_axl3": 920,
+        "share_all_axl3": 920,
+        "planned_axl3": 920,
+        "byte_planned_axl3": 920,
+        "equivalent_packed_json": 920,
+        "negotiated_compact_json": 713
+      }
+    },
+    {
+      "rows": 2,
+      "configured_constant_columns": 0,
+      "eligible_constant_columns": 0,
+      "value_length": 16,
+      "turn": 0,
+      "full_context_cost": {
+        "unshared_axl3": 754,
+        "share_all_axl3": 754,
+        "planned_axl3": 754,
+        "byte_planned_axl3": 754,
+        "equivalent_packed_json": 754,
+        "negotiated_compact_json": 685
+      }
+    },
+    {
+      "rows": 2,
+      "configured_constant_columns": 0,
+      "eligible_constant_columns": 0,
+      "value_length": 16,
+      "turn": 1,
+      "full_context_cost": {
+        "unshared_axl3": 1017,
+        "share_all_axl3": 1017,
+        "planned_axl3": 1017,
+        "byte_planned_axl3": 1017,
+        "equivalent_packed_json": 1017,
+        "negotiated_compact_json": 879
+      }
+    },
+    {
+      "rows": 2,
+      "configured_constant_columns": 0,
+      "eligible_constant_columns": 0,
+      "value_length": 16,
+      "turn": 2,
+      "full_context_cost": {
+        "unshared_axl3": 1280,
+        "share_all_axl3": 1280,
+        "planned_axl3": 1280,
+        "byte_planned_axl3": 1280,
+        "equivalent_packed_json": 1280,
+        "negotiated_compact_json": 1073
+      }
+    },
+    {
+      "rows": 2,
+      "configured_constant_columns": 0,
+      "eligible_constant_columns": 0,
+      "value_length": 128,
+      "turn": 0,
+      "full_context_cost": {
+        "unshared_axl3": 1650,
+        "share_all_axl3": 1650,
+        "planned_axl3": 1650,
+        "byte_planned_axl3": 1650,
+        "equivalent_packed_json": 1650,
+        "negotiated_compact_json": 1581
+      }
+    },
+    {
+      "rows": 2,
+      "configured_constant_columns": 0,
+      "eligible_constant_columns": 0,
+      "value_length": 128,
+      "turn": 1,
+      "full_context_cost": {
+        "unshared_axl3": 2809,
+        "share_all_axl3": 2809,
+        "planned_axl3": 2809,
+        "byte_planned_axl3": 2809,
+        "equivalent_packed_json": 2809,
+        "negotiated_compact_json": 2671
+      }
+    },
+    {
+      "rows": 2,
+      "configured_constant_columns": 0,
+      "eligible_constant_columns": 0,
+      "value_length": 128,
+      "turn": 2,
+      "full_context_cost": {
+        "unshared_axl3": 3968,
+        "share_all_axl3": 3968,
+        "planned_axl3": 3968,
+        "byte_planned_axl3": 3968,
+        "equivalent_packed_json": 3968,
+        "negotiated_compact_json": 3761
+      }
+    },
+    {
+      "rows": 2,
+      "configured_constant_columns": 1,
+      "eligible_constant_columns": 1,
+      "value_length": 0,
+      "turn": 0,
+      "full_context_cost": {
+        "unshared_axl3": 624,
+        "share_all_axl3": 624,
+        "planned_axl3": 624,
+        "byte_planned_axl3": 624,
+        "equivalent_packed_json": 624,
+        "negotiated_compact_json": 555
+      }
+    },
+    {
+      "rows": 2,
+      "configured_constant_columns": 1,
+      "eligible_constant_columns": 1,
+      "value_length": 0,
+      "turn": 1,
+      "full_context_cost": {
+        "unshared_axl3": 757,
+        "share_all_axl3": 757,
+        "planned_axl3": 757,
+        "byte_planned_axl3": 757,
+        "equivalent_packed_json": 757,
+        "negotiated_compact_json": 619
+      }
+    },
+    {
+      "rows": 2,
+      "configured_constant_columns": 1,
+      "eligible_constant_columns": 1,
+      "value_length": 0,
+      "turn": 2,
+      "full_context_cost": {
+        "unshared_axl3": 890,
+        "share_all_axl3": 890,
+        "planned_axl3": 890,
+        "byte_planned_axl3": 890,
+        "equivalent_packed_json": 890,
+        "negotiated_compact_json": 683
+      }
+    },
+    {
+      "rows": 2,
+      "configured_constant_columns": 1,
+      "eligible_constant_columns": 1,
+      "value_length": 1,
+      "turn": 0,
+      "full_context_cost": {
+        "unshared_axl3": 632,
+        "share_all_axl3": 631,
+        "planned_axl3": 631,
+        "byte_planned_axl3": 631,
+        "equivalent_packed_json": 631,
+        "negotiated_compact_json": 562
+      }
+    },
+    {
+      "rows": 2,
+      "configured_constant_columns": 1,
+      "eligible_constant_columns": 1,
+      "value_length": 1,
+      "turn": 1,
+      "full_context_cost": {
+        "unshared_axl3": 773,
+        "share_all_axl3": 771,
+        "planned_axl3": 771,
+        "byte_planned_axl3": 771,
+        "equivalent_packed_json": 771,
+        "negotiated_compact_json": 633
+      }
+    },
+    {
+      "rows": 2,
+      "configured_constant_columns": 1,
+      "eligible_constant_columns": 1,
+      "value_length": 1,
+      "turn": 2,
+      "full_context_cost": {
+        "unshared_axl3": 914,
+        "share_all_axl3": 911,
+        "planned_axl3": 911,
+        "byte_planned_axl3": 911,
+        "equivalent_packed_json": 911,
+        "negotiated_compact_json": 704
+      }
+    },
+    {
+      "rows": 2,
+      "configured_constant_columns": 1,
+      "eligible_constant_columns": 1,
+      "value_length": 16,
+      "turn": 0,
+      "full_context_cost": {
+        "unshared_axl3": 752,
+        "share_all_axl3": 736,
+        "planned_axl3": 736,
+        "byte_planned_axl3": 736,
+        "equivalent_packed_json": 736,
+        "negotiated_compact_json": 667
+      }
+    },
+    {
+      "rows": 2,
+      "configured_constant_columns": 1,
+      "eligible_constant_columns": 1,
+      "value_length": 16,
+      "turn": 1,
+      "full_context_cost": {
+        "unshared_axl3": 1013,
+        "share_all_axl3": 981,
+        "planned_axl3": 981,
+        "byte_planned_axl3": 981,
+        "equivalent_packed_json": 981,
+        "negotiated_compact_json": 843
+      }
+    },
+    {
+      "rows": 2,
+      "configured_constant_columns": 1,
+      "eligible_constant_columns": 1,
+      "value_length": 16,
+      "turn": 2,
+      "full_context_cost": {
+        "unshared_axl3": 1274,
+        "share_all_axl3": 1226,
+        "planned_axl3": 1226,
+        "byte_planned_axl3": 1226,
+        "equivalent_packed_json": 1226,
+        "negotiated_compact_json": 1019
+      }
+    },
+    {
+      "rows": 2,
+      "configured_constant_columns": 1,
+      "eligible_constant_columns": 1,
+      "value_length": 128,
+      "turn": 0,
+      "full_context_cost": {
+        "unshared_axl3": 1648,
+        "share_all_axl3": 1520,
+        "planned_axl3": 1520,
+        "byte_planned_axl3": 1520,
+        "equivalent_packed_json": 1520,
+        "negotiated_compact_json": 1451
+      }
+    },
+    {
+      "rows": 2,
+      "configured_constant_columns": 1,
+      "eligible_constant_columns": 1,
+      "value_length": 128,
+      "turn": 1,
+      "full_context_cost": {
+        "unshared_axl3": 2805,
+        "share_all_axl3": 2549,
+        "planned_axl3": 2549,
+        "byte_planned_axl3": 2549,
+        "equivalent_packed_json": 2549,
+        "negotiated_compact_json": 2411
+      }
+    },
+    {
+      "rows": 2,
+      "configured_constant_columns": 1,
+      "eligible_constant_columns": 1,
+      "value_length": 128,
+      "turn": 2,
+      "full_context_cost": {
+        "unshared_axl3": 3962,
+        "share_all_axl3": 3578,
+        "planned_axl3": 3578,
+        "byte_planned_axl3": 3578,
+        "equivalent_packed_json": 3578,
+        "negotiated_compact_json": 3371
+      }
+    },
+    {
+      "rows": 2,
+      "configured_constant_columns": 4,
+      "eligible_constant_columns": 4,
+      "value_length": 0,
+      "turn": 0,
+      "full_context_cost": {
+        "unshared_axl3": 618,
+        "share_all_axl3": 621,
+        "planned_axl3": 618,
+        "byte_planned_axl3": 618,
+        "equivalent_packed_json": 618,
+        "negotiated_compact_json": 549
+      }
+    },
+    {
+      "rows": 2,
+      "configured_constant_columns": 4,
+      "eligible_constant_columns": 4,
+      "value_length": 0,
+      "turn": 1,
+      "full_context_cost": {
+        "unshared_axl3": 745,
+        "share_all_axl3": 751,
+        "planned_axl3": 745,
+        "byte_planned_axl3": 745,
+        "equivalent_packed_json": 745,
+        "negotiated_compact_json": 607
+      }
+    },
+    {
+      "rows": 2,
+      "configured_constant_columns": 4,
+      "eligible_constant_columns": 4,
+      "value_length": 0,
+      "turn": 2,
+      "full_context_cost": {
+        "unshared_axl3": 872,
+        "share_all_axl3": 881,
+        "planned_axl3": 872,
+        "byte_planned_axl3": 872,
+        "equivalent_packed_json": 872,
+        "negotiated_compact_json": 665
+      }
+    },
+    {
+      "rows": 2,
+      "configured_constant_columns": 4,
+      "eligible_constant_columns": 4,
+      "value_length": 1,
+      "turn": 0,
+      "full_context_cost": {
+        "unshared_axl3": 626,
+        "share_all_axl3": 625,
+        "planned_axl3": 625,
+        "byte_planned_axl3": 625,
+        "equivalent_packed_json": 625,
+        "negotiated_compact_json": 556
+      }
+    },
+    {
+      "rows": 2,
+      "configured_constant_columns": 4,
+      "eligible_constant_columns": 4,
+      "value_length": 1,
+      "turn": 1,
+      "full_context_cost": {
+        "unshared_axl3": 761,
+        "share_all_axl3": 759,
+        "planned_axl3": 759,
+        "byte_planned_axl3": 759,
+        "equivalent_packed_json": 759,
+        "negotiated_compact_json": 621
+      }
+    },
+    {
+      "rows": 2,
+      "configured_constant_columns": 4,
+      "eligible_constant_columns": 4,
+      "value_length": 1,
+      "turn": 2,
+      "full_context_cost": {
+        "unshared_axl3": 896,
+        "share_all_axl3": 893,
+        "planned_axl3": 893,
+        "byte_planned_axl3": 893,
+        "equivalent_packed_json": 893,
+        "negotiated_compact_json": 686
+      }
+    },
+    {
+      "rows": 2,
+      "configured_constant_columns": 4,
+      "eligible_constant_columns": 4,
+      "value_length": 16,
+      "turn": 0,
+      "full_context_cost": {
+        "unshared_axl3": 746,
+        "share_all_axl3": 685,
+        "planned_axl3": 685,
+        "byte_planned_axl3": 685,
+        "equivalent_packed_json": 685,
+        "negotiated_compact_json": 616
+      }
+    },
+    {
+      "rows": 2,
+      "configured_constant_columns": 4,
+      "eligible_constant_columns": 4,
+      "value_length": 16,
+      "turn": 1,
+      "full_context_cost": {
+        "unshared_axl3": 1001,
+        "share_all_axl3": 879,
+        "planned_axl3": 879,
+        "byte_planned_axl3": 879,
+        "equivalent_packed_json": 879,
+        "negotiated_compact_json": 741
+      }
+    },
+    {
+      "rows": 2,
+      "configured_constant_columns": 4,
+      "eligible_constant_columns": 4,
+      "value_length": 16,
+      "turn": 2,
+      "full_context_cost": {
+        "unshared_axl3": 1256,
+        "share_all_axl3": 1073,
+        "planned_axl3": 1073,
+        "byte_planned_axl3": 1073,
+        "equivalent_packed_json": 1073,
+        "negotiated_compact_json": 866
+      }
+    },
+    {
+      "rows": 2,
+      "configured_constant_columns": 4,
+      "eligible_constant_columns": 4,
+      "value_length": 128,
+      "turn": 0,
+      "full_context_cost": {
+        "unshared_axl3": 1642,
+        "share_all_axl3": 1133,
+        "planned_axl3": 1133,
+        "byte_planned_axl3": 1133,
+        "equivalent_packed_json": 1133,
+        "negotiated_compact_json": 1064
+      }
+    },
+    {
+      "rows": 2,
+      "configured_constant_columns": 4,
+      "eligible_constant_columns": 4,
+      "value_length": 128,
+      "turn": 1,
+      "full_context_cost": {
+        "unshared_axl3": 2793,
+        "share_all_axl3": 1775,
+        "planned_axl3": 1775,
+        "byte_planned_axl3": 1775,
+        "equivalent_packed_json": 1775,
+        "negotiated_compact_json": 1637
+      }
+    },
+    {
+      "rows": 2,
+      "configured_constant_columns": 4,
+      "eligible_constant_columns": 4,
+      "value_length": 128,
+      "turn": 2,
+      "full_context_cost": {
+        "unshared_axl3": 3944,
+        "share_all_axl3": 2417,
+        "planned_axl3": 2417,
+        "byte_planned_axl3": 2417,
+        "equivalent_packed_json": 2417,
+        "negotiated_compact_json": 2210
+      }
+    },
+    {
+      "rows": 8,
+      "configured_constant_columns": 0,
+      "eligible_constant_columns": 0,
+      "value_length": 0,
+      "turn": 0,
+      "full_context_cost": {
+        "unshared_axl3": 776,
+        "share_all_axl3": 776,
+        "planned_axl3": 776,
+        "byte_planned_axl3": 776,
+        "equivalent_packed_json": 776,
+        "negotiated_compact_json": 707
+      }
+    },
+    {
+      "rows": 8,
+      "configured_constant_columns": 0,
+      "eligible_constant_columns": 0,
+      "value_length": 0,
+      "turn": 1,
+      "full_context_cost": {
+        "unshared_axl3": 1067,
+        "share_all_axl3": 1067,
+        "planned_axl3": 1067,
+        "byte_planned_axl3": 1067,
+        "equivalent_packed_json": 1067,
+        "negotiated_compact_json": 929
+      }
+    },
+    {
+      "rows": 8,
+      "configured_constant_columns": 0,
+      "eligible_constant_columns": 0,
+      "value_length": 0,
+      "turn": 2,
+      "full_context_cost": {
+        "unshared_axl3": 1360,
+        "share_all_axl3": 1360,
+        "planned_axl3": 1360,
+        "byte_planned_axl3": 1360,
+        "equivalent_packed_json": 1360,
+        "negotiated_compact_json": 1153
+      }
+    },
+    {
+      "rows": 8,
+      "configured_constant_columns": 0,
+      "eligible_constant_columns": 0,
+      "value_length": 1,
+      "turn": 0,
+      "full_context_cost": {
+        "unshared_axl3": 808,
+        "share_all_axl3": 808,
+        "planned_axl3": 808,
+        "byte_planned_axl3": 808,
+        "equivalent_packed_json": 808,
+        "negotiated_compact_json": 739
+      }
+    },
+    {
+      "rows": 8,
+      "configured_constant_columns": 0,
+      "eligible_constant_columns": 0,
+      "value_length": 1,
+      "turn": 1,
+      "full_context_cost": {
+        "unshared_axl3": 1131,
+        "share_all_axl3": 1131,
+        "planned_axl3": 1131,
+        "byte_planned_axl3": 1131,
+        "equivalent_packed_json": 1131,
+        "negotiated_compact_json": 993
+      }
+    },
+    {
+      "rows": 8,
+      "configured_constant_columns": 0,
+      "eligible_constant_columns": 0,
+      "value_length": 1,
+      "turn": 2,
+      "full_context_cost": {
+        "unshared_axl3": 1456,
+        "share_all_axl3": 1456,
+        "planned_axl3": 1456,
+        "byte_planned_axl3": 1456,
+        "equivalent_packed_json": 1456,
+        "negotiated_compact_json": 1249
+      }
+    },
+    {
+      "rows": 8,
+      "configured_constant_columns": 0,
+      "eligible_constant_columns": 0,
+      "value_length": 16,
+      "turn": 0,
+      "full_context_cost": {
+        "unshared_axl3": 1288,
+        "share_all_axl3": 1288,
+        "planned_axl3": 1288,
+        "byte_planned_axl3": 1288,
+        "equivalent_packed_json": 1288,
+        "negotiated_compact_json": 1219
+      }
+    },
+    {
+      "rows": 8,
+      "configured_constant_columns": 0,
+      "eligible_constant_columns": 0,
+      "value_length": 16,
+      "turn": 1,
+      "full_context_cost": {
+        "unshared_axl3": 2091,
+        "share_all_axl3": 2091,
+        "planned_axl3": 2091,
+        "byte_planned_axl3": 2091,
+        "equivalent_packed_json": 2091,
+        "negotiated_compact_json": 1953
+      }
+    },
+    {
+      "rows": 8,
+      "configured_constant_columns": 0,
+      "eligible_constant_columns": 0,
+      "value_length": 16,
+      "turn": 2,
+      "full_context_cost": {
+        "unshared_axl3": 2896,
+        "share_all_axl3": 2896,
+        "planned_axl3": 2896,
+        "byte_planned_axl3": 2896,
+        "equivalent_packed_json": 2896,
+        "negotiated_compact_json": 2689
+      }
+    },
+    {
+      "rows": 8,
+      "configured_constant_columns": 0,
+      "eligible_constant_columns": 0,
+      "value_length": 128,
+      "turn": 0,
+      "full_context_cost": {
+        "unshared_axl3": 4872,
+        "share_all_axl3": 4872,
+        "planned_axl3": 4872,
+        "byte_planned_axl3": 4872,
+        "equivalent_packed_json": 4872,
+        "negotiated_compact_json": 4803
+      }
+    },
+    {
+      "rows": 8,
+      "configured_constant_columns": 0,
+      "eligible_constant_columns": 0,
+      "value_length": 128,
+      "turn": 1,
+      "full_context_cost": {
+        "unshared_axl3": 9259,
+        "share_all_axl3": 9259,
+        "planned_axl3": 9259,
+        "byte_planned_axl3": 9259,
+        "equivalent_packed_json": 9259,
+        "negotiated_compact_json": 9121
+      }
+    },
+    {
+      "rows": 8,
+      "configured_constant_columns": 0,
+      "eligible_constant_columns": 0,
+      "value_length": 128,
+      "turn": 2,
+      "full_context_cost": {
+        "unshared_axl3": 13648,
+        "share_all_axl3": 13648,
+        "planned_axl3": 13648,
+        "byte_planned_axl3": 13648,
+        "equivalent_packed_json": 13648,
+        "negotiated_compact_json": 13441
+      }
+    },
+    {
+      "rows": 8,
+      "configured_constant_columns": 1,
+      "eligible_constant_columns": 1,
+      "value_length": 0,
+      "turn": 0,
+      "full_context_cost": {
+        "unshared_axl3": 768,
+        "share_all_axl3": 750,
+        "planned_axl3": 750,
+        "byte_planned_axl3": 750,
+        "equivalent_packed_json": 750,
+        "negotiated_compact_json": 681
+      }
+    },
+    {
+      "rows": 8,
+      "configured_constant_columns": 1,
+      "eligible_constant_columns": 1,
+      "value_length": 0,
+      "turn": 1,
+      "full_context_cost": {
+        "unshared_axl3": 1051,
+        "share_all_axl3": 1015,
+        "planned_axl3": 1015,
+        "byte_planned_axl3": 1015,
+        "equivalent_packed_json": 1015,
+        "negotiated_compact_json": 877
+      }
+    },
+    {
+      "rows": 8,
+      "configured_constant_columns": 1,
+      "eligible_constant_columns": 1,
+      "value_length": 0,
+      "turn": 2,
+      "full_context_cost": {
+        "unshared_axl3": 1336,
+        "share_all_axl3": 1282,
+        "planned_axl3": 1282,
+        "byte_planned_axl3": 1282,
+        "equivalent_packed_json": 1282,
+        "negotiated_compact_json": 1075
+      }
+    },
+    {
+      "rows": 8,
+      "configured_constant_columns": 1,
+      "eligible_constant_columns": 1,
+      "value_length": 1,
+      "turn": 0,
+      "full_context_cost": {
+        "unshared_axl3": 800,
+        "share_all_axl3": 775,
+        "planned_axl3": 775,
+        "byte_planned_axl3": 775,
+        "equivalent_packed_json": 775,
+        "negotiated_compact_json": 706
+      }
+    },
+    {
+      "rows": 8,
+      "configured_constant_columns": 1,
+      "eligible_constant_columns": 1,
+      "value_length": 1,
+      "turn": 1,
+      "full_context_cost": {
+        "unshared_axl3": 1115,
+        "share_all_axl3": 1065,
+        "planned_axl3": 1065,
+        "byte_planned_axl3": 1065,
+        "equivalent_packed_json": 1065,
+        "negotiated_compact_json": 927
+      }
+    },
+    {
+      "rows": 8,
+      "configured_constant_columns": 1,
+      "eligible_constant_columns": 1,
+      "value_length": 1,
+      "turn": 2,
+      "full_context_cost": {
+        "unshared_axl3": 1432,
+        "share_all_axl3": 1357,
+        "planned_axl3": 1357,
+        "byte_planned_axl3": 1357,
+        "equivalent_packed_json": 1357,
+        "negotiated_compact_json": 1150
+      }
+    },
+    {
+      "rows": 8,
+      "configured_constant_columns": 1,
+      "eligible_constant_columns": 1,
+      "value_length": 16,
+      "turn": 0,
+      "full_context_cost": {
+        "unshared_axl3": 1280,
+        "share_all_axl3": 1150,
+        "planned_axl3": 1150,
+        "byte_planned_axl3": 1150,
+        "equivalent_packed_json": 1150,
+        "negotiated_compact_json": 1081
+      }
+    },
+    {
+      "rows": 8,
+      "configured_constant_columns": 1,
+      "eligible_constant_columns": 1,
+      "value_length": 16,
+      "turn": 1,
+      "full_context_cost": {
+        "unshared_axl3": 2075,
+        "share_all_axl3": 1815,
+        "planned_axl3": 1815,
+        "byte_planned_axl3": 1815,
+        "equivalent_packed_json": 1815,
+        "negotiated_compact_json": 1677
+      }
+    },
+    {
+      "rows": 8,
+      "configured_constant_columns": 1,
+      "eligible_constant_columns": 1,
+      "value_length": 16,
+      "turn": 2,
+      "full_context_cost": {
+        "unshared_axl3": 2872,
+        "share_all_axl3": 2482,
+        "planned_axl3": 2482,
+        "byte_planned_axl3": 2482,
+        "equivalent_packed_json": 2482,
+        "negotiated_compact_json": 2275
+      }
+    },
+    {
+      "rows": 8,
+      "configured_constant_columns": 1,
+      "eligible_constant_columns": 1,
+      "value_length": 128,
+      "turn": 0,
+      "full_context_cost": {
+        "unshared_axl3": 4864,
+        "share_all_axl3": 3950,
+        "planned_axl3": 3950,
+        "byte_planned_axl3": 3950,
+        "equivalent_packed_json": 3950,
+        "negotiated_compact_json": 3881
+      }
+    },
+    {
+      "rows": 8,
+      "configured_constant_columns": 1,
+      "eligible_constant_columns": 1,
+      "value_length": 128,
+      "turn": 1,
+      "full_context_cost": {
+        "unshared_axl3": 9243,
+        "share_all_axl3": 7415,
+        "planned_axl3": 7415,
+        "byte_planned_axl3": 7415,
+        "equivalent_packed_json": 7415,
+        "negotiated_compact_json": 7277
+      }
+    },
+    {
+      "rows": 8,
+      "configured_constant_columns": 1,
+      "eligible_constant_columns": 1,
+      "value_length": 128,
+      "turn": 2,
+      "full_context_cost": {
+        "unshared_axl3": 13624,
+        "share_all_axl3": 10882,
+        "planned_axl3": 10882,
+        "byte_planned_axl3": 10882,
+        "equivalent_packed_json": 10882,
+        "negotiated_compact_json": 10675
+      }
+    },
+    {
+      "rows": 8,
+      "configured_constant_columns": 4,
+      "eligible_constant_columns": 4,
+      "value_length": 0,
+      "turn": 0,
+      "full_context_cost": {
+        "unshared_axl3": 744,
+        "share_all_axl3": 675,
+        "planned_axl3": 675,
+        "byte_planned_axl3": 675,
+        "equivalent_packed_json": 675,
+        "negotiated_compact_json": 606
+      }
+    },
+    {
+      "rows": 8,
+      "configured_constant_columns": 4,
+      "eligible_constant_columns": 4,
+      "value_length": 0,
+      "turn": 1,
+      "full_context_cost": {
+        "unshared_axl3": 1003,
+        "share_all_axl3": 865,
+        "planned_axl3": 865,
+        "byte_planned_axl3": 865,
+        "equivalent_packed_json": 865,
+        "negotiated_compact_json": 727
+      }
+    },
+    {
+      "rows": 8,
+      "configured_constant_columns": 4,
+      "eligible_constant_columns": 4,
+      "value_length": 0,
+      "turn": 2,
+      "full_context_cost": {
+        "unshared_axl3": 1264,
+        "share_all_axl3": 1057,
+        "planned_axl3": 1057,
+        "byte_planned_axl3": 1057,
+        "equivalent_packed_json": 1057,
+        "negotiated_compact_json": 850
+      }
+    },
+    {
+      "rows": 8,
+      "configured_constant_columns": 4,
+      "eligible_constant_columns": 4,
+      "value_length": 1,
+      "turn": 0,
+      "full_context_cost": {
+        "unshared_axl3": 776,
+        "share_all_axl3": 679,
+        "planned_axl3": 679,
+        "byte_planned_axl3": 679,
+        "equivalent_packed_json": 679,
+        "negotiated_compact_json": 610
+      }
+    },
+    {
+      "rows": 8,
+      "configured_constant_columns": 4,
+      "eligible_constant_columns": 4,
+      "value_length": 1,
+      "turn": 1,
+      "full_context_cost": {
+        "unshared_axl3": 1067,
+        "share_all_axl3": 873,
+        "planned_axl3": 873,
+        "byte_planned_axl3": 873,
+        "equivalent_packed_json": 873,
+        "negotiated_compact_json": 735
+      }
+    },
+    {
+      "rows": 8,
+      "configured_constant_columns": 4,
+      "eligible_constant_columns": 4,
+      "value_length": 1,
+      "turn": 2,
+      "full_context_cost": {
+        "unshared_axl3": 1360,
+        "share_all_axl3": 1069,
+        "planned_axl3": 1069,
+        "byte_planned_axl3": 1069,
+        "equivalent_packed_json": 1069,
+        "negotiated_compact_json": 862
+      }
+    },
+    {
+      "rows": 8,
+      "configured_constant_columns": 4,
+      "eligible_constant_columns": 4,
+      "value_length": 16,
+      "turn": 0,
+      "full_context_cost": {
+        "unshared_axl3": 1256,
+        "share_all_axl3": 739,
+        "planned_axl3": 739,
+        "byte_planned_axl3": 739,
+        "equivalent_packed_json": 739,
+        "negotiated_compact_json": 670
+      }
+    },
+    {
+      "rows": 8,
+      "configured_constant_columns": 4,
+      "eligible_constant_columns": 4,
+      "value_length": 16,
+      "turn": 1,
+      "full_context_cost": {
+        "unshared_axl3": 2027,
+        "share_all_axl3": 993,
+        "planned_axl3": 993,
+        "byte_planned_axl3": 993,
+        "equivalent_packed_json": 993,
+        "negotiated_compact_json": 855
+      }
+    },
+    {
+      "rows": 8,
+      "configured_constant_columns": 4,
+      "eligible_constant_columns": 4,
+      "value_length": 16,
+      "turn": 2,
+      "full_context_cost": {
+        "unshared_axl3": 2800,
+        "share_all_axl3": 1249,
+        "planned_axl3": 1249,
+        "byte_planned_axl3": 1249,
+        "equivalent_packed_json": 1249,
+        "negotiated_compact_json": 1042
+      }
+    },
+    {
+      "rows": 8,
+      "configured_constant_columns": 4,
+      "eligible_constant_columns": 4,
+      "value_length": 128,
+      "turn": 0,
+      "full_context_cost": {
+        "unshared_axl3": 4840,
+        "share_all_axl3": 1187,
+        "planned_axl3": 1187,
+        "byte_planned_axl3": 1187,
+        "equivalent_packed_json": 1187,
+        "negotiated_compact_json": 1118
+      }
+    },
+    {
+      "rows": 8,
+      "configured_constant_columns": 4,
+      "eligible_constant_columns": 4,
+      "value_length": 128,
+      "turn": 1,
+      "full_context_cost": {
+        "unshared_axl3": 9195,
+        "share_all_axl3": 1889,
+        "planned_axl3": 1889,
+        "byte_planned_axl3": 1889,
+        "equivalent_packed_json": 1889,
+        "negotiated_compact_json": 1751
+      }
+    },
+    {
+      "rows": 8,
+      "configured_constant_columns": 4,
+      "eligible_constant_columns": 4,
+      "value_length": 128,
+      "turn": 2,
+      "full_context_cost": {
+        "unshared_axl3": 13552,
+        "share_all_axl3": 2593,
+        "planned_axl3": 2593,
+        "byte_planned_axl3": 2593,
+        "equivalent_packed_json": 2593,
+        "negotiated_compact_json": 2386
+      }
+    },
+    {
+      "rows": 32,
+      "configured_constant_columns": 0,
+      "eligible_constant_columns": 0,
+      "value_length": 0,
+      "turn": 0,
+      "full_context_cost": {
+        "unshared_axl3": 1508,
+        "share_all_axl3": 1508,
+        "planned_axl3": 1508,
+        "byte_planned_axl3": 1508,
+        "equivalent_packed_json": 1508,
+        "negotiated_compact_json": 1439
+      }
+    },
+    {
+      "rows": 32,
+      "configured_constant_columns": 0,
+      "eligible_constant_columns": 0,
+      "value_length": 0,
+      "turn": 1,
+      "full_context_cost": {
+        "unshared_axl3": 2535,
+        "share_all_axl3": 2535,
+        "planned_axl3": 2535,
+        "byte_planned_axl3": 2535,
+        "equivalent_packed_json": 2535,
+        "negotiated_compact_json": 2397
+      }
+    },
+    {
+      "rows": 32,
+      "configured_constant_columns": 0,
+      "eligible_constant_columns": 0,
+      "value_length": 0,
+      "turn": 2,
+      "full_context_cost": {
+        "unshared_axl3": 3562,
+        "share_all_axl3": 3562,
+        "planned_axl3": 3562,
+        "byte_planned_axl3": 3562,
+        "equivalent_packed_json": 3562,
+        "negotiated_compact_json": 3355
+      }
+    },
+    {
+      "rows": 32,
+      "configured_constant_columns": 0,
+      "eligible_constant_columns": 0,
+      "value_length": 1,
+      "turn": 0,
+      "full_context_cost": {
+        "unshared_axl3": 1636,
+        "share_all_axl3": 1636,
+        "planned_axl3": 1636,
+        "byte_planned_axl3": 1636,
+        "equivalent_packed_json": 1636,
+        "negotiated_compact_json": 1567
+      }
+    },
+    {
+      "rows": 32,
+      "configured_constant_columns": 0,
+      "eligible_constant_columns": 0,
+      "value_length": 1,
+      "turn": 1,
+      "full_context_cost": {
+        "unshared_axl3": 2791,
+        "share_all_axl3": 2791,
+        "planned_axl3": 2791,
+        "byte_planned_axl3": 2791,
+        "equivalent_packed_json": 2791,
+        "negotiated_compact_json": 2653
+      }
+    },
+    {
+      "rows": 32,
+      "configured_constant_columns": 0,
+      "eligible_constant_columns": 0,
+      "value_length": 1,
+      "turn": 2,
+      "full_context_cost": {
+        "unshared_axl3": 3946,
+        "share_all_axl3": 3946,
+        "planned_axl3": 3946,
+        "byte_planned_axl3": 3946,
+        "equivalent_packed_json": 3946,
+        "negotiated_compact_json": 3739
+      }
+    },
+    {
+      "rows": 32,
+      "configured_constant_columns": 0,
+      "eligible_constant_columns": 0,
+      "value_length": 16,
+      "turn": 0,
+      "full_context_cost": {
+        "unshared_axl3": 3556,
+        "share_all_axl3": 3556,
+        "planned_axl3": 3556,
+        "byte_planned_axl3": 3556,
+        "equivalent_packed_json": 3556,
+        "negotiated_compact_json": 3487
+      }
+    },
+    {
+      "rows": 32,
+      "configured_constant_columns": 0,
+      "eligible_constant_columns": 0,
+      "value_length": 16,
+      "turn": 1,
+      "full_context_cost": {
+        "unshared_axl3": 6631,
+        "share_all_axl3": 6631,
+        "planned_axl3": 6631,
+        "byte_planned_axl3": 6631,
+        "equivalent_packed_json": 6631,
+        "negotiated_compact_json": 6493
+      }
+    },
+    {
+      "rows": 32,
+      "configured_constant_columns": 0,
+      "eligible_constant_columns": 0,
+      "value_length": 16,
+      "turn": 2,
+      "full_context_cost": {
+        "unshared_axl3": 9706,
+        "share_all_axl3": 9706,
+        "planned_axl3": 9706,
+        "byte_planned_axl3": 9706,
+        "equivalent_packed_json": 9706,
+        "negotiated_compact_json": 9499
+      }
+    },
+    {
+      "rows": 32,
+      "configured_constant_columns": 0,
+      "eligible_constant_columns": 0,
+      "value_length": 128,
+      "turn": 0,
+      "full_context_cost": {
+        "unshared_axl3": 17892,
+        "share_all_axl3": 17892,
+        "planned_axl3": 17892,
+        "byte_planned_axl3": 17892,
+        "equivalent_packed_json": 17892,
+        "negotiated_compact_json": 17823
+      }
+    },
+    {
+      "rows": 32,
+      "configured_constant_columns": 0,
+      "eligible_constant_columns": 0,
+      "value_length": 128,
+      "turn": 1,
+      "full_context_cost": {
+        "unshared_axl3": 35303,
+        "share_all_axl3": 35303,
+        "planned_axl3": 35303,
+        "byte_planned_axl3": 35303,
+        "equivalent_packed_json": 35303,
+        "negotiated_compact_json": 35165
+      }
+    },
+    {
+      "rows": 32,
+      "configured_constant_columns": 0,
+      "eligible_constant_columns": 0,
+      "value_length": 128,
+      "turn": 2,
+      "full_context_cost": {
+        "unshared_axl3": 52714,
+        "share_all_axl3": 52714,
+        "planned_axl3": 52714,
+        "byte_planned_axl3": 52714,
+        "equivalent_packed_json": 52714,
+        "negotiated_compact_json": 52507
+      }
+    },
+    {
+      "rows": 32,
+      "configured_constant_columns": 1,
+      "eligible_constant_columns": 1,
+      "value_length": 0,
+      "turn": 0,
+      "full_context_cost": {
+        "unshared_axl3": 1454,
+        "share_all_axl3": 1364,
+        "planned_axl3": 1364,
+        "byte_planned_axl3": 1364,
+        "equivalent_packed_json": 1364,
+        "negotiated_compact_json": 1295
+      }
+    },
+    {
+      "rows": 32,
+      "configured_constant_columns": 1,
+      "eligible_constant_columns": 1,
+      "value_length": 0,
+      "turn": 1,
+      "full_context_cost": {
+        "unshared_axl3": 2427,
+        "share_all_axl3": 2247,
+        "planned_axl3": 2247,
+        "byte_planned_axl3": 2247,
+        "equivalent_packed_json": 2247,
+        "negotiated_compact_json": 2109
+      }
+    },
+    {
+      "rows": 32,
+      "configured_constant_columns": 1,
+      "eligible_constant_columns": 1,
+      "value_length": 0,
+      "turn": 2,
+      "full_context_cost": {
+        "unshared_axl3": 3400,
+        "share_all_axl3": 3130,
+        "planned_axl3": 3130,
+        "byte_planned_axl3": 3130,
+        "equivalent_packed_json": 3130,
+        "negotiated_compact_json": 2923
+      }
+    },
+    {
+      "rows": 32,
+      "configured_constant_columns": 1,
+      "eligible_constant_columns": 1,
+      "value_length": 1,
+      "turn": 0,
+      "full_context_cost": {
+        "unshared_axl3": 1582,
+        "share_all_axl3": 1461,
+        "planned_axl3": 1461,
+        "byte_planned_axl3": 1461,
+        "equivalent_packed_json": 1461,
+        "negotiated_compact_json": 1392
+      }
+    },
+    {
+      "rows": 32,
+      "configured_constant_columns": 1,
+      "eligible_constant_columns": 1,
+      "value_length": 1,
+      "turn": 1,
+      "full_context_cost": {
+        "unshared_axl3": 2683,
+        "share_all_axl3": 2441,
+        "planned_axl3": 2441,
+        "byte_planned_axl3": 2441,
+        "equivalent_packed_json": 2441,
+        "negotiated_compact_json": 2303
+      }
+    },
+    {
+      "rows": 32,
+      "configured_constant_columns": 1,
+      "eligible_constant_columns": 1,
+      "value_length": 1,
+      "turn": 2,
+      "full_context_cost": {
+        "unshared_axl3": 3784,
+        "share_all_axl3": 3421,
+        "planned_axl3": 3421,
+        "byte_planned_axl3": 3421,
+        "equivalent_packed_json": 3421,
+        "negotiated_compact_json": 3214
+      }
+    },
+    {
+      "rows": 32,
+      "configured_constant_columns": 1,
+      "eligible_constant_columns": 1,
+      "value_length": 16,
+      "turn": 0,
+      "full_context_cost": {
+        "unshared_axl3": 3502,
+        "share_all_axl3": 2916,
+        "planned_axl3": 2916,
+        "byte_planned_axl3": 2916,
+        "equivalent_packed_json": 2916,
+        "negotiated_compact_json": 2847
+      }
+    },
+    {
+      "rows": 32,
+      "configured_constant_columns": 1,
+      "eligible_constant_columns": 1,
+      "value_length": 16,
+      "turn": 1,
+      "full_context_cost": {
+        "unshared_axl3": 6523,
+        "share_all_axl3": 5351,
+        "planned_axl3": 5351,
+        "byte_planned_axl3": 5351,
+        "equivalent_packed_json": 5351,
+        "negotiated_compact_json": 5213
+      }
+    },
+    {
+      "rows": 32,
+      "configured_constant_columns": 1,
+      "eligible_constant_columns": 1,
+      "value_length": 16,
+      "turn": 2,
+      "full_context_cost": {
+        "unshared_axl3": 9544,
+        "share_all_axl3": 7786,
+        "planned_axl3": 7786,
+        "byte_planned_axl3": 7786,
+        "equivalent_packed_json": 7786,
+        "negotiated_compact_json": 7579
+      }
+    },
+    {
+      "rows": 32,
+      "configured_constant_columns": 1,
+      "eligible_constant_columns": 1,
+      "value_length": 128,
+      "turn": 0,
+      "full_context_cost": {
+        "unshared_axl3": 17838,
+        "share_all_axl3": 13780,
+        "planned_axl3": 13780,
+        "byte_planned_axl3": 13780,
+        "equivalent_packed_json": 13780,
+        "negotiated_compact_json": 13711
+      }
+    },
+    {
+      "rows": 32,
+      "configured_constant_columns": 1,
+      "eligible_constant_columns": 1,
+      "value_length": 128,
+      "turn": 1,
+      "full_context_cost": {
+        "unshared_axl3": 35195,
+        "share_all_axl3": 27079,
+        "planned_axl3": 27079,
+        "byte_planned_axl3": 27079,
+        "equivalent_packed_json": 27079,
+        "negotiated_compact_json": 26941
+      }
+    },
+    {
+      "rows": 32,
+      "configured_constant_columns": 1,
+      "eligible_constant_columns": 1,
+      "value_length": 128,
+      "turn": 2,
+      "full_context_cost": {
+        "unshared_axl3": 52552,
+        "share_all_axl3": 40378,
+        "planned_axl3": 40378,
+        "byte_planned_axl3": 40378,
+        "equivalent_packed_json": 40378,
+        "negotiated_compact_json": 40171
+      }
+    },
+    {
+      "rows": 32,
+      "configured_constant_columns": 4,
+      "eligible_constant_columns": 4,
+      "value_length": 0,
+      "turn": 0,
+      "full_context_cost": {
+        "unshared_axl3": 1292,
+        "share_all_axl3": 935,
+        "planned_axl3": 935,
+        "byte_planned_axl3": 935,
+        "equivalent_packed_json": 935,
+        "negotiated_compact_json": 866
+      }
+    },
+    {
+      "rows": 32,
+      "configured_constant_columns": 4,
+      "eligible_constant_columns": 4,
+      "value_length": 0,
+      "turn": 1,
+      "full_context_cost": {
+        "unshared_axl3": 2103,
+        "share_all_axl3": 1389,
+        "planned_axl3": 1389,
+        "byte_planned_axl3": 1389,
+        "equivalent_packed_json": 1389,
+        "negotiated_compact_json": 1251
+      }
+    },
+    {
+      "rows": 32,
+      "configured_constant_columns": 4,
+      "eligible_constant_columns": 4,
+      "value_length": 0,
+      "turn": 2,
+      "full_context_cost": {
+        "unshared_axl3": 2914,
+        "share_all_axl3": 1843,
+        "planned_axl3": 1843,
+        "byte_planned_axl3": 1843,
+        "equivalent_packed_json": 1843,
+        "negotiated_compact_json": 1636
+      }
+    },
+    {
+      "rows": 32,
+      "configured_constant_columns": 4,
+      "eligible_constant_columns": 4,
+      "value_length": 1,
+      "turn": 0,
+      "full_context_cost": {
+        "unshared_axl3": 1420,
+        "share_all_axl3": 939,
+        "planned_axl3": 939,
+        "byte_planned_axl3": 939,
+        "equivalent_packed_json": 939,
+        "negotiated_compact_json": 870
+      }
+    },
+    {
+      "rows": 32,
+      "configured_constant_columns": 4,
+      "eligible_constant_columns": 4,
+      "value_length": 1,
+      "turn": 1,
+      "full_context_cost": {
+        "unshared_axl3": 2359,
+        "share_all_axl3": 1397,
+        "planned_axl3": 1397,
+        "byte_planned_axl3": 1397,
+        "equivalent_packed_json": 1397,
+        "negotiated_compact_json": 1259
+      }
+    },
+    {
+      "rows": 32,
+      "configured_constant_columns": 4,
+      "eligible_constant_columns": 4,
+      "value_length": 1,
+      "turn": 2,
+      "full_context_cost": {
+        "unshared_axl3": 3298,
+        "share_all_axl3": 1855,
+        "planned_axl3": 1855,
+        "byte_planned_axl3": 1855,
+        "equivalent_packed_json": 1855,
+        "negotiated_compact_json": 1648
+      }
+    },
+    {
+      "rows": 32,
+      "configured_constant_columns": 4,
+      "eligible_constant_columns": 4,
+      "value_length": 16,
+      "turn": 0,
+      "full_context_cost": {
+        "unshared_axl3": 3340,
+        "share_all_axl3": 999,
+        "planned_axl3": 999,
+        "byte_planned_axl3": 999,
+        "equivalent_packed_json": 999,
+        "negotiated_compact_json": 930
+      }
+    },
+    {
+      "rows": 32,
+      "configured_constant_columns": 4,
+      "eligible_constant_columns": 4,
+      "value_length": 16,
+      "turn": 1,
+      "full_context_cost": {
+        "unshared_axl3": 6199,
+        "share_all_axl3": 1517,
+        "planned_axl3": 1517,
+        "byte_planned_axl3": 1517,
+        "equivalent_packed_json": 1517,
+        "negotiated_compact_json": 1379
+      }
+    },
+    {
+      "rows": 32,
+      "configured_constant_columns": 4,
+      "eligible_constant_columns": 4,
+      "value_length": 16,
+      "turn": 2,
+      "full_context_cost": {
+        "unshared_axl3": 9058,
+        "share_all_axl3": 2035,
+        "planned_axl3": 2035,
+        "byte_planned_axl3": 2035,
+        "equivalent_packed_json": 2035,
+        "negotiated_compact_json": 1828
+      }
+    },
+    {
+      "rows": 32,
+      "configured_constant_columns": 4,
+      "eligible_constant_columns": 4,
+      "value_length": 128,
+      "turn": 0,
+      "full_context_cost": {
+        "unshared_axl3": 17676,
+        "share_all_axl3": 1447,
+        "planned_axl3": 1447,
+        "byte_planned_axl3": 1447,
+        "equivalent_packed_json": 1447,
+        "negotiated_compact_json": 1378
+      }
+    },
+    {
+      "rows": 32,
+      "configured_constant_columns": 4,
+      "eligible_constant_columns": 4,
+      "value_length": 128,
+      "turn": 1,
+      "full_context_cost": {
+        "unshared_axl3": 34871,
+        "share_all_axl3": 2413,
+        "planned_axl3": 2413,
+        "byte_planned_axl3": 2413,
+        "equivalent_packed_json": 2413,
+        "negotiated_compact_json": 2275
+      }
+    },
+    {
+      "rows": 32,
+      "configured_constant_columns": 4,
+      "eligible_constant_columns": 4,
+      "value_length": 128,
+      "turn": 2,
+      "full_context_cost": {
+        "unshared_axl3": 52066,
+        "share_all_axl3": 3379,
+        "planned_axl3": 3379,
+        "byte_planned_axl3": 3379,
+        "equivalent_packed_json": 3379,
+        "negotiated_compact_json": 3172
+      }
+    }
+  ]
+}

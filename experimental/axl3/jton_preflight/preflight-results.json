@@ -1,0 +1,62 @@
+[
+  {
+    "case": "dense",
+    "compact_json_bytes": 47,
+    "spec_grid_eligible": true,
+    "strict_json_roundtrip": true
+  },
+  {
+    "case": "absent_vs_null",
+    "compact_json_bytes": 32,
+    "spec_grid_eligible": false,
+    "strict_json_roundtrip": true
+  },
+  {
+    "case": "seventy_percent",
+    "compact_json_bytes": 182,
+    "spec_grid_eligible": false,
+    "strict_json_roundtrip": true
+  },
+  {
+    "case": "key_order",
+    "compact_json_bytes": 43,
+    "spec_grid_eligible": false,
+    "strict_json_roundtrip": true
+  },
+  {
+    "case": "reserved_strings",
+    "compact_json_bytes": 135,
+    "spec_grid_eligible": true,
+    "strict_json_roundtrip": true
+  },
+  {
+    "case": "delimiters",
+    "compact_json_bytes": 143,
+    "spec_grid_eligible": true,
+    "strict_json_roundtrip": true
+  },
+  {
+    "case": "nested",
+    "compact_json_bytes": 69,
+    "spec_grid_eligible": true,
+    "strict_json_roundtrip": true
+  },
+  {
+    "case": "numbers",
+    "compact_json_bytes": 71,
+    "spec_grid_eligible": true,
+    "strict_json_roundtrip": true
+  },
+  {
+    "case": "empty",
+    "compact_json_bytes": 2,
+    "spec_grid_eligible": false,
+    "strict_json_roundtrip": true
+  },
+  {
+    "case": "single",
+    "compact_json_bytes": 10,
+    "spec_grid_eligible": false,
+    "strict_json_roundtrip": true
+  }
+]

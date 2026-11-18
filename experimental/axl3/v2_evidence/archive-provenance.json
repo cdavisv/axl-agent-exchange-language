@@ -1,0 +1,26 @@
+{
+  "scope": "Portable historical v2 token/capacity study. No model inference; November 18 packaging reran 11 unit tests but not complete token benchmark. Token result bytes match original provenance. No network operation performed.",
+  "original_axl_commit": "1f9dfba14a9fdf79c84db05f8023c12060c40f1c",
+  "click_commit": "e38188e9e205005d5af5f9e59df51904c984586a",
+  "license": "licenses/Click-LICENSE.txt",
+  "files": {
+    "HISTORICAL_REPORT.md": "77c3be229343c51dbf294fea43dfa301458bf45e378507d0c1bc002fa33b99eb",
+    "README.md": "bb38d48697e97f3e450874972739f9d5e9602399d25321a085b50c1948998d82",
+    "batched-results.json": "944b8e7380fda8485874e347f8015b6cceba8ca0878978b74740b480a5dc84c1",
+    "batched-summary.json": "6d307f734692d3ab92d23f78b7b88cda4e06020af0d303ddfa47b409d9e71fbf",
+    "batched.py": "63c5da90a5aa14b82623310bc0d5b6ccdb5f82235719fd181b1d7f3f2cae47ab",
+    "benchmark.py": "fde5a73973ed89b97ca6e7074d918b880f993821130f655fe89901ebf0c20e19",
+    "chunking-results.json": "ad2dee76501d858174539704ecee6152b6355c0e018cb716750c06b942b2ae5c",
+    "chunking.py": "390f628b7979d5ba7431c28e5892e079fe7f9842dfb283baeec0bbfdcc02f298",
+    "corpus.json": "1284a65dab14639f432f632c36be97bc6daa1b304f38c5ee943ac3587c87f19f",
+    "licenses/Click-LICENSE.txt": "9a8ad106a394e853bfe21f42f4e72d592819a22805d991b5f3275029292b658d",
+    "original-provenance.json": "e18eaa8c3c60c443d1bec06b6fff717f263b2c841697cf29e9653724acf1730a",
+    "requirements.lock.txt": "bdaf169754788da11544d4a4c0e6c6cd67bdb5679107c2c3f70f4a8136f6e37b",
+    "results.json": "f8b09a3c5fa372043ffcf6819332f9c15c97a8c06e667a8b04789ec7f4b34475",
+    "summary.json": "2209256c90426738059f2e995ac464382c5431e72621e519ff7449e702562807",
+    "test_batched.py": "3cd20bad7fe58c9851e7d59deb7addaf82b64b0989be9a6e175312e76c3c88b9",
+    "test_benchmark.py": "402785eb983238ebf572285fcd63134031feaeacedbb6ce013988a1ce454048a",
+    "test_chunking.py": "c44bae1e23570b6b38b5f763750ec1e95dc04d4db66220621482d50ca54ff019",
+    "verify_artifacts.py": "ac71394401d6e809b9ce7a3eaac12140f2a310172ad59ec21561216a59d59dc4"
+  }
+}

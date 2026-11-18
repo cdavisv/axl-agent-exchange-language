@@ -276,3 +276,10 @@ python scripts/generate_axl_shared_types.py
   protocol document.
 - [docs/axl-directive.md](./docs/axl-directive.md): concise authoring guidance
   for agent prompts.
+
+## AXL 3 experimental candidate
+
+The opt-in [AXL 3 research prototype](experimental/axl3/README.md) adds bounded schema-packed
+exchange, guarded state handoffs, and reproducible synthetic comparisons. It is not a released
+AXL 3.0 specification and does not change the v2 package API or version. See its explicit limits
+and measured wins/losses before adopting it.

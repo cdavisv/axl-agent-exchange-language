@@ -1,0 +1,6 @@
+{
+  "baseline_commit": "f4696e7bf9b7c45feffeb02d237f72ea33809ae7",
+  "baseline_path": "experimental/axl3/axl3.py",
+  "baseline_sha256": "0003d49cd1470c2c1c19afc3da794dfdaffbcf8e84c089bcd136cdaf233dbed4",
+  "note": "Fetched remote core matched frozen baseline except trailing blank line. Baseline retains original bytes from preceding tested worktree."
+}

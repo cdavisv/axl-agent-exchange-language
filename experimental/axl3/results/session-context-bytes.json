@@ -1,0 +1,823 @@
+{
+  "unit": "utf8_bytes",
+  "tokenizer_sha256": null,
+  "scope": "48 synthetic scenarios; full constructed input includes instructions, schema provisioning, host-session markers, all bind/ack messages, previous data and common host delivery receipts. Reconnect every4frames repeats binding but keeps conversation history. Handshakes are host-generated, not model calls. Transmitted-wire totals separately include bind/ack and every delivery receipt, but common schema/context provisioning is counted only in full-context totals. No native chat-template, generation, billing, inference or latency claim. Equal-guard explicit full-fingerprint JSON and identical alias JSON controls. Fresh epochs/authentication/CAS persistence are external host obligations.",
+  "scenarios": [
+    {
+      "turns": 1,
+      "rows_per_turn": 1,
+      "body_length": 16,
+      "reconnect_every": 0,
+      "handshakes": 1,
+      "summed_full_context_cost": {
+        "explicit_json": 619,
+        "session_axl3": 739,
+        "equivalent_session_json": 739
+      },
+      "transmitted_wire_cost_including_bind_ack": {
+        "explicit_json": 145,
+        "session_axl3": 254,
+        "equivalent_session_json": 254
+      }
+    },
+    {
+      "turns": 1,
+      "rows_per_turn": 1,
+      "body_length": 16,
+      "reconnect_every": 4,
+      "handshakes": 1,
+      "summed_full_context_cost": {
+        "explicit_json": 619,
+        "session_axl3": 739,
+        "equivalent_session_json": 739
+      },
+      "transmitted_wire_cost_including_bind_ack": {
+        "explicit_json": 145,
+        "session_axl3": 254,
+        "equivalent_session_json": 254
+      }
+    },
+    {
+      "turns": 1,
+      "rows_per_turn": 1,
+      "body_length": 128,
+      "reconnect_every": 0,
+      "handshakes": 1,
+      "summed_full_context_cost": {
+        "explicit_json": 731,
+        "session_axl3": 851,
+        "equivalent_session_json": 851
+      },
+      "transmitted_wire_cost_including_bind_ack": {
+        "explicit_json": 257,
+        "session_axl3": 366,
+        "equivalent_session_json": 366
+      }
+    },
+    {
+      "turns": 1,
+      "rows_per_turn": 1,
+      "body_length": 128,
+      "reconnect_every": 4,
+      "handshakes": 1,
+      "summed_full_context_cost": {
+        "explicit_json": 731,
+        "session_axl3": 851,
+        "equivalent_session_json": 851
+      },
+      "transmitted_wire_cost_including_bind_ack": {
+        "explicit_json": 257,
+        "session_axl3": 366,
+        "equivalent_session_json": 366
+      }
+    },
+    {
+      "turns": 1,
+      "rows_per_turn": 8,
+      "body_length": 16,
+      "reconnect_every": 0,
+      "handshakes": 1,
+      "summed_full_context_cost": {
+        "explicit_json": 780,
+        "session_axl3": 900,
+        "equivalent_session_json": 900
+      },
+      "transmitted_wire_cost_including_bind_ack": {
+        "explicit_json": 306,
+        "session_axl3": 415,
+        "equivalent_session_json": 415
+      }
+    },
+    {
+      "turns": 1,
+      "rows_per_turn": 8,
+      "body_length": 16,
+      "reconnect_every": 4,
+      "handshakes": 1,
+      "summed_full_context_cost": {
+        "explicit_json": 780,
+        "session_axl3": 900,
+        "equivalent_session_json": 900
+      },
+      "transmitted_wire_cost_including_bind_ack": {
+        "explicit_json": 306,
+        "session_axl3": 415,
+        "equivalent_session_json": 415
+      }
+    },
+    {
+      "turns": 1,
+      "rows_per_turn": 8,
+      "body_length": 128,
+      "reconnect_every": 0,
+      "handshakes": 1,
+      "summed_full_context_cost": {
+        "explicit_json": 1676,
+        "session_axl3": 1796,
+        "equivalent_session_json": 1796
+      },
+      "transmitted_wire_cost_including_bind_ack": {
+        "explicit_json": 1202,
+        "session_axl3": 1311,
+        "equivalent_session_json": 1311
+      }
+    },
+    {
+      "turns": 1,
+      "rows_per_turn": 8,
+      "body_length": 128,
+      "reconnect_every": 4,
+      "handshakes": 1,
+      "summed_full_context_cost": {
+        "explicit_json": 1676,
+        "session_axl3": 1796,
+        "equivalent_session_json": 1796
+      },
+      "transmitted_wire_cost_including_bind_ack": {
+        "explicit_json": 1202,
+        "session_axl3": 1311,
+        "equivalent_session_json": 1311
+      }
+    },
+    {
+      "turns": 2,
+      "rows_per_turn": 1,
+      "body_length": 16,
+      "reconnect_every": 0,
+      "handshakes": 1,
+      "summed_full_context_cost": {
+        "explicit_json": 1402,
+        "session_axl3": 1578,
+        "equivalent_session_json": 1578
+      },
+      "transmitted_wire_cost_including_bind_ack": {
+        "explicit_json": 290,
+        "session_axl3": 335,
+        "equivalent_session_json": 335
+      }
+    },
+    {
+      "turns": 2,
+      "rows_per_turn": 1,
+      "body_length": 16,
+      "reconnect_every": 4,
+      "handshakes": 1,
+      "summed_full_context_cost": {
+        "explicit_json": 1402,
+        "session_axl3": 1578,
+        "equivalent_session_json": 1578
+      },
+      "transmitted_wire_cost_including_bind_ack": {
+        "explicit_json": 290,
+        "session_axl3": 335,
+        "equivalent_session_json": 335
+      }
+    },
+    {
+      "turns": 2,
+      "rows_per_turn": 1,
+      "body_length": 128,
+      "reconnect_every": 0,
+      "handshakes": 1,
+      "summed_full_context_cost": {
+        "explicit_json": 1738,
+        "session_axl3": 1914,
+        "equivalent_session_json": 1914
+      },
+      "transmitted_wire_cost_including_bind_ack": {
+        "explicit_json": 514,
+        "session_axl3": 559,
+        "equivalent_session_json": 559
+      }
+    },
+    {
+      "turns": 2,
+      "rows_per_turn": 1,
+      "body_length": 128,
+      "reconnect_every": 4,
+      "handshakes": 1,
+      "summed_full_context_cost": {
+        "explicit_json": 1738,
+        "session_axl3": 1914,
+        "equivalent_session_json": 1914
+      },
+      "transmitted_wire_cost_including_bind_ack": {
+        "explicit_json": 514,
+        "session_axl3": 559,
+        "equivalent_session_json": 559
+      }
+    },
+    {
+      "turns": 2,
+      "rows_per_turn": 8,
+      "body_length": 16,
+      "reconnect_every": 0,
+      "handshakes": 1,
+      "summed_full_context_cost": {
+        "explicit_json": 1891,
+        "session_axl3": 2067,
+        "equivalent_session_json": 2067
+      },
+      "transmitted_wire_cost_including_bind_ack": {
+        "explicit_json": 618,
+        "session_axl3": 663,
+        "equivalent_session_json": 663
+      }
+    },
+    {
+      "turns": 2,
+      "rows_per_turn": 8,
+      "body_length": 16,
+      "reconnect_every": 4,
+      "handshakes": 1,
+      "summed_full_context_cost": {
+        "explicit_json": 1891,
+        "session_axl3": 2067,
+        "equivalent_session_json": 2067
+      },
+      "transmitted_wire_cost_including_bind_ack": {
+        "explicit_json": 618,
+        "session_axl3": 663,
+        "equivalent_session_json": 663
+      }
+    },
+    {
+      "turns": 2,
+      "rows_per_turn": 8,
+      "body_length": 128,
+      "reconnect_every": 0,
+      "handshakes": 1,
+      "summed_full_context_cost": {
+        "explicit_json": 4579,
+        "session_axl3": 4755,
+        "equivalent_session_json": 4755
+      },
+      "transmitted_wire_cost_including_bind_ack": {
+        "explicit_json": 2410,
+        "session_axl3": 2455,
+        "equivalent_session_json": 2455
+      }
+    },
+    {
+      "turns": 2,
+      "rows_per_turn": 8,
+      "body_length": 128,
+      "reconnect_every": 4,
+      "handshakes": 1,
+      "summed_full_context_cost": {
+        "explicit_json": 4579,
+        "session_axl3": 4755,
+        "equivalent_session_json": 4755
+      },
+      "transmitted_wire_cost_including_bind_ack": {
+        "explicit_json": 2410,
+        "session_axl3": 2455,
+        "equivalent_session_json": 2455
+      }
+    },
+    {
+      "turns": 4,
+      "rows_per_turn": 1,
+      "body_length": 16,
+      "reconnect_every": 0,
+      "handshakes": 1,
+      "summed_full_context_cost": {
+        "explicit_json": 3460,
+        "session_axl3": 3556,
+        "equivalent_session_json": 3556
+      },
+      "transmitted_wire_cost_including_bind_ack": {
+        "explicit_json": 580,
+        "session_axl3": 497,
+        "equivalent_session_json": 497
+      }
+    },
+    {
+      "turns": 4,
+      "rows_per_turn": 1,
+      "body_length": 16,
+      "reconnect_every": 4,
+      "handshakes": 1,
+      "summed_full_context_cost": {
+        "explicit_json": 3460,
+        "session_axl3": 3556,
+        "equivalent_session_json": 3556
+      },
+      "transmitted_wire_cost_including_bind_ack": {
+        "explicit_json": 580,
+        "session_axl3": 497,
+        "equivalent_session_json": 497
+      }
+    },
+    {
+      "turns": 4,
+      "rows_per_turn": 1,
+      "body_length": 128,
+      "reconnect_every": 0,
+      "handshakes": 1,
+      "summed_full_context_cost": {
+        "explicit_json": 4580,
+        "session_axl3": 4676,
+        "equivalent_session_json": 4676
+      },
+      "transmitted_wire_cost_including_bind_ack": {
+        "explicit_json": 1028,
+        "session_axl3": 945,
+        "equivalent_session_json": 945
+      }
+    },
+    {
+      "turns": 4,
+      "rows_per_turn": 1,
+      "body_length": 128,
+      "reconnect_every": 4,
+      "handshakes": 1,
+      "summed_full_context_cost": {
+        "explicit_json": 4580,
+        "session_axl3": 4676,
+        "equivalent_session_json": 4676
+      },
+      "transmitted_wire_cost_including_bind_ack": {
+        "explicit_json": 1028,
+        "session_axl3": 945,
+        "equivalent_session_json": 945
+      }
+    },
+    {
+      "turns": 4,
+      "rows_per_turn": 8,
+      "body_length": 16,
+      "reconnect_every": 0,
+      "handshakes": 1,
+      "summed_full_context_cost": {
+        "explicit_json": 5112,
+        "session_axl3": 5208,
+        "equivalent_session_json": 5208
+      },
+      "transmitted_wire_cost_including_bind_ack": {
+        "explicit_json": 1246,
+        "session_axl3": 1163,
+        "equivalent_session_json": 1163
+      }
+    },
+    {
+      "turns": 4,
+      "rows_per_turn": 8,
+      "body_length": 16,
+      "reconnect_every": 4,
+      "handshakes": 1,
+      "summed_full_context_cost": {
+        "explicit_json": 5112,
+        "session_axl3": 5208,
+        "equivalent_session_json": 5208
+      },
+      "transmitted_wire_cost_including_bind_ack": {
+        "explicit_json": 1246,
+        "session_axl3": 1163,
+        "equivalent_session_json": 1163
+      }
+    },
+    {
+      "turns": 4,
+      "rows_per_turn": 8,
+      "body_length": 128,
+      "reconnect_every": 0,
+      "handshakes": 1,
+      "summed_full_context_cost": {
+        "explicit_json": 14072,
+        "session_axl3": 14168,
+        "equivalent_session_json": 14168
+      },
+      "transmitted_wire_cost_including_bind_ack": {
+        "explicit_json": 4830,
+        "session_axl3": 4747,
+        "equivalent_session_json": 4747
+      }
+    },
+    {
+      "turns": 4,
+      "rows_per_turn": 8,
+      "body_length": 128,
+      "reconnect_every": 4,
+      "handshakes": 1,
+      "summed_full_context_cost": {
+        "explicit_json": 14072,
+        "session_axl3": 14168,
+        "equivalent_session_json": 14168
+      },
+      "transmitted_wire_cost_including_bind_ack": {
+        "explicit_json": 4830,
+        "session_axl3": 4747,
+        "equivalent_session_json": 4747
+      }
+    },
+    {
+      "turns": 8,
+      "rows_per_turn": 1,
+      "body_length": 16,
+      "reconnect_every": 0,
+      "handshakes": 1,
+      "summed_full_context_cost": {
+        "explicit_json": 9544,
+        "session_axl3": 8712,
+        "equivalent_session_json": 8712
+      },
+      "transmitted_wire_cost_including_bind_ack": {
+        "explicit_json": 1160,
+        "session_axl3": 821,
+        "equivalent_session_json": 821
+      }
+    },
+    {
+      "turns": 8,
+      "rows_per_turn": 1,
+      "body_length": 16,
+      "reconnect_every": 4,
+      "handshakes": 2,
+      "summed_full_context_cost": {
+        "explicit_json": 9608,
+        "session_axl3": 9512,
+        "equivalent_session_json": 9512
+      },
+      "transmitted_wire_cost_including_bind_ack": {
+        "explicit_json": 1160,
+        "session_axl3": 994,
+        "equivalent_session_json": 994
+      }
+    },
+    {
+      "turns": 8,
+      "rows_per_turn": 1,
+      "body_length": 128,
+      "reconnect_every": 0,
+      "handshakes": 1,
+      "summed_full_context_cost": {
+        "explicit_json": 13576,
+        "session_axl3": 12744,
+        "equivalent_session_json": 12744
+      },
+      "transmitted_wire_cost_including_bind_ack": {
+        "explicit_json": 2056,
+        "session_axl3": 1717,
+        "equivalent_session_json": 1717
+      }
+    },
+    {
+      "turns": 8,
+      "rows_per_turn": 1,
+      "body_length": 128,
+      "reconnect_every": 4,
+      "handshakes": 2,
+      "summed_full_context_cost": {
+        "explicit_json": 13640,
+        "session_axl3": 13544,
+        "equivalent_session_json": 13544
+      },
+      "transmitted_wire_cost_including_bind_ack": {
+        "explicit_json": 2056,
+        "session_axl3": 1890,
+        "equivalent_session_json": 1890
+      }
+    },
+    {
+      "turns": 8,
+      "rows_per_turn": 8,
+      "body_length": 16,
+      "reconnect_every": 0,
+      "handshakes": 1,
+      "summed_full_context_cost": {
+        "explicit_json": 15550,
+        "session_axl3": 14718,
+        "equivalent_session_json": 14718
+      },
+      "transmitted_wire_cost_including_bind_ack": {
+        "explicit_json": 2502,
+        "session_axl3": 2163,
+        "equivalent_session_json": 2163
+      }
+    },
+    {
+      "turns": 8,
+      "rows_per_turn": 8,
+      "body_length": 16,
+      "reconnect_every": 4,
+      "handshakes": 2,
+      "summed_full_context_cost": {
+        "explicit_json": 15614,
+        "session_axl3": 15518,
+        "equivalent_session_json": 15518
+      },
+      "transmitted_wire_cost_including_bind_ack": {
+        "explicit_json": 2502,
+        "session_axl3": 2336,
+        "equivalent_session_json": 2336
+      }
+    },
+    {
+      "turns": 8,
+      "rows_per_turn": 8,
+      "body_length": 128,
+      "reconnect_every": 0,
+      "handshakes": 1,
+      "summed_full_context_cost": {
+        "explicit_json": 47806,
+        "session_axl3": 46974,
+        "equivalent_session_json": 46974
+      },
+      "transmitted_wire_cost_including_bind_ack": {
+        "explicit_json": 9670,
+        "session_axl3": 9331,
+        "equivalent_session_json": 9331
+      }
+    },
+    {
+      "turns": 8,
+      "rows_per_turn": 8,
+      "body_length": 128,
+      "reconnect_every": 4,
+      "handshakes": 2,
+      "summed_full_context_cost": {
+        "explicit_json": 47870,
+        "session_axl3": 47774,
+        "equivalent_session_json": 47774
+      },
+      "transmitted_wire_cost_including_bind_ack": {
+        "explicit_json": 9670,
+        "session_axl3": 9504,
+        "equivalent_session_json": 9504
+      }
+    },
+    {
+      "turns": 16,
+      "rows_per_turn": 1,
+      "body_length": 16,
+      "reconnect_every": 0,
+      "handshakes": 1,
+      "summed_full_context_cost": {
+        "explicit_json": 29641,
+        "session_axl3": 23881,
+        "equivalent_session_json": 23881
+      },
+      "transmitted_wire_cost_including_bind_ack": {
+        "explicit_json": 2338,
+        "session_axl3": 1487,
+        "equivalent_session_json": 1487
+      }
+    },
+    {
+      "turns": 16,
+      "rows_per_turn": 1,
+      "body_length": 16,
+      "reconnect_every": 4,
+      "handshakes": 4,
+      "summed_full_context_cost": {
+        "explicit_json": 30009,
+        "session_axl3": 28673,
+        "equivalent_session_json": 28673
+      },
+      "transmitted_wire_cost_including_bind_ack": {
+        "explicit_json": 2334,
+        "session_axl3": 2004,
+        "equivalent_session_json": 2004
+      }
+    },
+    {
+      "turns": 16,
+      "rows_per_turn": 1,
+      "body_length": 128,
+      "reconnect_every": 0,
+      "handshakes": 1,
+      "summed_full_context_cost": {
+        "explicit_json": 44873,
+        "session_axl3": 39113,
+        "equivalent_session_json": 39113
+      },
+      "transmitted_wire_cost_including_bind_ack": {
+        "explicit_json": 4130,
+        "session_axl3": 3279,
+        "equivalent_session_json": 3279
+      }
+    },
+    {
+      "turns": 16,
+      "rows_per_turn": 1,
+      "body_length": 128,
+      "reconnect_every": 4,
+      "handshakes": 4,
+      "summed_full_context_cost": {
+        "explicit_json": 45241,
+        "session_axl3": 43905,
+        "equivalent_session_json": 43905
+      },
+      "transmitted_wire_cost_including_bind_ack": {
+        "explicit_json": 4126,
+        "session_axl3": 3796,
+        "equivalent_session_json": 3796
+      }
+    },
+    {
+      "turns": 16,
+      "rows_per_turn": 8,
+      "body_length": 16,
+      "reconnect_every": 0,
+      "handshakes": 1,
+      "summed_full_context_cost": {
+        "explicit_json": 52510,
+        "session_axl3": 46750,
+        "equivalent_session_json": 46750
+      },
+      "transmitted_wire_cost_including_bind_ack": {
+        "explicit_json": 5054,
+        "session_axl3": 4203,
+        "equivalent_session_json": 4203
+      }
+    },
+    {
+      "turns": 16,
+      "rows_per_turn": 8,
+      "body_length": 16,
+      "reconnect_every": 4,
+      "handshakes": 4,
+      "summed_full_context_cost": {
+        "explicit_json": 52878,
+        "session_axl3": 51542,
+        "equivalent_session_json": 51542
+      },
+      "transmitted_wire_cost_including_bind_ack": {
+        "explicit_json": 5050,
+        "session_axl3": 4720,
+        "equivalent_session_json": 4720
+      }
+    },
+    {
+      "turns": 16,
+      "rows_per_turn": 8,
+      "body_length": 128,
+      "reconnect_every": 0,
+      "handshakes": 1,
+      "summed_full_context_cost": {
+        "explicit_json": 174366,
+        "session_axl3": 168606,
+        "equivalent_session_json": 168606
+      },
+      "transmitted_wire_cost_including_bind_ack": {
+        "explicit_json": 19390,
+        "session_axl3": 18539,
+        "equivalent_session_json": 18539
+      }
+    },
+    {
+      "turns": 16,
+      "rows_per_turn": 8,
+      "body_length": 128,
+      "reconnect_every": 4,
+      "handshakes": 4,
+      "summed_full_context_cost": {
+        "explicit_json": 174734,
+        "session_axl3": 173398,
+        "equivalent_session_json": 173398
+      },
+      "transmitted_wire_cost_including_bind_ack": {
+        "explicit_json": 19386,
+        "session_axl3": 19056,
+        "equivalent_session_json": 19056
+      }
+    },
+    {
+      "turns": 32,
+      "rows_per_turn": 1,
+      "body_length": 16,
+      "reconnect_every": 0,
+      "handshakes": 1,
+      "summed_full_context_cost": {
+        "explicit_json": 101889,
+        "session_axl3": 73985,
+        "equivalent_session_json": 73985
+      },
+      "transmitted_wire_cost_including_bind_ack": {
+        "explicit_json": 4706,
+        "session_axl3": 2831,
+        "equivalent_session_json": 2831
+      }
+    },
+    {
+      "turns": 32,
+      "rows_per_turn": 1,
+      "body_length": 16,
+      "reconnect_every": 4,
+      "handshakes": 8,
+      "summed_full_context_cost": {
+        "explicit_json": 103657,
+        "session_axl3": 96481,
+        "equivalent_session_json": 96481
+      },
+      "transmitted_wire_cost_including_bind_ack": {
+        "explicit_json": 4702,
+        "session_axl3": 4048,
+        "equivalent_session_json": 4048
+      }
+    },
+    {
+      "turns": 32,
+      "rows_per_turn": 1,
+      "body_length": 128,
+      "reconnect_every": 0,
+      "handshakes": 1,
+      "summed_full_context_cost": {
+        "explicit_json": 161025,
+        "session_axl3": 133121,
+        "equivalent_session_json": 133121
+      },
+      "transmitted_wire_cost_including_bind_ack": {
+        "explicit_json": 8290,
+        "session_axl3": 6415,
+        "equivalent_session_json": 6415
+      }
+    },
+    {
+      "turns": 32,
+      "rows_per_turn": 1,
+      "body_length": 128,
+      "reconnect_every": 4,
+      "handshakes": 8,
+      "summed_full_context_cost": {
+        "explicit_json": 162793,
+        "session_axl3": 155617,
+        "equivalent_session_json": 155617
+      },
+      "transmitted_wire_cost_including_bind_ack": {
+        "explicit_json": 8286,
+        "session_axl3": 7632,
+        "equivalent_session_json": 7632
+      }
+    },
+    {
+      "turns": 32,
+      "rows_per_turn": 8,
+      "body_length": 16,
+      "reconnect_every": 0,
+      "handshakes": 1,
+      "summed_full_context_cost": {
+        "explicit_json": 192150,
+        "session_axl3": 164246,
+        "equivalent_session_json": 164246
+      },
+      "transmitted_wire_cost_including_bind_ack": {
+        "explicit_json": 10238,
+        "session_axl3": 8363,
+        "equivalent_session_json": 8363
+      }
+    },
+    {
+      "turns": 32,
+      "rows_per_turn": 8,
+      "body_length": 16,
+      "reconnect_every": 4,
+      "handshakes": 8,
+      "summed_full_context_cost": {
+        "explicit_json": 193918,
+        "session_axl3": 186742,
+        "equivalent_session_json": 186742
+      },
+      "transmitted_wire_cost_including_bind_ack": {
+        "explicit_json": 10234,
+        "session_axl3": 9580,
+        "equivalent_session_json": 9580
+      }
+    },
+    {
+      "turns": 32,
+      "rows_per_turn": 8,
+      "body_length": 128,
+      "reconnect_every": 0,
+      "handshakes": 1,
+      "summed_full_context_cost": {
+        "explicit_json": 665238,
+        "session_axl3": 637334,
+        "equivalent_session_json": 637334
+      },
+      "transmitted_wire_cost_including_bind_ack": {
+        "explicit_json": 38910,
+        "session_axl3": 37035,
+        "equivalent_session_json": 37035
+      }
+    },
+    {
+      "turns": 32,
+      "rows_per_turn": 8,
+      "body_length": 128,
+      "reconnect_every": 4,
+      "handshakes": 8,
+      "summed_full_context_cost": {
+        "explicit_json": 667006,
+        "session_axl3": 659830,
+        "equivalent_session_json": 659830
+      },
+      "transmitted_wire_cost_including_bind_ack": {
+        "explicit_json": 38906,
+        "session_axl3": 38252,
+        "equivalent_session_json": 38252
+      }
+    }
+  ]
+}

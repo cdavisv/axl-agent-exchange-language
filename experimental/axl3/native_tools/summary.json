@@ -1,0 +1,142 @@
+{
+  "gemma": {
+    "tokenizer_sha256": "ab26b2add729e6f645bd869f228f14190a06615538f3be6f7786f33d13d78ad2",
+    "base_core_commit": "a12d43c18d1af1298c757099c40854a85ef99758",
+    "corpus_sha256": "0002d0da5cdf9326b557c612d09e28dd4fefeb93f7f1ba75b520df175189ce0a",
+    "scope": "Tokenizer-only synthetic startup diagnostic. No generated validity/task success or native chat-template billing. Schema-specialized instructions limited to all-required schemas. Native tool format is generic JSON Schema, not provider API validation; host owns schema pinning and packing. Full tool schema counted. Runtime validation identical; brief_runtime moves detailed validation instructions out of prompt, so model reliability is unmeasured. Already examined corpus, not fresh holdout. No changes to released codec.",
+    "exact_checks": 228,
+    "setup_totals": {
+      "baseline": 4496,
+      "concise_general": 4496,
+      "brief_runtime": 3470,
+      "specialized": 5465,
+      "native_tool": 5630
+    },
+    "summary": {
+      "1": {
+        "baseline": {
+          "wire": 34219,
+          "cold": 38753,
+          "retained": 38753
+        },
+        "concise_general": {
+          "wire": 34219,
+          "cold": 38753,
+          "retained": 38753
+        },
+        "brief_runtime": {
+          "wire": 34219,
+          "cold": 37727,
+          "retained": 37727
+        },
+        "specialized": {
+          "wire": 34219,
+          "cold": 39722,
+          "retained": 39722
+        },
+        "native_tool": {
+          "wire": 36372,
+          "cold": 42040,
+          "retained": 42040
+        }
+      },
+      "3": {
+        "baseline": {
+          "wire": 104002,
+          "cold": 117604,
+          "retained": 221243
+        },
+        "concise_general": {
+          "wire": 104002,
+          "cold": 117604,
+          "retained": 221243
+        },
+        "brief_runtime": {
+          "wire": 104002,
+          "cold": 114526,
+          "retained": 218165
+        },
+        "specialized": {
+          "wire": 104002,
+          "cold": 120511,
+          "retained": 224150
+        },
+        "native_tool": {
+          "wire": 110448,
+          "cold": 127452,
+          "retained": 237550
+        }
+      }
+    }
+  },
+  "qwen": {
+    "tokenizer_sha256": "c0382117ea329cdf097041132f6d735924b697924d6f6fc3945713e96ce87539",
+    "base_core_commit": "a12d43c18d1af1298c757099c40854a85ef99758",
+    "corpus_sha256": "0002d0da5cdf9326b557c612d09e28dd4fefeb93f7f1ba75b520df175189ce0a",
+    "scope": "Tokenizer-only synthetic startup diagnostic. No generated validity/task success or native chat-template billing. Schema-specialized instructions limited to all-required schemas. Native tool format is generic JSON Schema, not provider API validation; host owns schema pinning and packing. Full tool schema counted. Runtime validation identical; brief_runtime moves detailed validation instructions out of prompt, so model reliability is unmeasured. Already examined corpus, not fresh holdout. No changes to released codec.",
+    "exact_checks": 228,
+    "setup_totals": {
+      "baseline": 4210,
+      "concise_general": 4286,
+      "brief_runtime": 3336,
+      "specialized": 5198,
+      "native_tool": 5396
+    },
+    "summary": {
+      "1": {
+        "baseline": {
+          "wire": 32662,
+          "cold": 36910,
+          "retained": 36910
+        },
+        "concise_general": {
+          "wire": 32662,
+          "cold": 36986,
+          "retained": 36986
+        },
+        "brief_runtime": {
+          "wire": 32662,
+          "cold": 36036,
+          "retained": 36036
+        },
+        "specialized": {
+          "wire": 32662,
+          "cold": 37898,
+          "retained": 37898
+        },
+        "native_tool": {
+          "wire": 34751,
+          "cold": 40185,
+          "retained": 40185
+        }
+      },
+      "3": {
+        "baseline": {
+          "wire": 99264,
+          "cold": 112008,
+          "retained": 210840
+        },
+        "concise_general": {
+          "wire": 99264,
+          "cold": 112236,
+          "retained": 211068
+        },
+        "brief_runtime": {
+          "wire": 99264,
+          "cold": 109386,
+          "retained": 208218
+        },
+        "specialized": {
+          "wire": 99264,
+          "cold": 114972,
+          "retained": 213804
+        },
+        "native_tool": {
+          "wire": 105539,
+          "cold": 121841,
+          "retained": 226947
+        }
+      }
+    }
+  }
+}
