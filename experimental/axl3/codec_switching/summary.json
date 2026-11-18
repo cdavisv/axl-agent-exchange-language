@@ -1,0 +1,200 @@
+{
+  "gemma": {
+    "scope": "Synthetic tokenizer-only host-side selection. Both mixed grammars and schema counted once in each retained input. No model generation, inference, retry, output billing or selection CPU cost. Online context selector is greedy, not globally optimal. Negotiated positional JSON has different out-of-band identity contract. Corpus already observed: diagnostic not new heldout evidence.",
+    "tokenizer_sha256": "ab26b2add729e6f645bd869f228f14190a06615538f3be6f7786f33d13d78ad2",
+    "corpus_sha256": "0002d0da5cdf9326b557c612d09e28dd4fefeb93f7f1ba75b520df175189ce0a",
+    "checks": 1824,
+    "summary": {
+      "3": {
+        "typed_rows": {
+          "wire": 104141,
+          "cold": 125837,
+          "retained_context": 229649
+        },
+        "guarded_packed_json": {
+          "wire": 104002,
+          "cold": 117604,
+          "retained_context": 221243
+        },
+        "negotiated_positional_json": {
+          "wire": 97333,
+          "cold": 111505,
+          "retained_context": 208475
+        },
+        "hybrid_wire": {
+          "wire": 103142,
+          "cold": 130880,
+          "retained_context": 233693
+        },
+        "hybrid_context": {
+          "wire": 103142,
+          "cold": 130880,
+          "retained_context": 233693
+        }
+      },
+      "8": {
+        "typed_rows": {
+          "wire": 284840,
+          "cold": 342696,
+          "retained_context": 1330653
+        },
+        "guarded_packed_json": {
+          "wire": 284526,
+          "cold": 320798,
+          "retained_context": 1307503
+        },
+        "negotiated_positional_json": {
+          "wire": 266742,
+          "cold": 304534,
+          "retained_context": 1228995
+        },
+        "hybrid_wire": {
+          "wire": 282184,
+          "cold": 356152,
+          "retained_context": 1334801
+        },
+        "hybrid_context": {
+          "wire": 282184,
+          "cold": 356152,
+          "retained_context": 1334801
+        }
+      },
+      "16": {
+        "typed_rows": {
+          "wire": 575070,
+          "cold": 690782,
+          "retained_context": 4982169
+        },
+        "guarded_packed_json": {
+          "wire": 574442,
+          "cold": 646986,
+          "retained_context": 4933357
+        },
+        "negotiated_positional_json": {
+          "wire": 538874,
+          "cold": 614458,
+          "retained_context": 4634069
+        },
+        "hybrid_wire": {
+          "wire": 569758,
+          "cold": 717694,
+          "retained_context": 4969217
+        },
+        "hybrid_context": {
+          "wire": 569758,
+          "cold": 717694,
+          "retained_context": 4969217
+        }
+      }
+    },
+    "selection_counts": {
+      "hybrid_wire": {
+        "guarded_packed_json": 472,
+        "typed_rows": 136
+      },
+      "hybrid_context": {
+        "guarded_packed_json": 472,
+        "typed_rows": 136
+      }
+    }
+  },
+  "qwen": {
+    "scope": "Synthetic tokenizer-only host-side selection. Both mixed grammars and schema counted once in each retained input. No model generation, inference, retry, output billing or selection CPU cost. Online context selector is greedy, not globally optimal. Negotiated positional JSON has different out-of-band identity contract. Corpus already observed: diagnostic not new heldout evidence.",
+    "tokenizer_sha256": "c0382117ea329cdf097041132f6d735924b697924d6f6fc3945713e96ce87539",
+    "corpus_sha256": "0002d0da5cdf9326b557c612d09e28dd4fefeb93f7f1ba75b520df175189ce0a",
+    "checks": 1824,
+    "summary": {
+      "3": {
+        "typed_rows": {
+          "wire": 98044,
+          "cold": 118540,
+          "retained_context": 216263
+        },
+        "guarded_packed_json": {
+          "wire": 99264,
+          "cold": 112008,
+          "retained_context": 210840
+        },
+        "negotiated_positional_json": {
+          "wire": 92580,
+          "cold": 105780,
+          "retained_context": 197928
+        },
+        "hybrid_wire": {
+          "wire": 97481,
+          "cold": 123563,
+          "retained_context": 220688
+        },
+        "hybrid_context": {
+          "wire": 97481,
+          "cold": 123563,
+          "retained_context": 220688
+        }
+      },
+      "8": {
+        "typed_rows": {
+          "wire": 268502,
+          "cold": 323158,
+          "retained_context": 1253759
+        },
+        "guarded_packed_json": {
+          "wire": 271935,
+          "cold": 305919,
+          "retained_context": 1247529
+        },
+        "negotiated_positional_json": {
+          "wire": 254111,
+          "cold": 289311,
+          "retained_context": 1168537
+        },
+        "hybrid_wire": {
+          "wire": 267129,
+          "cold": 336681,
+          "retained_context": 1262071
+        },
+        "hybrid_context": {
+          "wire": 267129,
+          "cold": 336681,
+          "retained_context": 1262071
+        }
+      },
+      "16": {
+        "typed_rows": {
+          "wire": 542394,
+          "cold": 651706,
+          "retained_context": 4696781
+        },
+        "guarded_packed_json": {
+          "wire": 549365,
+          "cold": 617333,
+          "retained_context": 4710881
+        },
+        "negotiated_positional_json": {
+          "wire": 513717,
+          "cold": 584117,
+          "retained_context": 4410305
+        },
+        "hybrid_wire": {
+          "wire": 539753,
+          "cold": 678857,
+          "retained_context": 4702605
+        },
+        "hybrid_context": {
+          "wire": 539753,
+          "cold": 678857,
+          "retained_context": 4702605
+        }
+      }
+    },
+    "selection_counts": {
+      "hybrid_wire": {
+        "guarded_packed_json": 240,
+        "typed_rows": 368
+      },
+      "hybrid_context": {
+        "guarded_packed_json": 240,
+        "typed_rows": 368
+      }
+    }
+  }
+}

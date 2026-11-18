@@ -1,0 +1,160 @@
+{
+  "dense": [
+    {
+      "id": 1,
+      "value": "001"
+    },
+    {
+      "id": 2,
+      "value": "002"
+    }
+  ],
+  "absent_vs_null": [
+    {
+      "id": 1,
+      "value": null
+    },
+    {
+      "id": 2
+    }
+  ],
+  "seventy_percent": [
+    {
+      "id": 0,
+      "value": null
+    },
+    {
+      "id": 1,
+      "value": null
+    },
+    {
+      "id": 2,
+      "value": null
+    },
+    {
+      "id": 3,
+      "value": null
+    },
+    {
+      "id": 4,
+      "value": null
+    },
+    {
+      "id": 5,
+      "value": null
+    },
+    {
+      "id": 6,
+      "value": null
+    },
+    {
+      "id": 7
+    },
+    {
+      "id": 8
+    },
+    {
+      "id": 9
+    }
+  ],
+  "key_order": [
+    {
+      "id": 1,
+      "value": "x"
+    },
+    {
+      "value": "y",
+      "id": 2
+    }
+  ],
+  "reserved_strings": [
+    {
+      "value": "true"
+    },
+    {
+      "value": "false"
+    },
+    {
+      "value": "null"
+    },
+    {
+      "value": "NaN"
+    },
+    {
+      "value": "Infinity"
+    },
+    {
+      "value": "001"
+    },
+    {
+      "value": "1e2"
+    },
+    {
+      "value": ""
+    }
+  ],
+  "delimiters": [
+    {
+      "value": "a;b"
+    },
+    {
+      "value": "a,b"
+    },
+    {
+      "value": "a\tb"
+    },
+    {
+      "value": "a|b"
+    },
+    {
+      "value": "a\nb"
+    },
+    {
+      "value": "\"quoted\""
+    },
+    {
+      "value": "\\"
+    },
+    {
+      "value": "日本語"
+    }
+  ],
+  "nested": [
+    {
+      "id": 1,
+      "value": {
+        "a": [
+          null,
+          true,
+          "true"
+        ]
+      }
+    },
+    {
+      "id": 2,
+      "value": {
+        "a": []
+      }
+    }
+  ],
+  "numbers": [
+    {
+      "value": 0
+    },
+    {
+      "value": -0.0
+    },
+    {
+      "value": 9007199254740993
+    },
+    {
+      "value": 1e-20
+    }
+  ],
+  "empty": [],
+  "single": [
+    {
+      "id": 1
+    }
+  ]
+}

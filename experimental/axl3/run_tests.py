@@ -26,6 +26,7 @@ PROFILES = [
     "hybrid_validation",
     "shared_reference",
     "native_tools",
+    "codec_switching",
 ]
 
 if __name__ == "__main__":

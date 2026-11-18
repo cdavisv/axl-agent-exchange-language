@@ -97,3 +97,10 @@ or no-change receipt is cheaper. This is a host strategy also available to JSON,
 superiority. Cold receivers cannot apply deltas without a verified base. Future inference tests
 must compare equal contracts, evidence, tool permissions, retries and full context costs, using
 held-out tasks and the same models. Do not infer task success from tokenizer counts.
+
+## Additional audited experiments
+
+See [the November 18 publication audit](AUDIT-20261118.md) for native-tool interoperability,
+codec-switching counterexamples, JTON preflight fixtures, historical v2 evidence studies,
+rejected prototypes and remaining model-evaluation gaps. None changes the default codec.
+

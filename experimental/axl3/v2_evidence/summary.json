@@ -1,0 +1,140 @@
+[
+  {
+    "model": "Qwen/Qwen2.5-Coder-0.5B-Instruct",
+    "fixed_json_mean_tokens": 3019.866666666667,
+    "fixed_axl_mean_tokens": 2872.866666666667,
+    "paired_mean_saving_pct": 4.877775695883532,
+    "capacity": [
+      {
+        "cap": 512,
+        "json_mean_records": 2.7666666666666666,
+        "axl_mean_records": 2.933333333333333,
+        "axl_more": 5,
+        "tie": 25,
+        "axl_fewer": 0,
+        "flat_json_mean_records": 2.8666666666666667,
+        "array_json_mean_records": 3.066666666666667,
+        "shared_json_mean_records": 3.066666666666667
+      },
+      {
+        "cap": 1024,
+        "json_mean_records": 6.066666666666666,
+        "axl_mean_records": 6.433333333333334,
+        "axl_more": 11,
+        "tie": 19,
+        "axl_fewer": 0,
+        "flat_json_mean_records": 6.3,
+        "array_json_mean_records": 6.766666666666667,
+        "shared_json_mean_records": 6.9
+      },
+      {
+        "cap": 2048,
+        "json_mean_records": 12.866666666666667,
+        "axl_mean_records": 13.566666666666666,
+        "axl_more": 21,
+        "tie": 9,
+        "axl_fewer": 0,
+        "flat_json_mean_records": 13.2,
+        "array_json_mean_records": 14.166666666666666,
+        "shared_json_mean_records": 14.7
+      },
+      {
+        "cap": 4096,
+        "json_mean_records": 26.8,
+        "axl_mean_records": 28.266666666666666,
+        "axl_more": 30,
+        "tie": 0,
+        "axl_fewer": 0,
+        "flat_json_mean_records": 27.633333333333333,
+        "array_json_mean_records": 29.266666666666666,
+        "shared_json_mean_records": 30.666666666666668
+      },
+      {
+        "cap": 8192,
+        "json_mean_records": 54.36666666666667,
+        "axl_mean_records": 57.46666666666667,
+        "axl_more": 30,
+        "tie": 0,
+        "axl_fewer": 0,
+        "flat_json_mean_records": 55.9,
+        "array_json_mean_records": 59.266666666666666,
+        "shared_json_mean_records": 62.1
+      }
+    ],
+    "flat_json_mean_tokens": 2942.866666666667,
+    "axl_saving_vs_flat_json_pct": 2.383789398019009,
+    "array_json_mean_tokens": 2778.866666666667,
+    "axl_saving_vs_array_json_pct": -3.3909168803949905,
+    "shared_json_mean_tokens": 2664.866666666667,
+    "axl_saving_vs_shared_json_pct": -7.825987929436246
+  },
+  {
+    "model": "google/gemma-4-e2b-it",
+    "fixed_json_mean_tokens": 3400.3333333333335,
+    "fixed_axl_mean_tokens": 3252.3333333333335,
+    "paired_mean_saving_pct": 4.361265171237686,
+    "capacity": [
+      {
+        "cap": 512,
+        "json_mean_records": 2.1666666666666665,
+        "axl_mean_records": 2.2333333333333334,
+        "axl_more": 2,
+        "tie": 28,
+        "axl_fewer": 0,
+        "flat_json_mean_records": 2.2333333333333334,
+        "array_json_mean_records": 2.533333333333333,
+        "shared_json_mean_records": 2.533333333333333
+      },
+      {
+        "cap": 1024,
+        "json_mean_records": 5.333333333333333,
+        "axl_mean_records": 5.566666666666666,
+        "axl_more": 7,
+        "tie": 23,
+        "axl_fewer": 0,
+        "flat_json_mean_records": 5.533333333333333,
+        "array_json_mean_records": 5.766666666666667,
+        "shared_json_mean_records": 5.9
+      },
+      {
+        "cap": 2048,
+        "json_mean_records": 11.4,
+        "axl_mean_records": 11.966666666666667,
+        "axl_more": 17,
+        "tie": 13,
+        "axl_fewer": 0,
+        "flat_json_mean_records": 11.833333333333334,
+        "array_json_mean_records": 12.266666666666667,
+        "shared_json_mean_records": 12.866666666666667
+      },
+      {
+        "cap": 4096,
+        "json_mean_records": 23.7,
+        "axl_mean_records": 24.733333333333334,
+        "axl_more": 27,
+        "tie": 3,
+        "axl_fewer": 0,
+        "flat_json_mean_records": 24.333333333333332,
+        "array_json_mean_records": 25.6,
+        "shared_json_mean_records": 26.733333333333334
+      },
+      {
+        "cap": 8192,
+        "json_mean_records": 48.266666666666666,
+        "axl_mean_records": 50.56666666666667,
+        "axl_more": 30,
+        "tie": 0,
+        "axl_fewer": 0,
+        "flat_json_mean_records": 49.6,
+        "array_json_mean_records": 52.2,
+        "shared_json_mean_records": 54.6
+      }
+    ],
+    "flat_json_mean_tokens": 3303.3333333333335,
+    "axl_saving_vs_flat_json_pct": 1.5471874574740343,
+    "array_json_mean_tokens": 3141.3333333333335,
+    "axl_saving_vs_array_json_pct": -3.5418800295125825,
+    "shared_json_mean_tokens": 3025.3333333333335,
+    "axl_saving_vs_shared_json_pct": -7.5224481692845755
+  }
+]

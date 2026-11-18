@@ -1,0 +1,43 @@
+{
+  "upstream_commit": "1f9dfba14a9fdf79c84db05f8023c12060c40f1c",
+  "files": {
+    "test_chunking.py": "25df13fa537405ac8607670a45d6a7a1258b4e7f394cf8cc45b35b2f43c0d0be",
+    "benchmark.py": "a493956b4311a26842e39aff40c70b2f6aef4f21db2f685e59768b79f2fca481",
+    "test_benchmark.py": "65ff5a1302efd365157f7b2058489e6fac7cb9330f72a6ae13b6b6c774094adb",
+    "batched.py": "fcb6e5e321370c992021a436b6ec4e1adbac5fcd623255b2bdec950db26c837b",
+    "chunking.py": "08ae549ac245e280653c1446f48f258408b239467997ea1b10af2e4a17375625",
+    "test_batched.py": "442e3a49b36df04b1c0249764b6f035cc66f479a5f9ef8b5a3e401181359ea53",
+    "README.md": "b6d34c8bc154df846cbb216d5251a83460395934145db5fc30d413c452084017",
+    "REPORT.md": "77c3be229343c51dbf294fea43dfa301458bf45e378507d0c1bc002fa33b99eb",
+    "tests.txt": "416de5e7257ed08971e2f263b8bf7b74935bf195a5b6296eb5723dc0b9a3e9a9",
+    "requirements.lock.txt": "bdaf169754788da11544d4a4c0e6c6cd67bdb5679107c2c3f70f4a8136f6e37b",
+    "upstream-tests.txt": "71164c3c3cef9e5afc58b2a51a24eda94215da46bb2ef689c934e92ddb79485a",
+    "corpus.json": "1284a65dab14639f432f632c36be97bc6daa1b304f38c5ee943ac3587c87f19f",
+    "results.json": "f8b09a3c5fa372043ffcf6819332f9c15c97a8c06e667a8b04789ec7f4b34475",
+    "summary.json": "2209256c90426738059f2e995ac464382c5431e72621e519ff7449e702562807",
+    "chunking-results.json": "ad2dee76501d858174539704ecee6152b6355c0e018cb716750c06b942b2ae5c",
+    "batched-results.json": "944b8e7380fda8485874e347f8015b6cceba8ca0878978b74740b480a5dc84c1",
+    "batched-summary.json": "6d307f734692d3ab92d23f78b7b88cda4e06020af0d303ddfa47b409d9e71fbf",
+    "tokenizers/google--gemma-4-e2b-it/chat_template.jinja": "0a2c8073c878ab1da004bee933a998606537bbb62016310352c7285c3f01c5b5",
+    "tokenizers/google--gemma-4-e2b-it/tokenizer_config.json": "9f4fec4b1dc6ecddf8f4a92e9caea5971c0e67d81309f3f9066a2bee8c362633",
+    "tokenizers/google--gemma-4-e2b-it/tokenizer.json": "ab26b2add729e6f645bd869f228f14190a06615538f3be6f7786f33d13d78ad2",
+    "tokenizers/google--gemma-4-e2b-it/source.json": "c975bc6559712294b7d5b06bf9f51afc8e7bc35b44521f13c19234a51f4d5c88",
+    "tokenizers/Qwen--Qwen2.5-Coder-0.5B-Instruct/tokenizer.json": "c0382117ea329cdf097041132f6d735924b697924d6f6fc3945713e96ce87539",
+    "tokenizers/Qwen--Qwen2.5-Coder-0.5B-Instruct/source.json": "f0560dfb0ad766519a85e38761b003d0b2f3e95813b19027a81366d9e0019530"
+  },
+  "model_inference": false,
+  "versions": {
+    "tokenizers": "0.22.2",
+    "pydantic": "2.14.3",
+    "jinja2": "3.1.6",
+    "pytest": "9.2.0",
+    "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]"
+  },
+  "independent_corpus": {
+    "url": "https://github.com/pallets/click",
+    "commit": "e38188e9e205005d5af5f9e59df51904c984586a"
+  },
+  "corpus_count": 1232,
+  "observation_count": 1800,
+  "batch_observation_count": 1620
+}
